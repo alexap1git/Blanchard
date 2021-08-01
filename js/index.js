@@ -18,6 +18,7 @@ window.addEventListener('DOMContentLoaded', function () {
                 document.querySelector('#burger').addEventListener('click', function(){
                     document.querySelector('#nav-menu').classList.toggle('nav__is-activ')
                     document.querySelector('.header__burger-btn').classList.toggle('burger__is-activ')
+                    document.querySelector('.nav__enter-link').classList.toggle('nav__enter-link-activ')                    
                 })
 
 })
