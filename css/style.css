@@ -623,6 +623,7 @@ h2 {
     padding-bottom: 10px;
     padding-left: 14px;
     padding-right: 75px;
+    width: 100%;
     color:  #FFFFFF;
     z-index: 10;
 }
@@ -646,7 +647,7 @@ h2 {
 
 .menu__item-realizm:focus-within .scrolls__realizm1 {
     position: relative;
-    left: 52px;
+    left: 21px;
     top: -2px;
     width: 2px;
     height: 30px;
@@ -655,7 +656,7 @@ h2 {
 }
 .menu__item-realizm:focus-within .scrolls__realizm2 {
     position: relative;
-    left: 73px;
+    left: 21px;
     top: -2px;
     width: 2px;
     height: 30px;
@@ -664,7 +665,7 @@ h2 {
 }
 .menu__item-realizm:focus-within .scrolls__realizm3 {
     position: relative;
-    left: 67px;
+    left: 21px;
     top: -2px;
     width: 2px;
     height: 30px;
@@ -673,7 +674,7 @@ h2 {
 }
 .menu__item-realizm:focus-within .scrolls__realizm4 {
     position: relative;
-    left: 60px;
+    left: 21px;
     top: -2px;
     width: 2px;
     height: 30px;
@@ -702,7 +703,7 @@ h2 {
 
 .menu__item-impressianizm:focus-within .scrolls__impressianizm1 {
     position: relative;
-    left: 81px;
+    left: 21px;
     top: -2px;
     width: 2px;
     height: 30px;
@@ -711,7 +712,7 @@ h2 {
 }
 .menu__item-impressianizm:focus-within .scrolls__impressianizm2 {
     position: relative;
-    left: 47px;
+    left: 21px;
     top: -2px;
     width: 2px;
     height: 30px;
@@ -720,7 +721,7 @@ h2 {
 }
 .menu__item-impressianizm:focus-within .scrolls__impressianizm3 {
     position: relative;
-    left: 50px;
+    left: 21px;
     top: -2px;
     width: 2px;
     height: 30px;
@@ -729,7 +730,7 @@ h2 {
 }
 .menu__item-impressianizm:focus-within .scrolls__impressianizm4 {
     position: relative;
-    left: 51px;
+    left: 21px;
     top: -2px;
     width: 2px;
     height: 30px;
@@ -759,7 +760,7 @@ h2 {
 
 .menu__item-postimpressianizm:focus-within .scrolls__postimpressianizm1 {
     position: relative;
-    left: 46px;
+    left: 21px;
     top: -2px;
     width: 2px;
     height: 30px;
@@ -777,7 +778,7 @@ h2 {
 }
 .menu__item-postimpressianizm:focus-within .scrolls__postimpressianizm3 {
     position: relative;
-    left: 25px;
+    left: 21px;
     top: -2px;
     width: 2px;
     height: 30px;
@@ -786,7 +787,7 @@ h2 {
 }
 .menu__item-postimpressianizm:focus-within .scrolls__postimpressianizm4 {
     position: relative;
-    left: 26px;
+    left: 21px;
     top: -2px;
     width: 2px;
     height: 30px;
@@ -817,7 +818,7 @@ h2 {
 
 .menu__item-avangard:focus-within .scrolls__avangard1 {
     position: relative;
-    left: 55px;
+    left: 21px;
     top: -2px;
     width: 2px;
     height: 30px;
@@ -826,7 +827,7 @@ h2 {
 }
 .menu__item-avangard:focus-within .scrolls__avangard2 {
     position: relative;
-    left: 40px;
+    left: 21px;
     top: -2px;
     width: 2px;
     height: 30px;
@@ -835,7 +836,7 @@ h2 {
 }
 .menu__item-avangard:focus-within .scrolls__avangard3 {
     position: relative;
-    left: 35px;
+    left: 21px;
     top: -2px;
     width: 2px;
     height: 30px;
@@ -844,7 +845,7 @@ h2 {
 }
 .menu__item-avangard:focus-within .scrolls__avangard4 {
     position: relative;
-    left: 28px;
+    left: 21px;
     top: -2px;
     width: 2px;
     height: 30px;
@@ -875,7 +876,7 @@ h2 {
 
 .menu__item-futurism:focus-within .scrolls__futurism1 {
     position: relative;
-    left: 31px;
+    left: 21px;
     top: -2px;
     width: 2px;
     height: 30px;
@@ -884,7 +885,7 @@ h2 {
 }
 .menu__item-futurism:focus-within .scrolls__futurism2 {
     position: relative;
-    left: 23px;
+    left: 21px;
     top: -2px;
     width: 2px;
     height: 30px;
@@ -893,7 +894,7 @@ h2 {
 }
 .menu__item-futurism:focus-within .scrolls__futurism3 {
     position: relative;
-    left: 26px;
+    left: 21px;
     top: -2px;
     width: 2px;
     height: 30px;
@@ -902,7 +903,7 @@ h2 {
 }
 .menu__item-futurism:focus-within .scrolls__futurism4 {
     position: relative;
-    left: 24px;
+    left: 21px;
     top: -2px;
     width: 2px;
     height: 30px;
