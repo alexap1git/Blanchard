@@ -33,40 +33,52 @@
         <nav class="header__nav">
             <div class="container header__container">
                 <button id="burger" class="header__burger-btn btn">
-                    <!--<a href="#" aria-label="Выпадающее меню" class="nav-burger-img"></a>-->    
-                    <!--<img src="img/Search.svg" alt="Поиск" class="nav-search-img">-->   
+                   <div class="header__burger-icon1"></div>
+                   <div class="header__burger-icon2"></div>
+                   <div class="header__burger-icon3"></div>   
                 </button>
                 <a href="/" aria-label="Ссылка на логотип Blanchard" class="header__blanchard-link" tabindex="1">
                     <img src="img/Logo.svg" alt="логотип Blanchard" class="header__blanchard-img">
              <!--   <img src="img/художественная_галерея.svg" alt="художественная галерея" class="header-description-img">    -->       
-                </a>  
-                <ul id="nav-menu" class="nav__list" aria-label="Меню">
-                    <li class="nav__item">
-                        <a href="#adout" class="nav__adout-us nav__item-link" tabindex="2">О нас</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#gallery" class="nav__gallery nav__item-link" tabindex="3">Галерея</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#catalog" class="nav__catalog nav__item-link" tabindex="4">Каталог</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#events" class="nav__events nav__item-link" tabindex="5">События</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#publications" class="nav__publications nav__item-link" tabindex="6">Издания</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#project" class="nav__project nav__item-link" tabindex="7">Проекты</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#contacts" class="nav__contacts nav__item-link" tabindex="8">Контакты</a>
-                    </li>
-                </ul>
+                </a>
+                <div class="nav-menu__adaptiv">
+                    <ul id="nav-menu" class="nav__list" aria-label="Меню">
+                        <li class="nav__item">
+                            <a href="#adout" class="nav__adout-us nav__item-link" tabindex="2">О нас</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#gallery" class="nav__gallery nav__item-link" tabindex="3">Галерея</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#catalog" class="nav__catalog nav__item-link" tabindex="4">Каталог</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#events" class="nav__events nav__item-link" tabindex="5">События</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#publications" class="nav__publications nav__item-link" tabindex="6">Издания</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#project" class="nav__project nav__item-link" tabindex="7">Проекты</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#contacts" class="nav__contacts nav__item-link" tabindex="8">Контакты</a>
+                        </li>
+                    </ul>
+                    <button id="enter-link-mobile" class="nav__enter-link-mobile btn">
+                       <p class="nav__enter-link-mobile-text">Войти</p> 
+                        <!--<a href="/" aria-label="Войти" class="nav__enter-link-mobile" tabindex="10">Войти</a> -->    
+                    </button>
+                </div>
                 <a href="/" aria-label="Войти" class="nav__enter-link" tabindex="9">Войти</a> 
-                <button id="search-form" class="header__search-form btn">
-                <!--   <a href="#" aria-label="Поиск по сайту" class="header__search-img"></a> -->   
-                <!--   <img src="img/Search.svg" alt="Поиск" class="nav-search-img"> -->  
+                <form action="https://jsonplaceholder.typicode.com/posts" autocomplete="on" method="POST" id="form__mobile" class="search_form-mobile">
+                    <button id="search-form" class="header__search-form btn"></button>
+                    <label class="header__search-label" for="search_input"></label>
+                    <input class="header__search-input" id="search_input" type="search">
+                </form>
+                <button id="search-form-close" class="header__search-form-close btn">
+                    <div class="header__search-form-close1"></div>
+                    <div class="header__search-form-close2"></div>
                 </button>
             </div> 
         </nav>    
@@ -74,9 +86,10 @@
             <div class="is-activ"></div>
             <div class="container search__container">
                 <ul class="search__list" aria-label="Меню поиска по разделам">
-                    <li class="search__item">
+                    <li class="search__item realizm">
                         <p  class="search__realizm search__item-link" tabindex="10">Реализм</p>
                         <ul class="menu__realizm menu__list">
+                            <li  class="realizm-scrolls"></li>    
                             <li class="menu__item-realizm menu__img-realizm1">
                                 <a href="/" class="list-link list-link-realizm1">Тинторетто</a>
                                 <div class="scrolls__realizm1"></div>
@@ -93,12 +106,12 @@
                                 <a href="/" class="list-link list-link-realizm4">Верроккьо</a>
                                 <div class="scrolls__realizm4"></div>
                             </li> 
-                            <li  class="realizm-scrolls"></li>                       
                         </ul>    
                     </li>    
-                    <li class="search__item">
+                    <li class="search__item impressianizm">
                         <p  class="search__impressianizm search__item-link" tabindex="10">Импрессионизм</p> 
                         <ul class="menu__impressianizm menu__list"> 
+                            <li class="impressianizm-scrolls"></li>   
                             <li class="menu__item-impressianizm menu__img-impressianizm1">
                                 <a href="/" class="list-link list-link-impressianizm1">Пикассо</a>
                                 <div class="scrolls__impressianizm1"></div>
@@ -115,10 +128,9 @@
                                 <a href="/" class="list-link list-link-impressianizm4">Верроккьо*</a>
                                 <div class="scrolls__impressianizm4"></div>
                             </li>    
-                            <li class="impressianizm-scrolls"></li>                    
                         </ul>
                     </li>
-                    <li class="search__item">
+                    <li class="search__item postimpressianizm">
                         <p  class="search__postimpressianizm search__item-link" tabindex="10">Постимпрессионизм</p>
                         <ul class="menu__postimpressianizm menu__list">
                             <li class="postimpressianizm-scrolls"></li>
@@ -137,11 +149,10 @@
                             <li class="menu__item-postimpressianizm menu__img-postimpressianizm4">
                                 <a href="/" class="list-link list-link-postimpressianizm4">Верроккьо****</a>
                                 <div class="scrolls__postimpressianizm4"></div>
-                            </li>     
-                            <li class="postimpressianizm-scrolls"></li>                   
+                            </li>                    
                         </ul>
                     </li>
-                    <li class="search__item">
+                    <li class="search__item avangard">
                         <p  class="search__avangard search__item-link" tabindex="10">Авангард</p> 
                         <ul class="menu__avangard menu__list">
                             <li class="avangard-scrolls"></li>
@@ -160,14 +171,13 @@
                             <li class="menu__item-avangard menu__img-avangard4">
                                 <a href="/" class="list-link list-link-avangard4">Верроккьо/////</a>
                                 <div class="scrolls__avangard4"></div>
-                            </li>  
-                            <li class="avangard-scrolls"></li>                      
+                            </li>                   
                         </ul>
                     </li>
-                    <li class="search__item">
+                    <li class="search__item futurism">
                         <p  class="search__futurism search__item-link" tabindex="10">Футуризм</p> 
                         <ul class="menu__futurism menu__list">
-        
+                            <li class="avangard-scrolls"></li>              
                             <li class="menu__item-futurism menu__img-futurism1">
                                 <a href="/" class="list-link list-link-futurism1">Пикассо...........</a>
                                 <div class="scrolls__futurism1"></div>
@@ -177,14 +187,13 @@
                                 <div class="scrolls__futurism2"></div>
                             </li>
                             <li class="menu__item-futurism menu__img-futurism3">
-                                <a href="/" class="list-link list-link-futurism3">Леонардо................</a>
+                                <a href="/" class="list-link list-link-futurism3">Леонардо.........</a>
                                 <div class="scrolls__futurism3"></div>
                             </li>
                             <li class="menu__item-futurism menu__img-futurism4">
-                                <a href="/" class="list-link list-link-futurism4">Верроккьо..........</a>
+                                <a href="/" class="list-link list-link-futurism4">Верроккьо........</a>
                                 <div class="scrolls__futurism4"></div>
                             </li>    
-                            <li class="avangard-scrolls"></li>                    
                         </ul>
                     </li>
                 </ul>
@@ -204,7 +213,7 @@
             <div class="swiper-slide3"></div>
             <div class="container touch-beautiful__alignment">
                 <div class="touch-beautiful__description">           
-                    <h2 class="touch-beautiful__title" tabindex="17">Прикоснитесь к прекрасному</h2>
+                    <h4 class="touch-beautiful__title" tabindex="17">Прикоснитесь к прекрасному</h4>
                     <p class="touch-beautiful__text" tabindex="18">Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки для новых предложений.</p>
                     <button class="touch-beautiful__btn btn" tabindex="19">Подписаться на рассылку</button>
                 </div> 
