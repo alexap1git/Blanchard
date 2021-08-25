@@ -8,50 +8,75 @@ window.addEventListener('DOMContentLoaded', function () {
                 })
                 document.querySelector('.search__realizm').addEventListener('click', function(){
                     document.querySelector('.menu__realizm').classList.toggle('realizm__is-activ')
+                    document.querySelector('.menu__impressianizm').classList.remove('impressianizm__is-activ')
+                    document.querySelector('.menu__postimpressianizm').classList.remove('postimpressianizm__is-activ')
+                    document.querySelector('.menu__avangard').classList.remove('avangard__is-activ')
+                    document.querySelector('.menu__futurism').classList.remove('futurism__is-activ')
+                    document.querySelector('.search__realizm').classList.toggle('search__realizm-activ')
                 })
                 document.querySelector('.search__impressianizm').addEventListener('click', function(){
+                    document.querySelector('.menu__realizm').classList.remove('realizm__is-activ')
                     document.querySelector('.menu__impressianizm').classList.toggle('impressianizm__is-activ')
+                    document.querySelector('.menu__postimpressianizm').classList.remove('postimpressianizm__is-activ')
+                    document.querySelector('.menu__avangard').classList.remove('avangard__is-activ')
+                    document.querySelector('.menu__futurism').classList.remove('futurism__is-activ')
+                    document.querySelector('.search__impressianizm').classList.toggle('search__impressianizm-activ')
                 })
                 document.querySelector('.search__postimpressianizm').addEventListener('click', function(){
+                    document.querySelector('.menu__realizm').classList.remove('realizm__is-activ')
+                    document.querySelector('.menu__impressianizm').classList.remove('impressianizm__is-activ')
                     document.querySelector('.menu__postimpressianizm').classList.toggle('postimpressianizm__is-activ')
+                    document.querySelector('.menu__avangard').classList.remove('avangard__is-activ')
+                    document.querySelector('.menu__futurism').classList.remove('futurism__is-activ')
+                    document.querySelector('.search__postimpressianizm').classList.toggle('search__postimpressianizm-activ')
                 })
                 document.querySelector('.search__avangard').addEventListener('click', function(){
+                    document.querySelector('.menu__realizm').classList.remove('realizm__is-activ')
+                    document.querySelector('.menu__impressianizm').classList.remove('impressianizm__is-activ')
+                    document.querySelector('.menu__postimpressianizm').classList.remove('postimpressianizm__is-activ')
                     document.querySelector('.menu__avangard').classList.toggle('avangard__is-activ')
+                    document.querySelector('.menu__futurism').classList.remove('futurism__is-activ')
+                    document.querySelector('.search__avangard').classList.toggle('search__avangard-activ')
                 })
                 document.querySelector('.search__futurism').addEventListener('click', function(){
+                    document.querySelector('.menu__realizm').classList.remove('realizm__is-activ')
+                    document.querySelector('.menu__impressianizm').classList.remove('impressianizm__is-activ')
+                    document.querySelector('.menu__postimpressianizm').classList.remove('postimpressianizm__is-activ')
+                    document.querySelector('.menu__avangard').classList.remove('avangard__is-activ')
                     document.querySelector('.menu__futurism').classList.toggle('futurism__is-activ')
+                    document.querySelector('.search__futurism').classList.toggle('search__futurism-activ')
                 })
 
-                document.querySelector('.search__realizm').addEventListener('click', function(){
-                    document.querySelector('.search__realizm').classList.toggle('search__realizm-activ')
-/*                    document.querySelector('.search__realizm-activ').addEventListener('click', function(){
+/*                 document.querySelector('.search__realizm').addEventListener('click', function(){
+
+                   document.querySelector('.search__realizm-activ').addEventListener('click', function(){
                         document.querySelector('.realizm').classList.toggle('search__realizm-visited')
-                    })  */
-                })
-                document.querySelector('.search__impressianizm').addEventListener('click', function(){
-                    document.querySelector('.search__impressianizm').classList.toggle('search__impressianizm-activ')
-/*                    document.querySelector('.search__impressianizm-activ').addEventListener('click', function(){
+                    })  
+                })*/
+/*                document.querySelector('.search__impressianizm').addEventListener('click', function(){
+
+                    document.querySelector('.search__impressianizm-activ').addEventListener('click', function(){
                         document.querySelector('.impressianizm').classList.toggle('search__impressianizm-visited')
-                    })  */
-                })
-                document.querySelector('.search__postimpressianizm').addEventListener('click', function(){
-                    document.querySelector('.search__postimpressianizm').classList.toggle('search__postimpressianizm-activ')
-/*                    document.querySelector('.search__postimpressianizm-activ').addEventListener('click', function(){
+                    })  
+                })*/
+/*                 document.querySelector('.search__postimpressianizm').addEventListener('click', function(){
+
+                   document.querySelector('.search__postimpressianizm-activ').addEventListener('click', function(){
                         document.querySelector('.postimpressianizm').classList.toggle('search__postimpressianizm-visited')
-                    })  */
-                })
-                document.querySelector('.search__avangard').addEventListener('click', function(){
-                    document.querySelector('.search__avangard').classList.toggle('search__avangard-activ')
-/*                    document.querySelector('.search__avangard-activ').addEventListener('click', function(){
+                    })  
+                })*/
+/*                document.querySelector('.search__avangard').addEventListener('click', function(){
+
+                    document.querySelector('.search__avangard-activ').addEventListener('click', function(){
                         document.querySelector('.avangard').classList.toggle('search__avangard-visited')
-                    })  */
-                })
-                document.querySelector('.search__futurism').addEventListener('click', function(){
-                    document.querySelector('.search__futurism').classList.toggle('search__futurism-activ')
-/*                    document.querySelector('.search__futurism-activ').addEventListener('click', function(){
+                    })  
+                })*/
+/*                 document.querySelector('.search__futurism').addEventListener('click', function(){
+
+                   document.querySelector('.search__futurism-activ').addEventListener('click', function(){
                         document.querySelector('.futurism').classList.toggle('search__futurism-visited')
-                    })  */
-                })
+                    })  
+                })*/
 
 
                 document.querySelector('#burger').addEventListener('click', function(){
