@@ -141,7 +141,7 @@ h2 {
 
 .nav__list {
     /* margin-right: 100px; */
-    width: 72%;   
+    width: 73%;   
     display: flex;
     justify-content: space-between;
   
@@ -159,6 +159,7 @@ h2 {
 */
 .nav__item {
     position: relative;
+    padding-right: 15px;
 }
 
 .nav__item-link {
@@ -233,6 +234,10 @@ h2 {
     color: #C283F3;
     transition: .3s color;
 } 
+
+.nav__enter-link:focus::after {
+    opacity: 1;
+} 
 .nav__enter-link:focus:hover svg {
     width: 13px;
 }
@@ -242,11 +247,6 @@ h2 {
 }
 .nav__enter-link:focus:hover {
     color: #FFFFFF;
-} 
-
-
-.nav__enter-link:focus::after {
-    opacity: 1;
 } 
 
 
@@ -657,7 +657,6 @@ h2 {
     width: 300px;
     height: 300px;
     position: absolute;
-   /* top: 50px;*/
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -667,9 +666,12 @@ h2 {
     background-color: rgb(0, 0, 0, 0.4);
 /*    background-image: linear-gradient(white, gray);*/
     z-index: 10;
-    overflow: hidden;
+ /*    overflow: hidden;
+   overflow: hidden auto;*/
 }
-
+.simplebar-content-wrapper {
+    overflow: auto;
+  }
 .menu {
     position: absolute;
     top: 100px;
@@ -680,7 +682,7 @@ h2 {
     transform: scaleY(1);
 }
 .menu__item-realizm,.menu__item-impressianizm,.menu__item-postimpressianizm,.menu__item-avangard,.menu__item-futurism  {
-    margin: 10px 0px 10px 0px;
+    margin: 10px 0px 20px 0px;
     height: 40px;
     display: flex;
     align-items: center;
@@ -689,7 +691,31 @@ h2 {
     border-width: 2px;
     z-index: 11;
 }
+.simplebar-scrollbar::before {
+    margin-right: 25px;
+    height: 25px;
+    width: 2px;
+    left: 1px;
+    background-color: #FFFFFF;
+   }
+.simplebar-scrollbar.simplebar-visible:before {
+    opacity: 1;
+}
+.simplebar-track{
+    margin-top: 41px;
+    margin-right: 18px;
+    margin-bottom: 41px;
+}
 
+.simplebar-track.simplebar-vertical {
+    width: 3px;
+    background-color: black;
+}
+ /*
+.simplebar-scroll-content {
+    width: 2px;
+}
+*/
 .menu__item-realizm:hover,.menu__item-impressianizm:hover,.menu__item-postimpressianizm:hover,.menu__item-avangard:hover,.menu__item-futurism:hover  {
     outline: 2px solid #9D5CD0;
 }
@@ -767,11 +793,11 @@ h2 {
     height: 220px;
     background-color: black;
     z-index: 10;*/
-    position: fixed;
-    left: 279px;
+    position: absolute;
+    left: 93%;
     top: 41px;
     width: 2px;
-    height: 220px;
+    height: 100%;
     background-color: black;
     /* border-radius: 50%; */
     z-index: 11;
@@ -3356,6 +3382,10 @@ h2 {
 /********************* 1024 - 768 ****************************************************************/
 
 @media (min-width:801px) and (max-width:1124px) {  
+    :root {
+        --header_height: 100px;
+        --touchbeautiful_height: 630px;
+    }
     html, body {
          position: relative;
     }
@@ -3381,6 +3411,7 @@ h2 {
         align-items: center;
         height: 100%;
         min-width: 800px;
+
     }
     .header__burger-btn {
         margin: 0;
@@ -3451,6 +3482,7 @@ h2 {
     }
 
     .header__burger-icon1,.header__burger-icon2,.header__burger-icon3  {
+        display: block;
         margin-bottom: 8px;
         width: 36px;
         height: 4px;
@@ -3597,15 +3629,11 @@ h2 {
     }
 
 
-    .nav__is-activ {
-        top: 0px;
-        transition: top .3s ease-out 0.1s;
-    }
+
     .section-search {
         display: none;
     }  
-}
-@media (min-width: 801px) and (max-width: 1124px) {
+
     .container {
         /* max-width: 1010px; */
         margin-right: auto;
@@ -3614,7 +3642,8 @@ h2 {
         padding-right: 50px;
     }
     .touch-beautiful__alignment {
-        padding-top: 22px;
+        padding-top: 24px;
+        padding-bottom: 119px;
     }
     .touch-beautiful__description {
         position: relative;
@@ -3626,6 +3655,7 @@ h2 {
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
+
     }
     .touch-beautiful__title {
         margin-bottom: 1px;
@@ -3654,7 +3684,11 @@ h2 {
     .burger__is-activ .header__burger-icon3  {
         transform: translateY(-12px) rotate(-45deg);
     }
-
+    .nav__is-activ {
+        height: calc(var(--touchbeautiful_height) + var(--header_height));
+        top: 0px;
+        transition: top .3s ease-out 0.1s;
+    }
 }
 
 /**************************** 768 - 320 ************************************************************************/
@@ -3662,6 +3696,10 @@ h2 {
     html,
      body {
          position: relative;
+    }
+    :root {
+        --header_height: 100px;
+        --touchbeautiful_height: 663px;
     }
     .container {
         max-width: 768px;
@@ -3765,6 +3803,7 @@ h2 {
         height: 42px;
     }
     .header__burger-icon1,.header__burger-icon2,.header__burger-icon3  {
+        display: block;
         margin-bottom: 8px;
         width: 36px;
         height: 4px;
@@ -3908,26 +3947,7 @@ h2 {
         font-size: 24px;
         line-height: 64px;
     }
-    .nav__is-activ {
-        top: 0px;
-        transition: top .3s ease-out 0.1s;
-/*        padding: 0px 0px 0px 48px;
-        position: absolute;
-        width: 100%;
-        left: 0px;
-        top: 0px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: flex-start;
-        background-color: black;
-        color: white;
-        opacity: 0.8;
-        z-index: 11;
-        transition-property: transform;
-        transition-delay: .3s;
-        transform: translateX(0px);*/
-    }
+
     .section-search {
         display: none;
     }
@@ -4001,6 +4021,7 @@ h2 {
         transition-property: top;
     }
     .header__search-form-close1 {
+        display: block;
         margin-bottom: 0px;
         width: 28px;
         height: 2px;
@@ -4010,6 +4031,7 @@ h2 {
         transform: translateY(-2px) rotate(45deg);
     }
     .header__search-form-close2 {
+        display: block;
         margin-bottom: 0px;
         width: 28px;
         height: 2px;
@@ -4017,6 +4039,11 @@ h2 {
         transition-duration: .3s;
         transition-property: display,transform;
         transform: translateY(-4px) rotate(-45deg);
+    }
+    .nav__is-activ {
+        height: calc(var(--touchbeautiful_height) + var(--header_height));
+        top: 0px;
+        transition: top .3s ease-out 0.1s;
     }
 }
 /**************************** 425 - 320 ************************************************************************/
@@ -4244,6 +4271,7 @@ h2 {
         width: 98px;
     }
     .header__burger-icon1,.header__burger-icon2,.header__burger-icon3  {
+        display: block;
         margin-bottom: 6px;
         width: 25px;
         height: 2px;
@@ -4521,6 +4549,7 @@ h2 {
         transition-property: top;
     }
     .header__search-form-close1 {
+        display: block;
         margin-bottom: 0px;
         width: 21px;
         height: 2px;
@@ -4530,6 +4559,7 @@ h2 {
         transform: translateY(-2px) rotate(45deg);
     }
     .header__search-form-close2 {
+        display: block;
         margin-bottom: 0px;
         width: 21px;
         height: 2px;

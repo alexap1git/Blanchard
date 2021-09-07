@@ -4,15 +4,18 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/choices.min.css">
+    <!--SimpleBar -->
+    <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css" />
+    <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
 
  
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
       <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="css/swiper1-bundle.min.css">
-    <link rel="stylesheet" href="css/swiper2-bundle.min.css"> 
-    <link rel="stylesheet" href="css/swiper3-bundle.min.css"> 
+    <!--<link rel="stylesheet" href="css/swiper1-bundle.min.css">-->
+    <!--<link rel="stylesheet" href="css/swiper2-bundle.min.css"> -->
+    <!--<link rel="stylesheet" href="css/swiper3-bundle.min.css"> -->
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -33,9 +36,9 @@
         <nav class="header__nav">
             <div class="container header__container">
                 <button id="burger" class="header__burger-btn btn">
-                   <div class="header__burger-icon1"></div>
-                   <div class="header__burger-icon2"></div>
-                   <div class="header__burger-icon3"></div>   
+                   <span class="header__burger-icon1"></span>
+                   <span class="header__burger-icon2"></span>
+                   <span class="header__burger-icon3"></span>   
                 </button>
                 <a href="/" aria-label="Ссылка на логотип Blanchard" class="header__blanchard-link" tabindex="1">
                     <img src="img/Logo.svg" alt="логотип Blanchard" class="header__blanchard-img">    
@@ -105,8 +108,8 @@
                                 <path d="M11 5L6 10L0.999997 5" stroke="white"/>
                             </svg>
                         </button>
-                        <ul class="menu__realizm menu__list">
-                            <li  class="realizm-scrolls"></li>    
+                        <ul class="menu__realizm menu__list" data-simplebar>
+                        <!-- <li  class="realizm-scrolls"></li>    -->   
                             <li class="menu__item-realizm menu__img-realizm1">
                                 <a href="/" class="list-link list-link-realizm1">Тинторетто</a>
                                 <div class="scrolls__realizm1"></div>
@@ -132,8 +135,8 @@
                                 <path d="M11 5L6 10L0.999997 5" stroke="white"/>
                             </svg>
                         </button> 
-                        <ul class="menu__impressianizm menu__list"> 
-                            <li class="impressianizm-scrolls"></li>   
+                        <ul class="menu__impressianizm menu__list" data-simplebar> 
+                        <!--   <li class="impressianizm-scrolls"></li> >  --> 
                             <li class="menu__item-impressianizm menu__img-impressianizm1">
                                 <a href="/" class="list-link list-link-impressianizm1">Пикассо</a>
                                 <div class="scrolls__impressianizm1"></div>
@@ -159,8 +162,8 @@
                                 <path d="M11 5L6 10L0.999997 5" stroke="white"/>
                             </svg>
                         </button>
-                        <ul class="menu__postimpressianizm menu__list">
-                            <li class="postimpressianizm-scrolls"></li>
+                        <ul class="menu__postimpressianizm menu__list" data-simplebar>
+                        <!--<li class="postimpressianizm-scrolls"></li>-->    
                             <li class="menu__item-postimpressianizm menu__img-postimpressianizm1">
                                 <a href="/" class="list-link list-link-postimpressianizm1">Пикассо****</a>
                                 <div class="scrolls__postimpressianizm1"></div>
@@ -186,8 +189,8 @@
                                 <path d="M11 5L6 10L0.999997 5" stroke="white"/>
                             </svg>
                         </button> 
-                        <ul class="menu__avangard menu__list">
-                            <li class="avangard-scrolls"></li>
+                        <ul class="menu__avangard menu__list" data-simplebar>
+                        <!--    <li class="avangard-scrolls"></li>-->
                             <li class="menu__item-avangard menu__img-avangard1">
                                 <a href="/" class="list-link list-link-avangard1">Пикассо////</a>
                                 <div class="scrolls__avangard1"></div>
@@ -213,8 +216,8 @@
                                 <path d="M11 5L6 10L0.999997 5" stroke="white"/>
                             </svg>
                         </button> 
-                        <ul class="menu__futurism menu__list">
-                            <li class="avangard-scrolls"></li>              
+                        <ul class="menu__futurism menu__list" data-simplebar>
+                        <!--<li class="avangard-scrolls"></li>  -->                
                             <li class="menu__item-futurism menu__img-futurism1">
                                 <a href="/" class="list-link list-link-futurism1">Пикассо...........</a>
                                 <div class="scrolls__futurism1"></div>
@@ -272,6 +275,14 @@
         $( function() {
           $( "#accordion" ).accordion();
         } );
+    </script>
+    <script>
+        new SimpleBar(document.getElementById('myElement'), {
+            scrollbarMinSize : 2,
+        option2: value2
+        });
+        const simpleBar = new SimpleBar(document.getElementById('myElement'));
+        simpleBar.recalculate();
     </script>
 </body>
 </html>
