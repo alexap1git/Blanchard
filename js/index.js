@@ -101,4 +101,38 @@ window.addEventListener('DOMContentLoaded', function () {
                 })
                  
 
+                document.querySelectorAll(".search__item-link").forEach(item => {
+                    item.addEventListener("click", function() {
+                      let btn = this;
+                      let dropdown = this.parentElement.querySelector(".menu__list");
+                      
+                      document.querySelectorAll(".search__item-link").forEach(el => {
+                        if (el != btn) {
+                          el.classList.remove("active--btn");
+                        }
+                      });
+                      
+                      document.querySelectorAll(".menu__list").forEach(el => {
+                        if (el != dropdown) {
+                          el.classList.remove("active-list--item");
+                        }
+                      })
+                      dropdown.classList.toggle("active-list--item");
+                      btn.classList.toggle("active--btn")
+                    })
+                  })
+                  
+                  document.addEventListener("click", function(e) {
+                    let target = e.target;
+                    if (!target.closest(".search__list")) {
+                      document.querySelectorAll(".menu__list").forEach(el => {
+                          el.classList.remove("search__item-link");
+                      })
+                       document.querySelectorAll(".search__item-link").forEach(el => {
+                          el.classList.remove("active--btn");
+                      });
+                    }
+                  })
+
+
 })

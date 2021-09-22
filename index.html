@@ -33,17 +33,14 @@
 </head>
 <body>
     <header class="header__site">
-        <nav class="header__nav">
+
+        
+        <!--<div class="header__nav">-->        
             <div class="container header__container">
-                <button id="burger" class="header__burger-btn btn">
-                   <span class="header__burger-icon1"></span>
-                   <span class="header__burger-icon2"></span>
-                   <span class="header__burger-icon3"></span>   
-                </button>
                 <a href="/" aria-label="Ссылка на логотип Blanchard" class="header__blanchard-link" tabindex="1">
                     <img src="img/Logo.svg" alt="логотип Blanchard" class="header__blanchard-img">    
                 </a>
-                <div class="nav-menu__adaptiv">
+                <nav class="nav-menu__adaptiv">
                     <ul id="nav-menu" class="nav__list" aria-label="Меню">
                         <li class="nav__item">
                             <a href="#adout" class="nav__adout-us nav__item-link" tabindex="2">О нас</a>
@@ -78,7 +75,7 @@
                             Войти
                         </a> 
                     </div>
-                </div>
+                </nav>
 
                 <form action="https://jsonplaceholder.typicode.com/posts" autocomplete="on" method="POST" id="form__mobile" class="search_form-mobile">
                     <button id="search-form" class="header__search-form btn">
@@ -92,11 +89,21 @@
                     <input class="header__search-input" id="search_input" type="search">
                 </form> 
                 <button id="search-form-close" class="header__search-form-close btn">
-                    <div class="header__search-form-close1"></div>
-                    <div class="header__search-form-close2"></div>
+                    <span class="header__search-form-close1"></span>
+                    <span class="header__search-form-close2"></span>
                 </button>
             </div> 
-        </nav>    
+            <button id="burger" class="header__burger-btn btn">
+                <span class="header__burger-icon1"></span>
+                <span class="header__burger-icon2"></span>
+                <span class="header__burger-icon3"></span>   
+             </button>
+
+
+
+        <!--</div>-->  
+
+
         <div class="section-search">
             <div class="is-activ"></div>
             <div class="container search__container">
@@ -250,13 +257,32 @@
                 </form>
             </div>
         </div>
-    </header>
-
-    <main class="main">
-        <section class="touch-beautiful">
-            <div class="swiper-slide1"></div>
+        <div class="touch-beautiful">
+            <!--<div class="swiper-slide1"></div>
             <div class="swiper-slide2"></div>
             <div class="swiper-slide3"></div>
+            --> 
+
+            <!--swiper -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide swiper-slide1"></div>
+                  <div class="swiper-slide swiper-slide2"></div>
+                  <div class="swiper-slide swiper-slide3"></div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+              
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+              </div>
+            <!--swiper END-->
             <div class="container touch-beautiful__alignment">
                 <div class="touch-beautiful__description">           
                     <h1 class="touch-beautiful__title" tabindex="17">Прикоснитесь к прекрасному</h1>
@@ -264,6 +290,15 @@
                     <button class="touch-beautiful__btn btn" tabindex="19">Подписаться на рассылку</button>
                 </div> 
             </div>
+        </div>
+
+
+    </header>
+
+    <main class="main">
+        <section class="adout-us container">
+            <h3 class="adout-us__title" id="adout">О нас</h3>
+            <p class="about-us__text">Ясность нашей позиции очевидна: семантический разбор внешних противодействий однозначно определяет каждого участника как способного принимать собственные решения касаемо распределения внутренних резервов и ресурсов. Не следует, однако, забывать, что высококачественный прототип будущего проекта влечет за собой процесс внедрения и модернизации модели развития. Повседневная практика показывает, что высокое качество позиционных исследований создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом комплекса распределения внутренних резервов и ресурсов. В рамках спецификации современных стандартов, действия представителей оппозиции набирают популярность среди определенных слоев населения, а значит, должны быть разоблачены.</p>
         </section>
 
     </main>
