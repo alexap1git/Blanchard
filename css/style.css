@@ -95,6 +95,7 @@ h2 {
 /*** 1920 **/
 .header__site {
     background: #000000;
+    position: relative;
 }
 .container {
     margin-top: 0px;
@@ -1138,7 +1139,7 @@ h2 {
     position: absolute;
 }
 .swiper-slide1 {
-    visibility: hidden;
+/*    visibility: hidden;*/
     height: 100%;
     width: 100%;
 /*    position: absolute;*/
@@ -1147,13 +1148,14 @@ h2 {
     background-size: cover;
 }
 .swiper-slide2 {
-    visibility: hidden;
+ /*   visibility: hidden;*/
     width: 100%;
     height: 100%;
 /*    position: absolute;*/
     animation: anim alternate 3s linear infinite;
     background: url(../img/birmingham-museums-trust-MK_98NuC4-4-unsplash1.jpg);
     background-size: cover;
+
     /*display: none;
     animation: anim alternate 3s  linear infinite;
     height: 100%;
@@ -1161,7 +1163,7 @@ h2 {
     background-size: cover;*/
 }
 .swiper-slide3 {
-    visibility: hidden;
+/*    visibility: hidden;*/
     height: 100%;
     width: 100%;
 /*    position: absolute;*/
@@ -1178,6 +1180,7 @@ h2 {
 
 .swiper-slide-active {
     visibility: visible;
+    z-index: 1;
 }
 .swiper-slide-duplicate-active{
     visibility: visible;
@@ -1198,10 +1201,10 @@ h2 {
     position: relative;
     padding-top: 92px;
     padding-bottom: 119px;
-    /*padding-left: 0; */
-    /*margin-left: 50px;*/
-    /*padding-right: 0; */
-    /*margin-right: 50px; */
+    padding-left: 50px; 
+    margin-left: auto;
+    padding-right: 50px; 
+    margin-right: auto; 
     z-index: 10;
     /* top: -122%; */
     /* margin: auto; */
@@ -3454,11 +3457,28 @@ h2 {
 
     }
     .swiper-slide1 {
-        max-width: 100%;
+        min-width: 100%;
         animation: anim alternate 3s  linear infinite;
         height: 100%;
         background: url(../img/birmingham-museums-trust-MK_98NuC4-4-unsplash2_2.jpg);
         background-size: cover;
+
+    }
+    .swiper-slide2 {
+        min-width: 100%;
+        height: 100%;
+        animation: anim alternate 3s linear infinite;
+        background: url(../img/birmingham-museums-trust-MK_98NuC4-4-unsplash1_2.jpg);
+        background-size: cover;
+
+    }
+    .swiper-slide3 {
+        height: 100%;
+        min-width: 100%;
+        animation: anim alternate 3s linear infinite;
+        background: url(../img/birmingham-museums-trust-MK_98NuC4-4-unsplash3_2.jpg);
+        background-size: cover;
+
     }
 
     .header__container {
@@ -3568,6 +3588,7 @@ h2 {
         padding: 5px 5px 5px 48px;
         position: absolute;
         width: 100%;
+        min-height: 100%;
         left: 0px;
         top: -1000px;
         display: flex;
@@ -3755,7 +3776,7 @@ h2 {
         transform: translateY(-12px) rotate(-45deg);
     }
     .nav__is-activ {
-        height: 100%;
+    /*    height: 100%;*/
         top: 0px;
         transition: top .3s ease-out 0.1s;
         position: absolute;
@@ -3910,6 +3931,7 @@ h2 {
         padding: 5px 5px 5px 48px;
         position: absolute;
         width: 100%;
+        min-height: 100%;
         left: 0px;
         top: -1000px;
         display: flex;
@@ -3938,7 +3960,7 @@ h2 {
     .nav__enter-link-mobile {
         display: block;
         padding: 17px 100px;
-        margin-bottom: 78px;
+        margin-bottom: 45px;
         font-family: Open Sans;
         font-style: normal;
         font-weight: normal;
@@ -4123,7 +4145,7 @@ h2 {
         transform: translateY(-4px) rotate(-45deg);
     }
     .nav__is-activ {
-        height: 100%;
+    /*    height: 100%;*/
         top: 0px;
         transition: top .3s ease-out 0.1s;
         position: absolute;
@@ -4256,12 +4278,45 @@ h2 {
         padding-left: 15px;
         padding-right: 10px;
     }
+    
     .swiper-slide1 {
+     /*   visibility: hidden;*/
         max-width: 100%;
         animation: anim alternate 3s  linear infinite;
         height: 100%;
-        background: url(../img/birmingham-museums-trust-MK_98NuC4-4-unsplash2_4.jpg) no-repeat;
+        background: url(../img/birmingham-museums-trust-MK_98NuC4-4-unsplash2_4.jpg);
         background-size: cover;
+        overflow: hidden;
+    }
+    .swiper-slide2 {
+    /*    visibility: hidden;*/
+        width: 100%;
+        height: 100%;
+    /*    position: absolute;*/
+        animation: anim alternate 3s linear infinite;
+        background: url(../img/birmingham-museums-trust-MK_98NuC4-4-unsplash1_4.jpg);
+        background-size: cover;
+        overflow: hidden;
+        /*display: none;
+        animation: anim alternate 3s  linear infinite;
+        height: 100%;
+        background: url(../img/birmingham-museums-trust-MK_98NuC4-4-unsplash1.jpg) round;
+        background-size: cover;*/
+    }
+    .swiper-slide3 {
+    /*    visibility: hidden;*/
+        height: 100%;
+        width: 100%;
+    /*    position: absolute;*/
+        animation: anim alternate 3s linear infinite;
+        background: url(../img/birmingham-museums-trust-MK_98NuC4-4-unsplash3_4.jpg);
+        background-size: cover;
+        overflow: hidden;
+        /*display: none;
+        animation: anim alternate 3s  linear infinite;
+        height: 100%;
+        background: url(../img/birmingham-museums-trust-MK_98NuC4-4-unsplash3.jpg) round;
+        background-size: cover;*/
     }
     .header__container {
         padding-top: 0px;
@@ -4388,6 +4443,7 @@ h2 {
         padding: 5px 5px 5px 48px;
         position: absolute;
         min-width: 100%;
+        min-height: 100%;
         left: 0px;
         top: -1000px;
         display: flex;
@@ -4499,7 +4555,7 @@ h2 {
     }
 
     .nav__is-activ {
-        height: 100%;
+     /*   height: 100%;*/
         top: 0px;
         transition: top .3s ease-out 0.1s;
         position: absolute;
@@ -4667,4 +4723,13 @@ h2 {
         transition-property: display,transform;
         transform: translateY(-4px) rotate(-45deg);
     }
+    .adout-us__title {
+           margin: 0;
+           padding-top: 50px;
+           padding-bottom: 20px;
+       }
+       .about-us__text {
+           margin: 0;
+           padding-bottom: 50px;
+       }
 }
