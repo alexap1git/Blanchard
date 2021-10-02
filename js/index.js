@@ -1,6 +1,7 @@
 window.addEventListener('DOMContentLoaded', function () {
                 document.querySelector('.touch-beautiful__alignment').addEventListener('click', function(){
-                    document.querySelector('.header__search-input').classList.remove('search__input-revealed')                     
+                    document.querySelector('.header__search-input').classList.remove('search__search-input--revealed')    
+                    document.querySelector('.header__search-label').classList.remove('header__search-label--revealed')                       
                     document.querySelector('.search_form-mobile').classList.remove('search_form-mobile-revealed')
                     document.querySelector('.header__burger-btn').classList.remove('header__withdraw')
                     document.querySelector('.header__blanchard-link').classList.remove('header__withdraw')
@@ -86,14 +87,18 @@ window.addEventListener('DOMContentLoaded', function () {
                 })
                                
                 document.querySelector('.header__search-label').addEventListener('click', function(){
-                    document.querySelector('.header__search-input').classList.add('search__input-revealed')  
+                    document.querySelector('.header__search-background').classList.add('header__search-background--revealed') 
+                    document.querySelector('.header__search-input').classList.add('search__search-input--revealed')  
+                    document.querySelector('.header__search-label').classList.add('header__search-label--revealed')  
                     document.querySelector('.search_form-mobile').classList.add('search_form-mobile-revealed')
                     document.querySelector('.header__burger-btn').classList.add('header__withdraw')
                     document.querySelector('.header__blanchard-link').classList.add('header__withdraw')
                     document.querySelector('.header__search-form-close').classList.add('header__search-form-close-activ')
                 })
                 document.querySelector('.header__search-form-close').addEventListener('click', function(){
-                    document.querySelector('.header__search-input').classList.remove('search__input-revealed')  
+                    document.querySelector('.header__search-background').classList.remove('header__search-background--revealed') 
+                    document.querySelector('.header__search-input').classList.remove('search__search-input--revealed')  
+                    document.querySelector('.header__search-label').classList.remove('header__search-label--revealed')  
                     document.querySelector('.search_form-mobile').classList.remove('search_form-mobile-revealed')
                     document.querySelector('.header__burger-btn').classList.remove('header__withdraw')
                     document.querySelector('.header__blanchard-link').classList.remove('header__withdraw')
