@@ -185,7 +185,7 @@ h2 {
 
 .nav__adout-us {
     display:inline-block;
-    min-width: 54px;
+ /*   min-width: 54px;*/
 }
 /*
 .nav__enter {
@@ -1126,7 +1126,7 @@ h2 {
 
 
 .touch-beautiful {
-   /* height: 702px;*/
+    height: 100%;
     position: relative;
     overflow: hidden;
 }
@@ -1139,7 +1139,47 @@ h2 {
 .swiper {
     height: 100%;
     width: 100%;
+}
+.swiper-slide {
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+.touch-beautiful__swiper {
+    height: 100%;
+    width: 100%;
     position: absolute;
+}
+
+.touch-beautiful__swiper-slide {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+}
+.touch-beautiful__swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .swiper-slide1 {
 /*    visibility: hidden;*/
@@ -1185,6 +1225,16 @@ h2 {
     visibility: visible;
     z-index: 1;
 }
+/*
+.swiper-wrapper {
+    max-height: 900px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+
+}*/
+
+
 .swiper-slide-duplicate-active{
     visibility: visible;
 }
@@ -1242,7 +1292,7 @@ h2 {
     z-index: 0;
 }
 .touch-beautiful__text {
-    margin: 0px 0 90px 0px;
+    margin: 0px 0 95px 0px;
     padding-left: 3px;
     max-width: 579px;
     font-style: normal;
@@ -1321,11 +1371,15 @@ h2 {
     d: path("M0.999997 6L6 0.999995L11 6");
     transition: .6s;
 }
-
+/*
+.main {
+    position: relative;
+}
+*/
 .adout-us__title {
     margin: 0;
     padding-top: 80px;
-    padding-bottom: 14px;
+    padding-bottom: 16px;
     font-weight: normal;
     font-size: 48px;
     line-height: 65px;
@@ -1333,43 +1387,48 @@ h2 {
 }
 .about-us__text {
     margin: 0;
-    padding-bottom: 80px;
+    padding-bottom: 70px;
     max-width: 1080px;
     font-weight: normal;
     font-size: 16px;
     line-height: 32.5px;
     color: #333333;
 }
-/*
+
+
 .gallery {
-    position: absolute;
-    width: 1920px;
-    height: 995px;
-    left: 0px;
-    top: 1255px;
+ /*   position: absolute;
+    width: 1920px;*/
+/*    max-height: 995px;
+   left: 0px;
+    top: 1255px;*/
     background-image: url(../img/birmingham-museums-trust-MK_98NuC4-4-unsplash3_1.jpg);
 }
-.gallery__title {
-    position: absolute;
-    width: 191px;
-    height: 66px;
-    left: 157px;
-    top: 32px;
 
+.gallery-background {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+.gallery__filter {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+.gallery__title {
+    margin: 0;
+    padding-top: 80px;
     font-family: "Open Sans" ,sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 48px;
     line-height: 65px;
-
     color: #FFFFFF;
 }
+
 .gallery__text {
-    position: absolute;
-    width: 240px;
-    height: 32px;
-    left: 158px;
-    top: 145px;
+    margin: 0;
+    padding-top: 15px;
     font-family: "Open Sans" ,sans-serif;
     font-style: normal;
     font-weight: 600;
@@ -1377,22 +1436,81 @@ h2 {
     line-height: 32px;
     color: #FFFFFF;
 }
-.choices{
+.gallery__choices {
+    height: 120px;
+    flex-grow: 1;
+}
+.swiper-container {
+    flex-shrink: 0;
+    padding-top: 140px;
+    padding-bottom: 55px;
+    padding-left: 28px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.swiper-button-prev, .swiper-rtl .swiper-button-next {
+    left: 10px;
+    right: auto;
+}
+.swiper-button-next, .swiper-button-prev {
     position: absolute;
-    width: 401px;
-    height: 40px;
-    left: 159px;
-    top: 203px;
+    top: 1%;
+}
+.swiper-button-next {
+    top: 12%;
+    left: 35.5%;
+}
+.swiper-button-next:after {
+    content: "\203A";
+    padding: 8px 12px;
+    border-radius: 15px;
+    border: 1px solid rgb(182, 181, 181);
+    background-color: grey;
+    color: white;
+    font-size: small;
+    
+}
+.swiper-button-prev {
+    top: 12%;
+    left: 29.8%;
+}
+ .swiper-button-prev:after {
+    content: '\2039';
+    padding: 8px 12px;
+    border-radius: 15px;
+    border: 1px solid rgb(182, 181, 181);
+    background-color: grey;
+    color: white;
+    font-size: small;
+}
+.swiper-pagination {
+    position: absolute;
+    left: 31%;
+    top: 110px;
+    width: 5%;
+    height: 30px;
+    font-size: 16px;
+    color: white;
+    z-index: 15;
+}
+.choices{
+    flex-grow: 1;
+    padding-top: 10px;
+    padding-left: 3px;
+ /*   max-width: 401px;*/
     overflow: inherit;
     opacity: 0.5;
 }
 .choices__list--dropdown {
+  /*  padding-top: 10px;*/
     overflow: inherit;
     color: white;
     background-color: rgba(0,0,0,0.5);
     border: 1px solid #FFFFFF;
     box-sizing: border-box;
-    border-radius: 6px;
+    border-radius: 10px;
 }
 
 .choices__inner {
@@ -1436,11 +1554,7 @@ h2 {
 }
 
 .coments-gallery {
-    position: absolute;
-    width: 401px;
-    height: 129px;
-    left: 159px;
-    top: 782px;
+    padding-bottom: 55px;
     font-family: "Open Sans" ,sans-serif;
     font-style: normal;
     font-weight: 600;
@@ -1486,11 +1600,258 @@ h2 {
     padding-top: 36px;
     height: 97%;
 }
-.slide1-img1,.slide1-img2,.slide1-img3,.slide1-img4,.slide1-img5,.slide1-img6 {
+.swiper1-slide__environment {
     width: 350px;
-    height: 350px;
+    /*height: 350px;*/
     margin: 25px;
+    height: calc((100% - 50px) / 2);
 }
+
+.slide1-img1,.slide1-img2,.slide1-img3,.slide1-img4,.slide1-img5,.slide1-img6 {
+    width: 100%;
+    height: 100%;
+    padding: 25px 0px;
+}
+.slide2-img1,.slide2-img2,.slide2-img3,.slide2-img4,.slide2-img5,.slide2-img6 {
+    width: 100%;
+    height: 100%;
+    padding: 25px 0px;
+}
+.slide3-img1,.slide3-img2,.slide3-img3,.slide3-img4,.slide3-img5,.slide3-img6 {
+    width: 100%;
+    height: 100%;
+    padding: 25px 0px;
+}
+.slide4-img1,.slide4-img2,.slide4-img3,.slide4-img4,.slide4-img5,.slide4-img6 {
+    width: 100%;
+    height: 100%;
+    padding: 25px 0px;
+}
+.slide5-img1,.slide5-img2,.slide5-img3,.slide5-img4,.slide5-img5,.slide5-img6 {
+    width: 100%;
+    height: 100%;
+    padding: 25px 0px;
+}
+/*
+.swiper1-slide__environment:nth-child(3n) {
+    margin-right: 0;
+}
+*/
+.slide-img {
+    width: 100%;
+    height: 100%;
+}
+/***картинки для слайдов №1   ***/
+.slide1-img1 {
+    background: url(../img/Rectangle70_1920.jpg);
+    background-size: cover; 
+}
+.slide1-img2 {
+    background: url(../img/Rectangle69_1920.jpg);
+    background-size: cover; 
+}
+.slide1-img3 {
+    background: url(../img/Rectangle68_1920.jpg);
+    background-size: cover; 
+}
+.slide1-img4 {
+    background: url(../img/Rectangle72_1920.jpg);
+    background-size: cover; 
+}
+.slide1-img5 {
+    background: url(../img/Rectangle73_1920.jpg);
+    background-size: cover; 
+}
+.slide1-img6 {
+    background: url(../img/Rectangle71_1920.jpg);
+    background-size: cover; 
+}
+/***картинки для слайдов №2   ***/
+.slide2-img1 {
+    background: url(../img/Rectangle70_1_1920.jpg);
+    background-size: cover; 
+}
+.slide2-img2 {
+    background: url(../img/Rectangle68_1_1920.jpg);
+    background-size: cover; 
+}
+.slide2-img3 {
+    background: url(../img/Rectangle69_1_1920.jpg);
+    background-size: cover; 
+}
+.slide2-img4 {
+    background: url(../img/Rectangle72_1_1920.jpg);
+    background-size: cover; 
+}
+.slide2-img5 {
+    background: url(../img/Rectangle71_1_1920.jpg);
+    background-size: cover; 
+}
+.slide2-img6 {
+    background: url(../img/Rectangle73_1_1920.jpg);
+    background-size: cover; 
+}
+/***картинки для слайдов №3   ***/
+.slide3-img1 {
+    background: url(../img/Rectangle77_1920.jpg);
+    background-size: cover; 
+}
+.slide3-img2 {
+    background: url(../img/Rectangle74_1920.jpg);
+    background-size: cover; 
+}
+.slide3-img3 {
+    background: url(../img/Rectangle79_1920.jpg);
+    background-size: cover; 
+}
+.slide3-img4 {
+    background: url(../img/Rectangle78_1920.jpg);
+    background-size: cover; 
+}
+.slide3-img5 {
+    background: url(../img/Rectangle75_1920.jpg);
+    background-size: cover; 
+}
+.slide3-img6 {
+    background: url(../img/Rectangle76_1920.jpg);
+    background-size: cover; 
+}
+/***картинки для слайдов №4   ***/
+.slide4-img1 {
+    background: url(../img/Rectangle70_1.jpg);
+    background-size: cover; 
+}
+.slide4-img2 {
+    background: url(../img/Rectangle68_1.jpg);
+    background-size: cover; 
+}
+.slide4-img3 {
+    background: url(../img/Rectangle69_1.jpg);
+    background-size: cover; 
+}
+.slide4-img4 {
+    background: url(../img/Rectangle72_1.jpg);
+    background-size: cover; 
+}
+.slide4-img5 {
+    background: url(../img/Rectangle71_1.jpg);
+    background-size: cover; 
+}
+.slide4-img6 {
+    background: url(../img/Rectangle73_1.jpg);
+    background-size: cover; 
+}
+/***картинки для слайдов №5   ***/
+.slide5-img1 {
+    background: url(../img/Rectangle77.jpg);
+    background-size: cover; 
+}
+.slide5-img2 {
+    background: url(../img/Rectangle74.jpg);
+    background-size: cover; 
+}
+.slide5-img3 {
+    background: url(../img/Rectangle79.jpg);
+    background-size: cover; 
+}
+.slide5-img4 {
+    background: url(../img/Rectangle78.jpg);
+    background-size: cover; 
+}
+.slide5-img5 {
+    background: url(../img/Rectangle75.jpg);
+    background-size: cover; 
+}
+.slide5-img6 {
+    background: url(../img/Rectangle76.jpg);
+    background-size: cover; 
+}
+
+.mySwiper {
+    max-width: 1200px;
+    /* width: 187%; */
+    overflow: hidden;
+    padding-top: 164px;
+    padding-left: 50px;
+    padding-bottom: 65px;
+}
+.mySwiper .swiper-wrapper {
+    height: 750px;
+}
+.mySwiper .swiper-slide {
+/*background-color: grey;*/
+position: relative;
+cursor: pointer;
+height: calc((100% - 50px) / 2);
+}
+.mySwiper .swiper-slide:before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    bottom: 20px;
+    right: 20px;
+    left: 20px;
+    background:linear-gradient(0deg,  rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/Group12.svg) center no-repeat;
+    z-index: -1;
+    opacity: 0;
+    transition-property: z-index, opacity;
+    transition: .1s ease-in;
+  }
+  .mySwiper .swiper-slide:hover:before {
+    z-index: 1;
+    opacity: 1;
+  }
+  .mySwiper .swiper-slide:active:before {
+    z-index: 1;
+    opacity: 1;
+    background:linear-gradient(0deg, rgba(194, 131, 243, 0.3), rgba(194, 131, 243, 0.3)), url(../img/Group12.svg) center no-repeat;
+    border: 25px solid rgba(194, 131, 243, 0.4);
+    cursor: pointer;
+  }
+/*******//*
+.swiper {
+    width: 100%;
+    height: 100%;
+    padding-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+*/
+/*
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;*/
+/*       background: url(../img/Rectangle88.jpg);*/
+ /*    background: tomato;*/
+ /*  height: calc((100% - 30px) / 2);/*
+    /*height: 100%;*/
+ /*   width: 100%;*/
+    /* Center slide text vertically */
+ /*   display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    color: white;
+  }*/
+ /* .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }*/
+
+
+
+/******/
+
 .swiper1-button-next{
     height: 30px;
     width: 32px!important;
@@ -1542,53 +1903,286 @@ h2 {
 }
 
 
-.slide1-img1__hover {
-    display: initial;
-    position: absolute;
+.slide-img__hover {
+/*    display: initial;*/
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
     padding:110px;
     width: 300px;
     height: 300px;
-    left: 55px;
-    top: 50px;
 }
-.slide1-img1:hover ~.slide1-img1__hover {
-    background:linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/Group12.svg) center no-repeat;
-}
-.slide1-img1__hover:hover {
-    background:linear-gradient(0deg,  rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/Group12.svg) center no-repeat;
-    cursor: pointer;
-}
-
-.slide1-img1__hover:active {
-    display: initial;
-    position: absolute;
+.slide-img__hover:active {
+    /*    display: initial;*/
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
     padding:110px;
-    width: 350px;
-    height: 350px;
-    left: 30px;
-    top: 25px;
+    width: 300px;
+    height: 300px;
     background:linear-gradient(0deg, rgba(194, 131, 243, 0.3), rgba(194, 131, 243, 0.3)), url(../img/Group12.svg) center no-repeat;
     border: 25px solid rgba(194, 131, 243, 0.4);
     cursor: pointer;
 }
-.slide1-img1__hover:active ~ .slide1-img1{
+.slide-img__hover:hover {
+    background:linear-gradient(0deg,  rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/Group12.svg) center no-repeat;
+    cursor: pointer;
+}
+/****************** Slaid 1 *******************/
+.slide1-img1:hover ~.slide-img__hover {
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/Group12.svg) center no-repeat;
+}
+.slide1-img2:hover ~.slide-img__hover {
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/Group12.svg) center no-repeat;
+}
+.slide1-img3:hover ~.slide-img__hover {
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/Group12.svg) center no-repeat;
+}
+.slide1-img4:hover ~.slide-img__hover {
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/Group12.svg) center no-repeat;
+}
+.slide1-img5:hover ~.slide-img__hover {
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/Group12.svg) center no-repeat;
+}
+.slide1-img6:hover ~.slide-img__hover {
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/Group12.svg) center no-repeat;
+}
+
+.slide-img__hover:active ~ .slide1-img1{
+    border: 2px solid #D1A9F0;
+}
+.slide-img__hover:active ~ .slide1-img2{
+    border: 2px solid #D1A9F0;
+}
+.slide-img__hover:active ~ .slide1-img3{
+    border: 2px solid #D1A9F0;
+}
+.slide-img__hover:active ~ .slide1-img4{
+    border: 2px solid #D1A9F0;
+}
+.slide-img__hover:active ~ .slide1-img5{
+    border: 2px solid #D1A9F0;
+}
+.slide-img__hover:active ~ .slide1-img6{
     border: 2px solid #D1A9F0;
 }
 
-.slide1-img1:active ~ .slide1-img1__hover {
-    display: initial;
-    position: absolute;
+.slide1-img1:active ~ .slide-img__hover {
+    /*    display: initial;*/
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
     padding:110px;
     width: 350px;
     height: 350px;
-    left: 30px;
-    top: 25px;
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/Group12.svg) center no-repeat;
+    border: 25px solid rgba(194, 131, 243, 0.4);
+}
+/****************** Slaid 2 *******************/
+.slide2-img1:hover ~.slide-img__hover {
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/Group12.svg) center no-repeat;
+}
+.slide2-img2:hover ~.slide-img__hover {
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/Group12.svg) center no-repeat;
+}
+.slide2-img3:hover ~.slide-img__hover {
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/Group12.svg) center no-repeat;
+}
+.slide2-img4:hover ~.slide-img__hover {
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/Group12.svg) center no-repeat;
+}
+.slide2-img5:hover ~.slide-img__hover {
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/Group12.svg) center no-repeat;
+}
+.slide2-img6:hover ~.slide-img__hover {
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/Group12.svg) center no-repeat;
+}
+
+.slide-img__hover:active ~ .slide2-img1{
+    border: 2px solid #D1A9F0;
+}
+.slide-img__hover:active ~ .slide2-img2{
+    border: 2px solid #D1A9F0;
+}
+.slide-img__hover:active ~ .slide2-img3{
+    border: 2px solid #D1A9F0;
+}
+.slide-img__hover:active ~ .slide2-img4{
+    border: 2px solid #D1A9F0;
+}
+.slide-img__hover:active ~ .slide2-img5{
+    border: 2px solid #D1A9F0;
+}
+.slide-img__hover:active ~ .slide2-img6{
+    border: 2px solid #D1A9F0;
+}
+
+.slide2-img1:active ~ .slide-img__hover {
+    /*    display: initial;*/
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    padding:110px;
+    width: 350px;
+    height: 350px;
     background:linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/Group12.svg) center no-repeat;
     border: 25px solid rgba(194, 131, 243, 0.4);
 }
 
+/****************** Slaid 3 *******************/
+.slide3-img1:hover ~.slide-img__hover {
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/Group12.svg) center no-repeat;
+}
+.slide3-img2:hover ~.slide-img__hover {
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/Group12.svg) center no-repeat;
+}
+.slide3-img3:hover ~.slide-img__hover {
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/Group12.svg) center no-repeat;
+}
+.slide3-img4:hover ~.slide-img__hover {
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/Group12.svg) center no-repeat;
+}
+.slide3-img5:hover ~.slide-img__hover {
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/Group12.svg) center no-repeat;
+}
+.slide3-img6:hover ~.slide-img__hover {
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/Group12.svg) center no-repeat;
+}
+
+.slide-img__hover:active ~ .slide3-img1{
+    border: 2px solid #D1A9F0;
+}
+.slide-img__hover:active ~ .slide3-img2{
+    border: 2px solid #D1A9F0;
+}
+.slide-img__hover:active ~ .slide3-img3{
+    border: 2px solid #D1A9F0;
+}
+.slide-img__hover:active ~ .slide3-img4{
+    border: 2px solid #D1A9F0;
+}
+.slide-img__hover:active ~ .slide3-img5{
+    border: 2px solid #D1A9F0;
+}
+.slide-img__hover:active ~ .slide3-img6{
+    border: 2px solid #D1A9F0;
+}
+
+.slide3-img1:active ~ .slide-img__hover {
+    /*    display: initial;*/
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    padding:110px;
+    width: 350px;
+    height: 350px;
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/Group12.svg) center no-repeat;
+    border: 25px solid rgba(194, 131, 243, 0.4);
+}
+/****************** Slaid 4 *******************/
+.slide4-img1:hover ~.slide-img__hover {
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/Group12.svg) center no-repeat;
+}
+.slide4-img2:hover ~.slide-img__hover {
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/Group12.svg) center no-repeat;
+}
+.slide4-img3:hover ~.slide-img__hover {
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/Group12.svg) center no-repeat;
+}
+.slide4-img4:hover ~.slide-img__hover {
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/Group12.svg) center no-repeat;
+}
+.slide4-img5:hover ~.slide-img__hover {
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/Group12.svg) center no-repeat;
+}
+.slide4-img6:hover ~.slide-img__hover {
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/Group12.svg) center no-repeat;
+}
+
+.slide-img__hover:active ~ .slide4-img1{
+    border: 2px solid #D1A9F0;
+}
+.slide-img__hover:active ~ .slide4-img2{
+    border: 2px solid #D1A9F0;
+}
+.slide-img__hover:active ~ .slide4-img3{
+    border: 2px solid #D1A9F0;
+}
+.slide-img__hover:active ~ .slide4-img4{
+    border: 2px solid #D1A9F0;
+}
+.slide-img__hover:active ~ .slide4-img5{
+    border: 2px solid #D1A9F0;
+}
+.slide-img__hover:active ~ .slide4-img6{
+    border: 2px solid #D1A9F0;
+}
+
+.slide4-img1:active ~ .slide-img__hover {
+    /*    display: initial;*/
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    padding:110px;
+    width: 350px;
+    height: 350px;
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/Group12.svg) center no-repeat;
+    border: 25px solid rgba(194, 131, 243, 0.4);
+}
+/****************** Slaid 5 *******************/
+.slide5-img1:hover ~.slide-img__hover {
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/Group12.svg) center no-repeat;
+}
+.slide5-img2:hover ~.slide-img__hover {
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/Group12.svg) center no-repeat;
+}
+.slide5-img3:hover ~.slide-img__hover {
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/Group12.svg) center no-repeat;
+}
+.slide5-img4:hover ~.slide-img__hover {
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/Group12.svg) center no-repeat;
+}
+.slide5-img5:hover ~.slide-img__hover {
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/Group12.svg) center no-repeat;
+}
+.slide5-img6:hover ~.slide-img__hover {
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/Group12.svg) center no-repeat;
+}
+
+.slide-img__hover:active ~ .slide5-img1{
+    border: 2px solid #D1A9F0;
+}
+.slide-img__hover:active ~ .slide5-img2{
+    border: 2px solid #D1A9F0;
+}
+.slide-img__hover:active ~ .slide5-img3{
+    border: 2px solid #D1A9F0;
+}
+.slide-img__hover:active ~ .slide5-img4{
+    border: 2px solid #D1A9F0;
+}
+.slide-img__hover:active ~ .slide5-img5{
+    border: 2px solid #D1A9F0;
+}
+.slide-img__hover:active ~ .slide5-img6{
+    border: 2px solid #D1A9F0;
+}
+
+.slide5-img1:active ~ .slide-img__hover {
+    /*    display: initial;*/
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    padding:110px;
+    width: 350px;
+    height: 350px;
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/Group12.svg) center no-repeat;
+    border: 25px solid rgba(194, 131, 243, 0.4);
+}
+/********************/
 
 
+/*
 .slide1-img2__hover {
     display: initial;
     position: absolute;
@@ -1819,7 +2413,8 @@ h2 {
     background:linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/Group12.svg) center no-repeat;
     border: 25px solid rgba(194, 131, 243, 0.4);
 }
-
+*/
+/*
 
 
 .catalog {
@@ -3488,14 +4083,15 @@ h2 {
     }
     .header__search-label {
         margin: 0px 0px 0px 0px;
-     /*   display: none;*/
+     /* display: none;*/
+        position: absolute;
+        right: 50px;
         width: 30px;
         height: 30px;
         border: 0px;
         background: url(../img/Search_1.png) no-repeat;
         cursor: pointer;
-        z-index: 10;
-
+        z-index: 9;  
     }
     
     .header__search-input {
@@ -3546,7 +4142,7 @@ h2 {
     .header__blanchard-link {
         margin-left: auto;
         margin-right: auto;
-        padding-left: 35px;
+        padding-left: 20px;
         padding-bottom: 25px;
         padding-top: 30px;
         width: 222px;
@@ -3780,6 +4376,191 @@ h2 {
         transition: top .3s ease-out 0.1s;
         position: absolute;
     }
+
+    
+    .swiper1-slide__environment {
+        width: 280px;
+        height: 280px;
+        margin: 25px;
+    }
+    .slide-img__hover {
+        /* display: initial; */
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        padding: 85px;
+        width: 230px;
+        height: 230px;
+    }
+    .slide-img__hover:active {
+        /* display: initial; */
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        padding: 85px;
+        width: 230px;
+        height: 230px;
+        background: linear-gradient(
+    0deg, rgba(194, 131, 243, 0.3), rgba(194, 131, 243, 0.3)), url(../img/Group12.svg) center no-repeat;
+        border: 25px solid rgba(194, 131, 243, 0.4);
+        cursor: pointer;
+    }
+        /***картинки для слайдов №1   ***/
+    .slide1-img1 {
+        background: url(../img/Rectangle_70_1024.jpg);
+        background-size: cover;
+    }
+    .slide1-img2 {
+        background: url(../img/Rectangle_69_1024.jpg);
+        background-size: cover;
+    }
+    .slide1-img3 {
+        background: url(../img/Rectangle_72_1024.jpg);
+        background-size: cover;
+    }
+    .slide1-img4 {
+        background: url(../img/Rectangle_73_1024.jpg);
+        background-size: cover;
+    }
+    /***картинки для слайдов №2   ***/
+    .slide1-img5 {
+        background: url(../img/Rectangle68_1024.jpg);
+        background-size: cover;
+    }
+    .slide1-img6 {
+        background: url(../img/Rectangle70_1024.jpg);
+        background-size: cover;
+    }
+    .slide2-img1 {
+        background: url(../img/Rectangle71_1024.jpg);
+        background-size: cover;
+    }
+    .slide2-img2 {
+        background: url(../img/Rectangle72_1024.jpg);
+        background-size: cover;
+    }
+    /***картинки для слайдов №3   ***/    
+    .slide2-img3 {
+        background: url(../img/Rectangle104_1024.jpg);
+        background-size: cover;
+    }
+    .slide2-img4 {
+        background: url(../img/Rectangle69_1024.jpg);
+        background-size: cover;
+    }
+    .slide2-img5 {
+        background: url(../img/Rectangle105_1024.jpg);
+        background-size: cover;
+    }
+    .slide2-img6 {
+        background: url(../img/Rectangle73_1024.jpg);
+        background-size: cover;
+    }
+    /***картинки для слайдов №4   ***/
+    .slide3-img1 {
+        background: url(../img/Rectangle77_1024.jpg);
+        background-size: cover;
+    }
+    .slide3-img2 {
+        background: url(../img/Rectangle74_1024.jpg);
+        background-size: cover;
+    }
+    .slide3-img3 {
+        background: url(../img/Rectangle78_1024.jpg);
+        background-size: cover;
+    }
+    .slide3-img4 {
+        background: url(../img/Rectangle75_1024.jpg);
+        background-size: cover;
+    }
+
+    .slide3-img5 {
+        background: url(../img/Rectangle73_1024.jpg);
+        background-size: cover;
+    }
+    .slide3-img6 {
+        background: url(../img/Rectangle71_1024.jpg);
+        background-size: cover;
+    }
+  /***картинки для слайдов №5   ***/
+    .slide4-img1 {
+        background: url(../img/Rectangle79_1024.jpg);
+        background-size: cover;
+    }
+    .slide4-img2 {
+        background: url(../img/Rectangle87_1024.jpg);
+        background-size: cover;
+    }
+    .slide4-img3 {
+        background: url(../img/Rectangle76_1024.jpg);
+        background-size: cover;
+    }
+    .slide4-img4 {
+        background: url(../img/Rectangle89_1024.jpg);
+        background-size: cover;
+    }
+        /***картинки для слайдов №6   ***/
+    .slide4-img5 {
+        background: url(../img/Rectangle81_1024.jpg);
+        background-size: cover;
+    }
+    .slide4-img6 {
+        background: url(../img/Rectangle91_1024.jpg);
+        background-size: cover;
+    }
+
+    .gallery .coments-gallery {
+        position: relative;
+      /*  display: flex;*/
+     /*   flex-direction: row;*/
+    }
+    .mySwiper {
+        max-width: 100%;
+        padding-left: 33px;
+        margin-left: 18px;
+    }
+    .swiper-button-next {
+        top: 14.5%;
+        left: 47.5%;
+    }
+    .swiper-button-prev {
+        top: 14.5%;
+        left: 37.8%;
+    }
+    .gallery__filter {
+        width: 45%;
+    }
+    .swiper-pagination {
+        left: 41%;
+        top: 115px;
+    }
+    .mySwiper .swiper-wrapper {
+        height: 610px;
+    }
+    .coments-gallery {
+        padding-bottom: 50px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .gallery__text {
+        position: relative;
+        color: transparent;
+    }
+    .gallery__text::before {
+        content: "Фильтр:";
+        position: absolute;
+        top: 15px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        color: white;
+        background-color: transparent;
+
+       /*z-index: -1;*/
+       /* opacity: 0;*/
+
+    }
+    /******/
 }
 
 /**************************** 768 - 320 ************************************************************************/
@@ -4166,6 +4947,177 @@ h2 {
         transition: top .3s ease-out 0.1s;
         position: absolute;
     }
+    
+    .mySwiper {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+      }
+      .mySwiper .swiper-wrapper {
+        order: 1;
+        margin-bottom: 40px;
+      }
+      /*
+      .swiper-right-btns {
+        order: 2;
+        margin-bottom: 0;
+      }*/
+      .gallery__filter {
+        margin-bottom: 40px;
+      }
+
+              /***картинки для слайдов №1   ***/
+    .slide1-img1 {
+        background: url(../img/Rectangle70_768.jpg);
+        background-size: cover;
+    }
+    .slide1-img2 {
+        background: url(../img/Rectangle69_768.jpg);
+        background-size: cover;
+    }
+    .slide1-img3 {
+        background: url(../img/Rectangle106_768.jpg);
+        background-size: cover;
+    }
+    .slide1-img4 {
+        background: url(../img/Rectangle72_768.jpg);
+        background-size: cover;
+    }
+    /***картинки для слайдов №2   ***/
+    .slide1-img5 {
+        background: url(../img/Rectangle73_768.jpg);
+        background-size: cover;
+    }
+    .slide1-img6 {
+        background: url(../img/Rectangle107_768.jpg);
+        background-size: cover;
+    }
+    .slide2-img1 {
+        background: url(../img/Rectangle70_1_768.jpg);
+        background-size: cover;
+    }
+    .slide2-img2 {
+        background: url(../img/Rectangle104_768.jpg);
+        background-size: cover;
+    }
+    /***картинки для слайдов №3   ***/    
+    .slide2-img3 {
+        background: url(../img/Rectangle69_1_768.jpg);
+        background-size: cover;
+    }
+    .slide2-img4 {
+        background: url(../img/Rectangle72_1_768.jpg);
+        background-size: cover;
+    }
+    .slide2-img5 {
+        background: url(../img/Rectangle105_768.jpg);
+        background-size: cover;
+    }
+    .slide2-img6 {
+        background: url(../img/Rectangle73_1_768.jpg);
+        background-size: cover;
+    }
+    /***картинки для слайдов №4   ***/
+    .slide3-img1 {
+        background: url(../img/Rectangle77_768.jpg);
+        background-size: cover;
+    }
+    .slide3-img2 {
+        background: url(../img/Rectangle74_768.jpg);
+        background-size: cover;
+    }
+    .slide3-img3 {
+        background: url(../img/Rectangle79_768.jpg);
+        background-size: cover;
+    }
+    .slide3-img4 {
+        background: url(../img/Rectangle78_768.jpg);
+        background-size: cover;
+    }
+
+    .slide3-img5 {
+        background: url(../img/Rectangle75_768.jpg);
+        background-size: cover;
+    }
+    .slide3-img6 {
+        background: url(../img/Rectangle76_768.jpg);
+        background-size: cover;
+    }
+  /***картинки для слайдов №5   ***/
+    .slide4-img1 {
+        background: url(../img/Rectangle87_768.jpg);
+        background-size: cover;
+    }
+    .slide4-img2 {
+        background: url(../img/Rectangle81_768.jpg);
+        background-size: cover;
+    }
+    .slide4-img3 {
+        background: url(../img/Rectangle91_768.jpg);
+        background-size: cover;
+    }
+    .slide4-img4 {
+        background: url(../img/Rectangle89_768.jpg);
+        background-size: cover;
+    }
+        /***картинки для слайдов №6   ***/
+    .slide4-img5 {
+        background: url(../img/Rectangle83_768.jpg);
+        background-size: cover;
+    }
+    .slide4-img6 {
+        background: url(../img/Rectangle85_768.jpg);
+        background-size: cover;
+    }
+    .gallery-background {
+        flex-direction: column;
+    }
+    .gallery__text {
+        position: relative;
+        color: transparent;
+    }
+    .gallery__text::before {
+        content: "Фильтр:";
+        position: absolute;
+        top: 15px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        color: white;
+        background-color: transparent;
+
+       /*z-index: -1;*/
+       /* opacity: 0;*/
+
+    }
+    .mySwiper {
+        padding-top: 2px;
+        padding-left: 0px;
+    }
+    .gallery__filter {
+        width: 42%;
+    }
+    .coments-gallery {
+        position: absolute;
+        bottom: 10px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+    }
+    .swiper-button-next {
+        top: 29%;
+        left: 19.5%;
+    }
+    .swiper-button-prev {
+        top: 29%;
+        left: 6.8%;
+    }
+    .mySwiper .swiper-wrapper {
+        height: 610px; 
+    }
+    .swiper-pagination {
+        top: 28.5%;
+        left: 12%;
+    }
 }
 /**************************** 425 - 320 ************************************************************************/
 /*@media (min-width:321px) and (max-width:425px) {  
@@ -4292,7 +5244,7 @@ h2 {
         margin-right: auto;
         margin-left: auto;
         padding-left: 15px;
-        padding-right: 10px;
+        padding-right: 15px;
     }
     
     .swiper-slide1 {
@@ -4474,7 +5426,7 @@ h2 {
         justify-content: space-between;
     }
     .nav-menu__adaptiv {
-        padding: 5px 5px 5px 48px;
+        padding: 5px 5px 5px 15px;
         position: absolute;
         min-width: 100%;
         min-height: 100%;
@@ -4646,7 +5598,7 @@ h2 {
         padding-top: 22px;
         padding-bottom: 0;
         padding-left: 0;
-        margin-left: 35px;
+        margin-left: 30px;
         padding-right: 0;
         margin-right: 30px;
         display: flex;
@@ -4668,12 +5620,12 @@ h2 {
         font-size: 32px;
         line-height: 37px;
         text-align: center;
-        letter-spacing: 1.6px;
+     /*   letter-spacing: 1.6px;*/
     }
     .touch-beautiful__text {
         padding-left: 0px;
         margin: 0px 0px 20px -3px;
-        width: 100%;
+     /*   width: 100%;*/
         max-width: 265px;
 /*        width: 265px;*/
         height: 86px;
@@ -4795,11 +5747,189 @@ h2 {
         padding-bottom: 0px;
         font-size: 28px;
        }
-       .about-us__text {
+    .about-us__text {
         margin: 0;
         padding-bottom: 50px;
         font-size: 14px;
         line-height: 28px;
-        letter-spacing: 0.7px;
-       }
+        letter-spacing: 0.2px;
+    }
+
+    .gallery-background {
+        flex-direction: column;
+    }
+
+    .gallery__title {
+        padding-top: 36px;
+        font-size: 28px;
+    }
+    .gallery__text {
+        position: relative;
+        color: transparent;
+        padding-top: 0px;
+    }
+    .gallery__text::before {
+        content: "Фильтр:";
+        position: absolute;
+        top: 0px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        color: white;
+        background-color: transparent;
+        font-size: 16px;
+
+       /*z-index: -1;*/
+       /* opacity: 0;*/
+
+    }
+
+    .choices {
+        padding-top: 0px;
+    }
+    .coments-gallery {
+        position: absolute;
+        bottom: 10px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+        padding-right: 15px;
+    }
+
+                  /***картинки для слайдов №1   ***/
+    .slide1-img1 {
+        background: url(../img/Rectangle70_320.jpg);
+        background-size: cover;
+    }
+    .slide1-img2 {
+        background: url(../img/Rectangle69_320.jpg);
+        background-size: cover;
+    }
+    .slide1-img3 {
+        background: url(../img/Rectangle72_320.jpg);
+        background-size: cover;
+    }
+    .slide1-img4 {
+        background: url(../img/Rectangle73_320.jpg);
+        background-size: cover;
+    }
+
+    .slide1-img5 {
+        background: url(../img/Rectangle137_320.jpg);
+        background-size: cover;
+    }
+    .slide1-img6 {
+        background: url(../img/Rectangle139_320.jpg);
+        background-size: cover;
+    }
+    .slide2-img1 {
+        background: url(../img/Rectangle138_320.jpg);
+        background-size: cover;
+    }
+    .slide2-img2 {
+        background: url(../img/Rectangle140_320.jpg);
+        background-size: cover;
+    }
+    
+    .slide2-img3 {
+        background: url(../img/Rectangle141_320.jpg);
+        background-size: cover;
+    }
+    .slide2-img4 {
+        background: url(../img/Rectangle144_320.jpg);
+        background-size: cover;
+    }
+    .slide2-img5 {
+        background: url(../img/Rectangle105_320.jpg);
+        background-size: cover;
+    }
+    .slide2-img6 {
+        background: url(../img/Rectangle145_320.jpg);
+        background-size: cover;
+    }
+   
+    .slide3-img1 {
+        background: url(../img/Rectangle77_320.jpg);
+        background-size: cover;
+    }
+    .slide3-img2 {
+        background: url(../img/Rectangle78_320.jpg);
+        background-size: cover;
+    }
+    .slide3-img3 {
+        background: url(../img/Rectangle74_320.jpg);
+        background-size: cover;
+    }
+    .slide3-img4 {
+        background: url(../img/Rectangle75_320.jpg);
+        background-size: cover;
+    }
+
+    .slide3-img5 {
+        background: url(../img/Rectangle79_320.jpg);
+        background-size: cover;
+    }
+    .slide3-img6 {
+        background: url(../img/Rectangle76_320.jpg);
+        background-size: cover;
+    }
+  
+    .slide4-img1 {
+        background: url(../img/Rectangle87_320.jpg);
+        background-size: cover;
+    }
+    .slide4-img2 {
+        background: url(../img/Rectangle89_320.jpg);
+        background-size: cover;
+    }
+    .slide4-img3 {
+        background: url(../img/Rectangle81_320.jpg);
+        background-size: cover;
+    }
+    .slide4-img4 {
+        background: url(../img/Rectangle83_320.jpg);
+        background-size: cover;
+    }
+
+    .slide4-img5 {
+        background: url(../img/Rectangle91_320.jpg);
+        background-size: cover;
+    }
+    .slide4-img6 {
+        background: url(../img/Rectangle85_320.jpg);
+        background-size: cover;
+    }
+    .mySwiper {      
+        padding-top: 0px; 
+        padding-left: 0px;
+        padding-bottom: 0px;
+        margin-bottom: 120px;
+    }
+    .mySwiper .swiper-wrapper {
+        height: 500px;
+    }
+    .mySwiper .swiper-slide {
+        height: calc(100% - 135px);
+    }
+    .gallery__filter {
+       width: 100%;
+    }
+    .gallery__choices {
+        height: 85px;
+    }
+    .swiper-button-next {
+        top: 74%;
+        left: 63.5%;
+    }
+    .swiper-button-prev {
+        top: 74%;
+        left: 31.8%;
+    }
+    .swiper-pagination {
+        left: 43%;
+        top: 73%;
+        width: 15%;
+    }
+    .adout-us {
+        margin-bottom: -10px;
+    }
 }
