@@ -89,7 +89,6 @@ h2 {
     border: 3px solid #D1A9F0;
     cursor: pointer;
 }
-
 .btn:focus {
     border: 1px solid #9D5CD0;
     outline: 1px solid #9D5CD0;
@@ -152,7 +151,7 @@ h2 {
 
 .nav__list {
     /* margin-right: 100px; */
-    width: 72%;   
+    width: 60.5%;   
     display: flex;
     justify-content: space-between;
   
@@ -206,7 +205,7 @@ h2 {
 
 .nav__enter-link {
    /* margin-left: 100px; */
-    padding: 16px 0px 16px 20px;
+    padding: 16px 2px 16px 20px;
     /* display: flex; */
     /* flex-direction: column; */
     /* align-items: flex-start; */
@@ -370,7 +369,6 @@ h2 {
 
 /*.search__item:not(:last-child) {
     margin-right: 97px;
-
 }
 */
 .search__item-link {
@@ -520,7 +518,6 @@ h2 {
     background-color: #7943A4;
     cursor: pointer;
 } 
-
 .search__postimpressianizm:focus {
     border: 1px solid #7943A4;
     color: #FFFFFF;
@@ -550,25 +547,21 @@ h2 {
     width: 101px;
     margin-right: 88px;
 }
-
 .search__impressianizm {
     width: 168px;
     margin-left: 0px;
     margin-right: 92px;
 }
-
 .search__postimpressianizm {
     width: 207px;
     margin-left: 0px;
     margin-right: 90px;
 }
-
 .search__avangard {
     width: 106px;
     margin-left: 0px;
     margin-right: 87px;
 }
-
 .search__futurism {
     width: 109px;
     margin-left: 0px;
@@ -650,7 +643,6 @@ h2 {
 .search-form:hover {
     background: url(../img/Search_13.svg) left center no-repeat;
 }
-
 .search-form:active {
     background: url(../img/Search_31_1.svg) left center no-repeat;
 }*/
@@ -1231,7 +1223,6 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start;
-
 }*/
 
 
@@ -1253,7 +1244,7 @@ h2 {
     /* height: 100%; */
     position: relative;
     padding-top: 88px;
-    padding-bottom: 88px;
+    padding-bottom: 84px;
     padding-left: 50px; 
     margin-left: auto;
     padding-right: 50px; 
@@ -1304,10 +1295,10 @@ h2 {
 }
 
 .touch-beautiful__btn {
-    margin-bottom: 38px;
-    position: relative; 
-    padding-top: 20px;
-    padding-bottom: 17px;
+    margin-bottom: 35px;
+    position: relative;
+    padding-top: 17px;
+    padding-bottom: 20px;
     padding-left: 34px;
     padding-right: 34px;
     font-size: 18px;
@@ -1387,7 +1378,7 @@ h2 {
 }
 .about-us__text {
     margin: 0;
-    padding-bottom: 70px;
+    padding-bottom: 65px;
     max-width: 1080px;
     font-weight: normal;
     font-size: 16px;
@@ -1411,13 +1402,18 @@ h2 {
     flex-direction: row;
 }
 .gallery__filter {
+    margin-top: 75px;
+    margin-bottom: 75px;
     width: 30%;
     display: flex;
     flex-direction: column;
 }
 .gallery__title {
-    margin: 0;
-    padding-top: 80px;
+  /*  margin: 0; */
+    margin-top: 8px;
+    margin-bottom: 15px;
+    flex-grow: 0;
+    /* padding-top: 0px; */
     font-family: "Open Sans" ,sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -1428,7 +1424,8 @@ h2 {
 
 .gallery__text {
     margin: 0;
-    padding-top: 15px;
+    flex-grow: 0;
+    /* padding-top: 17px; */
     font-family: "Open Sans" ,sans-serif;
     font-style: normal;
     font-weight: 600;
@@ -1437,6 +1434,7 @@ h2 {
     color: #FFFFFF;
 }
 .gallery__choices {
+    /* margin-bottom: 113px; */
     height: 120px;
     flex-grow: 1;
 }
@@ -1460,46 +1458,53 @@ h2 {
 }
 .swiper-button-next {
     top: 12%;
-    left: 35.5%;
+    left: 12.7%;
+    width: 30px;
+    height: 30px;
 }
+
 .swiper-button-next:after {
-    content: "\203A";
-    padding: 8px 12px;
+    display: none;
+    /*content: "\203A";
+    padding: 9px 13px;
     border-radius: 15px;
     border: 1px solid rgb(182, 181, 181);
     background-color: grey;
     color: white;
-    font-size: small;
-    
+    font-size: small;*/
 }
 .swiper-button-prev {
     top: 12%;
-    left: 29.8%;
+    left: 4.3%;
+    width: 30px;
+    height: 30px;
 }
+
  .swiper-button-prev:after {
-    content: '\2039';
-    padding: 8px 12px;
+     display: none;
+ /*   content: '\2039';
+    padding: 9px 13px;
     border-radius: 15px;
-    border: 1px solid rgb(182, 181, 181);
+   border: 1px solid rgb(182, 181, 181);
     background-color: grey;
     color: white;
-    font-size: small;
+    font-size: small;*/
 }
 .swiper-pagination {
     position: absolute;
-    left: 31%;
-    top: 110px;
-    width: 5%;
-    height: 30px;
+    left: 7.1%;
+    top: 9%;
+    width: 65px;
+    height: 25px;
     font-size: 16px;
     color: white;
     z-index: 15;
 }
 .choices{
     flex-grow: 1;
-    padding-top: 10px;
-    padding-left: 3px;
- /*   max-width: 401px;*/
+    padding-top: 8px;
+    padding-left: 0px;
+    max-width: 400px;
     overflow: inherit;
     opacity: 0.5;
 }
@@ -1518,8 +1523,8 @@ h2 {
     background-color: rgba(0,0,0,0.5);
     border: 1px solid #FFFFFF;
     box-sizing: border-box;
-    border-radius: 6px;
-
+    border-radius: 9px;
+    padding: 7.5px 14.5px;
 }
 
 .choices__item,.choices__placeholder,.choices__item--selectable,.is-selected{
@@ -1564,6 +1569,157 @@ h2 {
     color: #FFFFFF;
 }
 
+.checke1, .checke2, .checke3{
+    display: none;
+    margin-right: 8px;
+}
+.checke1 + span {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 4px;
+    left: 0;
+    width: 12px;
+    height: 12px;
+    text-align: center;
+    vertical-align: 5px;
+    border: 1px solid #999999;
+
+}
+.checke2 + span {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 4px;
+    left: 0;
+    width: 12px;
+    height: 12px;
+    text-align: center;
+    vertical-align: 5px;
+    border: 1px solid #999999;
+
+}
+.checke3 + span {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 4px;
+    left: 0;
+    width: 12px;
+    height: 12px;
+    text-align: center;
+    vertical-align: 5px;
+    border: 1px solid #999999;
+
+}
+.checke1 + span::before {
+    content: url(../img/Ellipse16.svg);
+    position: relative;
+    top: -7px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    width: 12px;
+    height: 12px;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+}
+.checke2 + span::before {
+    content: url(../img/Ellipse16.svg);
+    position: relative;
+    top: -7px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    width: 12px;
+    height: 12px;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+}
+.checke3 + span::before {
+    content: url(../img/Ellipse16.svg);
+    position: relative;
+    top: -7px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    width: 12px;
+    height: 12px;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+}
+.checke1 + span::after {
+    content: "XIX век";
+    position: absolute;
+    padding-left: 23px;
+    width: 123px;
+    text-align: left;
+    top: -4px;
+    font-size: 16px;
+}
+.checke2 + span::after {
+    content: "XX век";
+    position: absolute;
+    padding-left: 23px;
+    width: 123px;
+    text-align: left;
+    top: -4px;
+    font-size: 16px;
+}
+.checke3 + span::after {
+    content: "Современность";
+    position: absolute;
+    padding-left: 23px;
+    width: 123px;
+    text-align: left;
+    top: -4px;
+    font-size: 16px;
+}
+
+
+.checke1:checked + span::before {
+    opacity: 1;
+}
+.checke2:checked + span::before {
+    opacity: 1;
+}
+.checke3:checked + span::before {
+    opacity: 1;
+}
+.checke1:checked + span {
+    border: 1px solid rgba(194, 131, 243, 1);
+  /*  border-radius: 3px;*/
+  color: rgba(194, 131, 243, 1);
+}
+.checke2:checked + span {
+    border: 1px solid rgba(194, 131, 243, 1);
+  /*  border-radius: 3px;*/
+  color: rgba(194, 131, 243, 1);
+}
+.checke3:checked + span {
+    border: 1px solid rgba(194, 131, 243, 1);
+  /*  border-radius: 3px;*/
+  color: rgba(194, 131, 243, 1);
+}
+.lable {
+    position: relative;
+    margin-bottom: 31px;
+    padding-left: 24px;
+    cursor: pointer;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: white;
+ }
+ .lable:visited {
+    text-decoration-line: #C283F3;
+    color: #C283F3;
+}
+.lable:active {
+    color: #C283F3;
+}
 
 
 .swiper1-container {
@@ -1643,146 +1799,284 @@ h2 {
 }
 /***картинки для слайдов №1   ***/
 .slide1-img1 {
-    background: url(../img/Rectangle70_1920.jpg);
+    background: url(../img/Rectangle70_1920.jpg) center;
     background-size: cover; 
+}
+.slide1-img1:active {
+   background:linear-gradient(0deg, rgba(194, 131, 243, 0.3), rgba(194, 131, 243, 0.3)), url(../img/Rectangle70_1920.jpg) center no-repeat;
+   background-size: cover; 
 }
 .slide1-img2 {
-    background: url(../img/Rectangle69_1920.jpg);
+    background: url(../img/Rectangle69_1920.jpg) center;
     background-size: cover; 
 }
+.slide1-img2:active {
+    background:linear-gradient(0deg, rgba(194, 131, 243, 0.3), rgba(194, 131, 243, 0.3)), url(../img/Rectangle69_1920.jpg) center no-repeat;
+    background-size: cover; 
+ }
 .slide1-img3 {
-    background: url(../img/Rectangle68_1920.jpg);
+    background: url(../img/Rectangle72_1920.jpg) center;
+    background-size: cover; 
+}
+.slide1-img3:active {
+    background:linear-gradient(0deg, rgba(194, 131, 243, 0.3), rgba(194, 131, 243, 0.3)), url(../img/Rectangle72_1920.jpg) center no-repeat;
     background-size: cover; 
 }
 .slide1-img4 {
-    background: url(../img/Rectangle72_1920.jpg);
+    background: url(../img/Rectangle73_1920.jpg) center;
+    background-size: cover; 
+}
+.slide1-img4:active {
+    background:linear-gradient(0deg, rgba(194, 131, 243, 0.3), rgba(194, 131, 243, 0.3)), url(../img/Rectangle73_1920.jpg) center no-repeat;
     background-size: cover; 
 }
 .slide1-img5 {
-    background: url(../img/Rectangle73_1920.jpg);
+    background: url(../img/Rectangle68_1920.jpg) center;
+    background-size: cover; 
+}
+.slide1-img5:active {
+    background:linear-gradient(0deg, rgba(194, 131, 243, 0.3), rgba(194, 131, 243, 0.3)), url(../img/Rectangle68_1920.jpg) center no-repeat;
     background-size: cover; 
 }
 .slide1-img6 {
-    background: url(../img/Rectangle71_1920.jpg);
+    background: url(../img/Rectangle71_1920.jpg) center;
     background-size: cover; 
 }
+.slide1-img6:active {
+    background:linear-gradient(0deg, rgba(194, 131, 243, 0.3), rgba(194, 131, 243, 0.3)), url(../img/Rectangle71_1920.jpg) center no-repeat;
+    background-size: cover; 
+}
+
 /***картинки для слайдов №2   ***/
 .slide2-img1 {
-    background: url(../img/Rectangle70_1_1920.jpg);
+    background: url(../img/Rectangle70_1_1920.jpg) center;
+    background-size: cover; 
+}
+.slide2-img1:active {
+    background:linear-gradient(0deg, rgba(194, 131, 243, 0.3), rgba(194, 131, 243, 0.3)), url(../img/Rectangle70_1_1920.jpg) center no-repeat;
     background-size: cover; 
 }
 .slide2-img2 {
-    background: url(../img/Rectangle68_1_1920.jpg);
+    background: url(../img/Rectangle72_1_1920.jpg) center;
+    background-size: cover; 
+}
+.slide2-img2:active {
+    background:linear-gradient(0deg, rgba(194, 131, 243, 0.3), rgba(194, 131, 243, 0.3)), url(../img/Rectangle72_1_1920.jpg) center no-repeat;
     background-size: cover; 
 }
 .slide2-img3 {
-    background: url(../img/Rectangle69_1_1920.jpg);
+    background: url(../img/Rectangle69_1_1920.jpg) center;
+    background-size: cover; 
+}
+.slide2-img3:active {
+    background:linear-gradient(0deg, rgba(194, 131, 243, 0.3), rgba(194, 131, 243, 0.3)), url(../img/Rectangle69_1_1920.jpg) center no-repeat;
     background-size: cover; 
 }
 .slide2-img4 {
-    background: url(../img/Rectangle72_1_1920.jpg);
+    background: url(../img/Rectangle69_1_1920.jpg) center;
+    background-size: cover; 
+}
+.slide2-img4:active {
+    background:linear-gradient(0deg, rgba(194, 131, 243, 0.3), rgba(194, 131, 243, 0.3)), url(../img/Rectangle69_1_1920.jpg) center no-repeat;
     background-size: cover; 
 }
 .slide2-img5 {
-    background: url(../img/Rectangle71_1_1920.jpg);
+    background: url(../img/Rectangle71_1_1920.jpg) center;
+    background-size: cover; 
+}
+.slide2-img5:active {
+    background:linear-gradient(0deg, rgba(194, 131, 243, 0.3), rgba(194, 131, 243, 0.3)), url(../img/Rectangle71_1_1920.jpg) center no-repeat;
     background-size: cover; 
 }
 .slide2-img6 {
-    background: url(../img/Rectangle73_1_1920.jpg);
+    background: url(../img/Rectangle73_1_1920.jpg) center;
+    background-size: cover; 
+}
+.slide2-img6:active {
+    background:linear-gradient(0deg, rgba(194, 131, 243, 0.3), rgba(194, 131, 243, 0.3)), url(../img/Rectangle73_1_1920.jpg) center no-repeat;
     background-size: cover; 
 }
 /***картинки для слайдов №3   ***/
 .slide3-img1 {
-    background: url(../img/Rectangle77_1920.jpg);
+    background: url(../img/Rectangle77_1920.jpg) center;
+    background-size: cover; 
+}
+.slide3-img1:active {
+    background:linear-gradient(0deg, rgba(194, 131, 243, 0.3), rgba(194, 131, 243, 0.3)), url(../img/Rectangle77_1920.jpg) center no-repeat;
     background-size: cover; 
 }
 .slide3-img2 {
-    background: url(../img/Rectangle74_1920.jpg);
+    background: url(../img/Rectangle74_1920.jpg) center;
+    background-size: cover; 
+}
+.slide3-img2:active {
+    background:linear-gradient(0deg, rgba(194, 131, 243, 0.3), rgba(194, 131, 243, 0.3)), url(../img/Rectangle74_1920.jpg) center no-repeat;
     background-size: cover; 
 }
 .slide3-img3 {
-    background: url(../img/Rectangle79_1920.jpg);
+    background: url(../img/Rectangle79_1920.jpg) center;
+    background-size: cover; 
+}
+.slide3-img3:active {
+    background:linear-gradient(0deg, rgba(194, 131, 243, 0.3), rgba(194, 131, 243, 0.3)), url(../img/Rectangle79_1920.jpg) center no-repeat;
     background-size: cover; 
 }
 .slide3-img4 {
-    background: url(../img/Rectangle78_1920.jpg);
+    background: url(../img/Rectangle78_1920.jpg) center;
+    background-size: cover; 
+}
+.slide3-img4:active {
+    background:linear-gradient(0deg, rgba(194, 131, 243, 0.3), rgba(194, 131, 243, 0.3)), url(../img/Rectangle78_1920.jpg) center no-repeat;
     background-size: cover; 
 }
 .slide3-img5 {
-    background: url(../img/Rectangle75_1920.jpg);
+    background: url(../img/Rectangle75_1920.jpg) center;
+    background-size: cover; 
+}
+.slide3-img5:active {
+    background:linear-gradient(0deg, rgba(194, 131, 243, 0.3), rgba(194, 131, 243, 0.3)), url(../img/Rectangle75_1920.jpg) center no-repeat;
     background-size: cover; 
 }
 .slide3-img6 {
-    background: url(../img/Rectangle76_1920.jpg);
+    background: url(../img/Rectangle76_1920.jpg) center;
+    background-size: cover; 
+}
+.slide3-img6:active {
+    background:linear-gradient(0deg, rgba(194, 131, 243, 0.3), rgba(194, 131, 243, 0.3)), url(../img/Rectangle76_1920.jpg) center no-repeat;
     background-size: cover; 
 }
 /***картинки для слайдов №4   ***/
 .slide4-img1 {
-    background: url(../img/Rectangle70_1.jpg);
+    background: url(../img/Rectangle70_1.jpg) center;
+    background-size: cover; 
+}
+.slide4-img1:active {
+    background:linear-gradient(0deg, rgba(194, 131, 243, 0.3), rgba(194, 131, 243, 0.3)), url(../img/Rectangle70_1.jpg) center no-repeat;
     background-size: cover; 
 }
 .slide4-img2 {
-    background: url(../img/Rectangle68_1.jpg);
+    background: url(../img/Rectangle68_1.jpg) center;
+    background-size: cover; 
+}
+.slide4-img2:active {
+    background:linear-gradient(0deg, rgba(194, 131, 243, 0.3), rgba(194, 131, 243, 0.3)), url(../img/Rectangle68_1.jpg) center no-repeat;
     background-size: cover; 
 }
 .slide4-img3 {
-    background: url(../img/Rectangle69_1.jpg);
+    background: url(../img/Rectangle69_1.jpg) center;
+    background-size: cover; 
+}
+.slide4-img3:active {
+    background:linear-gradient(0deg, rgba(194, 131, 243, 0.3), rgba(194, 131, 243, 0.3)), url(../img/Rectangle69_1.jpg) center no-repeat;
     background-size: cover; 
 }
 .slide4-img4 {
-    background: url(../img/Rectangle72_1.jpg);
+    background: url(../img/Rectangle72_1.jpg) center;
+    background-size: cover; 
+}
+.slide4-img4:active {
+    background:linear-gradient(0deg, rgba(194, 131, 243, 0.3), rgba(194, 131, 243, 0.3)), url(../img/Rectangle72_1.jpg) center no-repeat;
     background-size: cover; 
 }
 .slide4-img5 {
-    background: url(../img/Rectangle71_1.jpg);
+    background: url(../img/Rectangle71_1.jpg) center;
+    background-size: cover; 
+}
+.slide4-img5:active {
+    background:linear-gradient(0deg, rgba(194, 131, 243, 0.3), rgba(194, 131, 243, 0.3)), url(../img/Rectangle71_1.jpg) center no-repeat;
     background-size: cover; 
 }
 .slide4-img6 {
-    background: url(../img/Rectangle73_1.jpg);
+    background: url(../img/Rectangle73_1.jpg) center;
+    background-size: cover; 
+}
+.slide4-img6:active {
+    background:linear-gradient(0deg, rgba(194, 131, 243, 0.3), rgba(194, 131, 243, 0.3)), url(../img/Rectangle73_1.jpg) center no-repeat;
     background-size: cover; 
 }
 /***картинки для слайдов №5   ***/
 .slide5-img1 {
-    background: url(../img/Rectangle77.jpg);
+    background: url(../img/Rectangle77.jpg) center;
+    background-size: cover; 
+}
+.slide5-img1:active {
+    background:linear-gradient(0deg, rgba(194, 131, 243, 0.3), rgba(194, 131, 243, 0.3)), url(../img/Rectangle77.jpg) center no-repeat;
     background-size: cover; 
 }
 .slide5-img2 {
-    background: url(../img/Rectangle74.jpg);
+    background: url(../img/Rectangle74.jpg) center;
+    background-size: cover; 
+}
+.slide5-img2:active {
+    background:linear-gradient(0deg, rgba(194, 131, 243, 0.3), rgba(194, 131, 243, 0.3)), url(../img/Rectangle74.jpg) center no-repeat;
     background-size: cover; 
 }
 .slide5-img3 {
-    background: url(../img/Rectangle79.jpg);
+    background: url(../img/Rectangle79.jpg) center;
+    background-size: cover; 
+}
+.slide5-img3:active {
+    background:linear-gradient(0deg, rgba(194, 131, 243, 0.3), rgba(194, 131, 243, 0.3)), url(../img/Rectangle79.jpg) center no-repeat;
     background-size: cover; 
 }
 .slide5-img4 {
-    background: url(../img/Rectangle78.jpg);
+    background: url(../img/Rectangle78.jpg) center;
+    background-size: cover; 
+}
+.slide5-img4:active {
+    background:linear-gradient(0deg, rgba(194, 131, 243, 0.3), rgba(194, 131, 243, 0.3)), url(../img/Rectangle78.jpg) center no-repeat;
     background-size: cover; 
 }
 .slide5-img5 {
-    background: url(../img/Rectangle75.jpg);
+    background: url(../img/Rectangle75.jpg) center;
+    background-size: cover; 
+}
+.slide5-img5:active {
+    background:linear-gradient(0deg, rgba(194, 131, 243, 0.3), rgba(194, 131, 243, 0.3)), url(../img/Rectangle75.jpg) center no-repeat;
     background-size: cover; 
 }
 .slide5-img6 {
-    background: url(../img/Rectangle76.jpg);
+    background: url(../img/Rectangle76.jpg) center;
+    background-size: cover; 
+}
+.slide5-img6:active {
+    background:linear-gradient(0deg, rgba(194, 131, 243, 0.3), rgba(194, 131, 243, 0.3)), url(../img/Rectangle76.jpg) center no-repeat;
     background-size: cover; 
 }
 
+.gallery-checbox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-grow: 0;
+ /*   position: absolute;
+    padding-left: 30px;
+    left: 4%;
+    right: 88.35%;
+    top: 10.94%;
+    bottom: 40.78%;
+    background: #FFFFFF;
+    border-radius: 10px;*/
+}
 .mySwiper {
     max-width: 1200px;
     /* width: 187%; */
     overflow: hidden;
-    padding-top: 164px;
-    padding-left: 50px;
-    padding-bottom: 65px;
+    margin-top: 75px;
+    margin-bottom: 65px;
+    padding-top: 91px;
+    padding-left: 48px;
+    /* padding-bottom: 65px;*/
 }
 .mySwiper .swiper-wrapper {
-    height: 750px;
+    height: 367px;
 }
 .mySwiper .swiper-slide {
 /*background-color: grey;*/
-position: relative;
-cursor: pointer;
-height: calc((100% - 50px) / 2);
+    position: relative;
+    cursor: pointer;
+/*    height: calc((100% - 50px) / 2);*/
+    height: calc(100% - 15px) ;
 }
 .mySwiper .swiper-slide:before {
     content: "";
@@ -2199,7 +2493,6 @@ height: calc((100% - 50px) / 2);
     background:linear-gradient(0deg,  rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/Group12.svg) center no-repeat;
     cursor: pointer;
 }
-
 .slide1-img2__hover:active {
     display: initial;
     position: absolute;
@@ -2215,7 +2508,6 @@ height: calc((100% - 50px) / 2);
 .slide1-img2__hover:active ~ .slide1-img2{
     border: 2px solid #D1A9F0;
 }
-
 .slide1-img2:active ~ .slide1-img2__hover {
     display: initial;
     position: absolute;
@@ -2227,8 +2519,6 @@ height: calc((100% - 50px) / 2);
     background:linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/Group12.svg) center no-repeat;
     border: 25px solid rgba(194, 131, 243, 0.4);
 }
-
-
 .slide1-img3__hover {
     display: initial;
     position: absolute;
@@ -2245,7 +2535,6 @@ height: calc((100% - 50px) / 2);
     background:linear-gradient(0deg,  rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/Group12.svg) center no-repeat;
     cursor: pointer;
 }
-
 .slide1-img3__hover:active {
     display: initial;
     position: absolute;
@@ -2261,7 +2550,6 @@ height: calc((100% - 50px) / 2);
 .slide1-img3__hover:active ~ .slide1-img3{
     border: 2px solid #D1A9F0;
 }
-
 .slide1-img3:active ~ .slide1-img3__hover {
     display: initial;
     position: absolute;
@@ -2273,9 +2561,6 @@ height: calc((100% - 50px) / 2);
     background:linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/Group12.svg) center no-repeat;
     border: 25px solid rgba(194, 131, 243, 0.4);
 }
-
-
-
 .slide1-img4__hover {
     display: initial;
     position: absolute;
@@ -2292,7 +2577,6 @@ height: calc((100% - 50px) / 2);
     background:linear-gradient(0deg,  rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/Group12.svg) center no-repeat;
     cursor: pointer;
 }
-
 .slide1-img4__hover:active {
     display: initial;
     position: absolute;
@@ -2308,7 +2592,6 @@ height: calc((100% - 50px) / 2);
 .slide1-img4__hover:active ~ .slide1-img4{
     border: 2px solid #D1A9F0;
 }
-
 .slide1-img4:active ~ .slide1-img4__hover {
     display: initial;
     position: absolute;
@@ -2320,8 +2603,6 @@ height: calc((100% - 50px) / 2);
     background:linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/Group12.svg) center no-repeat;
     border: 25px solid rgba(194, 131, 243, 0.4);
 }
-
-
 .slide1-img5__hover {
     display: initial;
     position: absolute;
@@ -2335,11 +2616,9 @@ height: calc((100% - 50px) / 2);
     background:linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/Group12.svg) center no-repeat;
 }
 .slide1-img5__hover:hover {
-
     background:linear-gradient(0deg,  rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/Group12.svg) center no-repeat;
     cursor: pointer;
 }
-
 .slide1-img5__hover:active {
     display: initial;
     position: absolute;
@@ -2355,7 +2634,6 @@ height: calc((100% - 50px) / 2);
 .slide1-img5__hover:active ~ .slide1-img5{
     border: 2px solid #D1A9F0;
 }
-
 .slide1-img5:active ~ .slide1-img5__hover {
     display: initial;
     position: absolute;
@@ -2367,8 +2645,6 @@ height: calc((100% - 50px) / 2);
     background:linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/Group12.svg) center no-repeat;
     border: 25px solid rgba(194, 131, 243, 0.4);
 }
-
-
 .slide1-img6__hover {
     display: initial;
     position: absolute;
@@ -2385,7 +2661,6 @@ height: calc((100% - 50px) / 2);
     background:linear-gradient(0deg,  rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/Group12.svg) center no-repeat;
     cursor: pointer;
 }
-
 .slide1-img6__hover:active {
     display: initial;
     position: absolute;
@@ -2401,7 +2676,6 @@ height: calc((100% - 50px) / 2);
 .slide1-img6__hover:active ~ .slide1-img6{
     border: 2px solid #D1A9F0;
 }
-
 .slide1-img6:active ~ .slide1-img6__hover {
     display: initial;
     position: absolute;
@@ -2415,8 +2689,6 @@ height: calc((100% - 50px) / 2);
 }
 */
 /*
-
-
 .catalog {
     position: absolute;
     width: 1603px;
@@ -2446,23 +2718,18 @@ height: calc((100% - 50px) / 2);
     padding: 10px;
     z-index: 11;
 }
-
 .catalog__link1:visited, .catalog__link2:visited, .catalog__link3:visited, .catalog__link4:visited, .link5-catalog:visited {
     border-radius: 35px;
     border: 3px solid #9D5CD0;
 }
-
 .catalog__img1:hover,.catalog__img2:hover,.catalog__img3:hover,.catalog__img4:hover,.img5-catalog:hover {
     border-radius: 30px;
     box-shadow: 0px 0px 20px rgba(157, 92, 208, 0.7); 
 }
-
 .catalog__img1:active,.catalog__img2:active,.catalog__img3:active,.catalog__img4:active,.img5-catalog:active {
     border-radius: 30px;
     border: 2px solid #9D5CD0;
 }
-
-
 .catalog__text {
     width: 1080px;
     font-family: "Open Sans" ,sans-serif;
@@ -2472,7 +2739,6 @@ height: calc((100% - 50px) / 2);
     line-height: 32px;
     color: #333333;
 }
-
 .painters {
     position: absolute;
     width: 752px;
@@ -2486,7 +2752,6 @@ height: calc((100% - 50px) / 2);
     left: 802px;
     top: 285px;
 }
-
 .painter1-name,.painter2-name,.painter3-name,.painter4-name,.painter5-name,.painter6-name,.painter7-name,.painter8-name,.painter9-name,.painter10-name,.painter11-name,.painter12-name,.painter13-name {
     font-family: "Open Sans" ,sans-serif;
     font-style: normal;
@@ -2512,11 +2777,9 @@ height: calc((100% - 50px) / 2);
     font-size: 12px;
     line-height: 16px;
 }
-
 .visible {
     display: block;
 }
-
 .painters__text {
     font-family: "Open Sans" ,sans-serif;
     font-style: normal;
@@ -2547,8 +2810,6 @@ height: calc((100% - 50px) / 2);
     color: #ffffff;
     background-color: #9D5CD0;
 }
-
-
 .accordion1__title1,.accordion1__title2,.accordion1__title3,.accordion1__title4,.accordion1__title5,.accordion1__title6,.accordion1__title7 {
     margin-bottom: 30px;
     margin-top: 35px;
@@ -2635,8 +2896,6 @@ height: calc((100% - 50px) / 2);
     background: url(../img/R2.png) no-repeat;
     transform: rotate(180deg);
 }
-
-
 .ui-accordion-icons {
     width: 800px;
     margin-top: 10px;
@@ -2702,7 +2961,6 @@ height: calc((100% - 50px) / 2);
     border-top: 1px solid #9D5CD0;
     border-bottom: 1px solid #9D5CD0;
 }
-
 .accordion__href1,.accordion__href2,.accordion__href3,.accordion__href4,.accordion__href5,.accordion__href6,.accordion__href7 {
     position: absolute;
     width: 50px;
@@ -2712,7 +2970,6 @@ height: calc((100% - 50px) / 2);
     transition-timing-function: ease-in-out;
     background: url(../img/R1.png) no-repeat;
 }
-
 .painter1__block1,.painter1__block2,.painter1__block3 {
     margin: 0px;
     position: absolute;
@@ -2727,7 +2984,6 @@ height: calc((100% - 50px) / 2);
     width: 240px;
     height: 300px;
 }
-
 .painter1__block1,.painter2__block1{
     left: 0px;
 }
@@ -2737,7 +2993,6 @@ height: calc((100% - 50px) / 2);
 .painter1__block3,.painter2__block3 {
     left: 517px;
 }
-
 .painter__text {
     margin-top: 10px;
     padding: 0px;
@@ -2745,8 +3000,6 @@ height: calc((100% - 50px) / 2);
     font-size: 16px;
     line-height: 32px;
 }
-
-
 .events__title {
     margin: 0px 0px 50px 0px;
     position: absolute;
@@ -2814,7 +3067,6 @@ height: calc((100% - 50px) / 2);
     position: absolute;
     top: 627px;
     height: 30px;
-
     font-family: "Open Sans" ,sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -2825,7 +3077,6 @@ height: calc((100% - 50px) / 2);
     background: none;
     border-bottom: 1px solid #9D5CD0;
 }
-
 .event__items {
     display: flex;
     flex-direction:row; 
@@ -2848,11 +3099,9 @@ height: calc((100% - 50px) / 2);
     box-sizing: border-box;
     border-radius: 100px;
 }
-
 .no-visible {
     display: none;
 }
-
 .publications {
     position: absolute;
     width: 1920px;
@@ -2861,7 +3110,6 @@ height: calc((100% - 50px) / 2);
     top: 4770px;
     background-image: url(../img/birmingham-museums-trust-MK_98NuC4-4-unsplash4.jpg) ;
 }
-
 .publications__title {
     position: absolute;
     width: 225px;
@@ -2925,9 +3173,6 @@ height: calc((100% - 50px) / 2);
 .lable:last-child{
     margin-bottom: 0px;
 }
-
-
-
 .lable:active{
     color: #C283F3;
 }
@@ -2937,7 +3182,6 @@ height: calc((100% - 50px) / 2);
 .lable:target{
     color: #C283F3;
 }
-
 .lable:hover {
     color: #C283F3;
 }
@@ -2951,8 +3195,6 @@ height: calc((100% - 50px) / 2);
     color: #FFFFFF;
     cursor: pointer;
 }
-
-
 .checke1 + span {
     position: absolute;
     top: 2px;
@@ -2982,7 +3224,6 @@ height: calc((100% - 50px) / 2);
     text-align: center;
     vertical-align: 5px;
     border: 1px solid #FFFFFF;
-
 }
 .checke4 + span {
     position: absolute;
@@ -3074,8 +3315,6 @@ height: calc((100% - 50px) / 2);
     vertical-align: 5px;
     border: 1px solid #FFFFFF;
 }
-
-
 .checke1 + span::before {
     content: url(../img/Ellipse16.png);
     position: relative;
@@ -3220,9 +3459,6 @@ height: calc((100% - 50px) / 2);
     opacity: 0;
     transition: opacity .3s ease-in-out;
 }
-
-
-
 .checke1:checked + span::before {
     opacity: 1;  
 }
@@ -3246,7 +3482,6 @@ height: calc((100% - 50px) / 2);
     height: 13px;
     text-align: center;
     vertical-align: 5px;
-
 }
 .checke5:checked + span::before {
     opacity: 1;    
@@ -3304,16 +3539,11 @@ height: calc((100% - 50px) / 2);
     height: 13px;
     text-align: center;
     vertical-align: 5px;
-
 }
-
-
-
 .checke1:checked + span {
     border: 1px solid #C283F3;
     color: #C283F3;
 }
-
 .checke2:checked + span {
     border: 1px solid #C283F3;
     color: #C283F3;
@@ -3358,7 +3588,6 @@ height: calc((100% - 50px) / 2);
     border: 1px solid #C283F3;
     color: #C283F3;
 }
-
 .price__title{
     position: absolute;
     width: 58px;
@@ -3372,7 +3601,6 @@ height: calc((100% - 50px) / 2);
     line-height: 32px;
     color: #FFFFFF;
 }
-
 .price__range {
     display: flex;
     flex-direction: row;
@@ -3444,7 +3672,6 @@ height: calc((100% - 50px) / 2);
     line-height: 32px;
     color: #FFFFFF;
 }
-
 .project {
     position: absolute;
     width: 1920px;
@@ -3477,7 +3704,6 @@ height: calc((100% - 50px) / 2);
     line-height: 32px;
     color: #333333;
 }
-
 .project__partners {
     position: absolute;
     width: 280px;
@@ -3529,7 +3755,6 @@ height: calc((100% - 50px) / 2);
 .project__tooltip-marker1:hover+.project__tooltip-popup1 {
     opacity: 1;
 }
-
 .project__tooltip-marker2 {
     position: absolute;
     width: 16px;
@@ -3562,7 +3787,6 @@ height: calc((100% - 50px) / 2);
 .project__tooltip-marker2:hover+.project__tooltip-popup2 {
     opacity: 1;
 }
-
 .project__tooltip-marker3 {
     position: absolute;
     width: 16px;
@@ -3594,13 +3818,10 @@ height: calc((100% - 50px) / 2);
 .project__tooltip-marker3:hover+.project__tooltip-popup3 {
     opacity: 1;
 }
-
 .tooltip {
     width: 36px;
     height: 12px;
 }
-
-
 .contacts__title {
     position: absolute;
     width: 440px;
@@ -3614,7 +3835,6 @@ height: calc((100% - 50px) / 2);
     line-height: 65px;
     color: #333333;
 }
-
 .swiper2-container {
     display: flex;
     flex-direction: column;
@@ -3721,7 +3941,6 @@ height: calc((100% - 50px) / 2);
 .swiper2-button-next:hover{
     background: url(../img/Ellipse_113.png) center no-repeat;
 }
-
 .swiper2-button-prev:hover {
     background: url(../img/Ellipse_113.png) center no-repeat;
     transform: rotate(180deg);
@@ -3733,14 +3952,11 @@ height: calc((100% - 50px) / 2);
     background: url(../img/Ellipse_114.png) center no-repeat;
     transform: rotate(180deg);
 }
-
-
 .swiper2-button-next{
     height: 30px;
     width: 32px!important;
     background: url(../img/Ellipse111.png) center no-repeat;
 }
-
 .swiper2-button-prev {
     height: 30px;
     width: 32px!important;
@@ -3754,7 +3970,6 @@ height: calc((100% - 50px) / 2);
     left: 44px!important;
     color: white;
 }
-
 .swiper3-container {
     margin-left: 150px;
     position: absolute;
@@ -3763,7 +3978,6 @@ height: calc((100% - 50px) / 2);
     left: 9px;
     top: 456px;
 }
-
 .swiper3-slide {
     display: flex;
     flex-wrap: wrap;
@@ -3865,7 +4079,6 @@ height: calc((100% - 50px) / 2);
     font-size: 16px;
     line-height: 32px;
 }
-
 .contacts__order-call {
     position: absolute;
     width: 370px;
@@ -3913,7 +4126,6 @@ height: calc((100% - 50px) / 2);
     padding-left: 20px;
     color: #999999;
 }
-
 .contacts__send {
     padding: 10px 20px 10px 20px;
     position: absolute;
@@ -3965,7 +4177,6 @@ height: calc((100% - 50px) / 2);
     left: 680px;
     top: 6340px;
 }
-
 [class*="ground-pane"] {
     filter: grayscale(1);
 }
@@ -3987,16 +4198,12 @@ height: calc((100% - 50px) / 2);
     display: flex;
     flex-direction: column;
 }
-
 .footer__logo-name {
     margin-bottom: 7px;
 }
-
 .footer__socseti {
     margin-right: 160px;
 }
-
-
 .footer__instagram {
     margin-left: 13px;
     margin-right: 13px;
@@ -4085,7 +4292,7 @@ height: calc((100% - 50px) / 2);
         margin: 0px 0px 0px 0px;
      /* display: none;*/
         position: absolute;
-        right: 50px;
+        right: 30px;
         width: 30px;
         height: 30px;
         border: 0px;
@@ -4142,20 +4349,20 @@ height: calc((100% - 50px) / 2);
     .header__blanchard-link {
         margin-left: auto;
         margin-right: auto;
-        padding-left: 20px;
+        padding-left: 15px;
         padding-bottom: 25px;
         padding-top: 30px;
         width: 222px;
     }
-    .header__blanchard-link:focus-visible {
+ .header__blanchard-link:focus-visible {
         border: none;
     }
-    .header__blanchard-img {
+ .header__blanchard-img {
          width: 187px;
         height: 42px;
     }
 
-    .header__burger-icon1,.header__burger-icon2,.header__burger-icon3  {
+ .header__burger-icon1,.header__burger-icon2,.header__burger-icon3 {
         display: block;
         margin-bottom: 8px;
         width: 36px;
@@ -4164,22 +4371,22 @@ height: calc((100% - 50px) / 2);
         transition-duration: .3s;
         transition-property: display,transform;
     }
-    .header__burger-icon2 {
+ .header__burger-icon2 {
         margin-right: auto;
         transform: scaleX(0.8) translateX(-4px);
     }
-    .header__burger-icon3 {
+ .header__burger-icon3 {
         margin-right: auto;
         transform: scaleX(0.6) translateX(-10px);
     }
 
-    .nav__list {
+ .nav__list {
         margin: 100px 0 100px 0;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
     }
-    .nav-menu__adaptiv {
+ .nav-menu__adaptiv {
         padding: 5px 5px 5px 48px;
         position: absolute;
         width: 100%;
@@ -4314,7 +4521,7 @@ height: calc((100% - 50px) / 2);
         margin-right: auto;
         margin-left: auto;
         padding-left: 50px;
-        padding-right: 50px;
+        padding-right: 29px;
         padding-top: 0px;
         padding-bottom: 0px;
     }
@@ -4405,107 +4612,114 @@ height: calc((100% - 50px) / 2);
         border: 25px solid rgba(194, 131, 243, 0.4);
         cursor: pointer;
     }
+    .mySwiper .swiper-slide {
+    /* background-color: grey; */
+    position: relative;
+    cursor: pointer;
+    height: calc((100% - 105px));
+}
+
         /***картинки для слайдов №1   ***/
     .slide1-img1 {
-        background: url(../img/Rectangle_70_1024.jpg);
+        background: url(../img/Rectangle_70_1024.jpg) center;
         background-size: cover;
     }
     .slide1-img2 {
-        background: url(../img/Rectangle_69_1024.jpg);
+        background: url(../img/Rectangle_69_1024.jpg) center;
         background-size: cover;
     }
     .slide1-img3 {
-        background: url(../img/Rectangle_72_1024.jpg);
+        background: url(../img/Rectangle_72_1024.jpg) center;
         background-size: cover;
     }
-    .slide1-img4 {
-        background: url(../img/Rectangle_73_1024.jpg);
+ .slide1-img4 {
+        background: url(../img/Rectangle_73_1024.jpg) center;
         background-size: cover;
     }
-    /***картинки для слайдов №2   ***/
-    .slide1-img5 {
-        background: url(../img/Rectangle68_1024.jpg);
+    /***картинки для слайдов №2 ***/
+ .slide1-img5 {
+        background: url(../img/Rectangle68_1024.jpg) center;
         background-size: cover;
     }
-    .slide1-img6 {
-        background: url(../img/Rectangle70_1024.jpg);
+ .slide1-img6 {
+        background: url(../img/Rectangle70_1024.jpg) center;
         background-size: cover;
     }
-    .slide2-img1 {
-        background: url(../img/Rectangle71_1024.jpg);
+ .slide2-img1 {
+        background: url(../img/Rectangle71_1024.jpg) center;
         background-size: cover;
     }
-    .slide2-img2 {
-        background: url(../img/Rectangle72_1024.jpg);
+ .slide2-img2 {
+        background: url(../img/Rectangle72_1024.jpg) center;
         background-size: cover;
     }
-    /***картинки для слайдов №3   ***/    
-    .slide2-img3 {
-        background: url(../img/Rectangle104_1024.jpg);
+    /***картинки для слайдов №3 ***/    
+ .slide2-img3 {
+        background: url(../img/Rectangle104_1024.jpg) center;
         background-size: cover;
     }
-    .slide2-img4 {
-        background: url(../img/Rectangle69_1024.jpg);
+ .slide2-img4 {
+        background: url(../img/Rectangle69_1024.jpg) center;
         background-size: cover;
     }
-    .slide2-img5 {
-        background: url(../img/Rectangle105_1024.jpg);
+ .slide2-img5 {
+        background: url(../img/Rectangle105_1024.jpg) center;
         background-size: cover;
     }
-    .slide2-img6 {
-        background: url(../img/Rectangle73_1024.jpg);
+ .slide2-img6 {
+        background: url(../img/Rectangle73_1024.jpg) center;
         background-size: cover;
     }
-    /***картинки для слайдов №4   ***/
+    /***картинки для слайдов №4 ***/
     .slide3-img1 {
-        background: url(../img/Rectangle77_1024.jpg);
+        background: url(../img/Rectangle77_1024.jpg) center;
         background-size: cover;
     }
     .slide3-img2 {
-        background: url(../img/Rectangle74_1024.jpg);
+        background: url(../img/Rectangle74_1024.jpg) center;
         background-size: cover;
     }
     .slide3-img3 {
-        background: url(../img/Rectangle78_1024.jpg);
+        background: url(../img/Rectangle78_1024.jpg) center;
         background-size: cover;
     }
     .slide3-img4 {
-        background: url(../img/Rectangle75_1024.jpg);
+        background: url(../img/Rectangle75_1024.jpg) center;
         background-size: cover;
     }
 
     .slide3-img5 {
-        background: url(../img/Rectangle73_1024.jpg);
+        background: url(../img/Rectangle73_1024.jpg) center;
         background-size: cover;
     }
     .slide3-img6 {
-        background: url(../img/Rectangle71_1024.jpg);
+        background: url(../img/Rectangle71_1024.jpg) center;
         background-size: cover;
     }
   /***картинки для слайдов №5   ***/
     .slide4-img1 {
-        background: url(../img/Rectangle79_1024.jpg);
+        background: url(../img/Rectangle79_1024.jpg) center;
         background-size: cover;
     }
     .slide4-img2 {
-        background: url(../img/Rectangle87_1024.jpg);
+        background: url(../img/Rectangle87_1024.jpg) center;
         background-size: cover;
     }
     .slide4-img3 {
-        background: url(../img/Rectangle76_1024.jpg);
+        background: url(../img/Rectangle76_1024.jpg) center;
         background-size: cover;
     }
     .slide4-img4 {
-        background: url(../img/Rectangle89_1024.jpg);
+        background: url(../img/Rectangle89_1024.jpg) center;
         background-size: cover;
     }
         /***картинки для слайдов №6   ***/
     .slide4-img5 {
-        background: url(../img/Rectangle81_1024.jpg);
+        background: url(../img/Rectangle81_1024.jpg) center;
         background-size: cover;
     }
     .slide4-img6 {
-        background: url(../img/Rectangle91_1024.jpg);
+        background: url(../img/Rectangle91_1024.jpg) center;
         background-size: cover;
     }
 
@@ -4519,34 +4733,50 @@ height: calc((100% - 50px) / 2);
         padding-left: 33px;
         margin-left: 18px;
     }
+    .mySwiper .swiper-slide {
+        /* background-color: grey; */
+        position: relative;
+        cursor: pointer;
+        height: calc((100% - 15px));
+    }
     .swiper-button-next {
-        top: 14.5%;
-        left: 47.5%;
+        top: 12.5%;
+        left: 21%;
     }
     .swiper-button-prev {
-        top: 14.5%;
-        left: 37.8%;
-    }
-    .gallery__filter {
-        width: 45%;
+        top: 12.5%;
+        left: 5%;
     }
     .swiper-pagination {
-        left: 41%;
-        top: 115px;
+        left: 11%;
+        top: 39px;
     }
-    .mySwiper .swiper-wrapper {
-        height: 610px;
+
+    .gallery__filter {
+        width: 46%;
     }
-    .coments-gallery {
-        padding-bottom: 50px;
-        padding-left: 0;
-        padding-right: 0;
+    .gallery__title {
+        margin-top: 8px;
+        margin-bottom: 0px;
+        flex-grow: 0;
     }
     .gallery__text {
-        position: relative;
-        color: transparent;
+        margin: 0;
+        margin-top: 15px;
+        flex-grow: 0;
+        /* padding-top: 17px;*/
     }
-    .gallery__text::before {
+    .gallery__choices {
+        flex-grow: 1;
+    }
+    .gallery-checbox {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        flex-grow: 0;
+        margin-bottom: 35px;
+    }
+/*    .gallery__text::before {
         content: "Фильтр:";
         position: absolute;
         top: 15px;
@@ -4555,11 +4785,31 @@ height: calc((100% - 50px) / 2);
         right: 0px;
         color: white;
         background-color: transparent;
+    }*/
 
-       /*z-index: -1;*/
-       /* opacity: 0;*/
-
+    .mySwiper .swiper-wrapper {
+        height: 330px;
     }
+    .coments-gallery {
+        padding-bottom: 50px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .choices {
+        padding-top: 0;
+        margin-top: 7px;
+        /* margin-bottom: 24px; */
+    }
+    .choices__inner {
+        border-radius: 12px;
+        padding: 7.5px 14.5px;
+        font-size: 14px;
+    }
+   /* .gallery__text {
+        position: relative;
+        color: transparent;
+    }*/
+
     /******/
 }
 
@@ -4577,8 +4827,12 @@ height: calc((100% - 50px) / 2);
         max-width: 768px;
         margin-right: auto;
         margin-left: auto;
-        padding-left: 50px;
-        padding-right: 50px;
+        padding-left: 49.5px;
+        padding-right: 22.5px;
+    }
+    .about-us__text {
+        padding-bottom: 69px;
+        line-height: 32px;
     }
     .swiper-slide1 {
         max-width: 100%;
@@ -4590,6 +4844,7 @@ height: calc((100% - 50px) / 2);
     .header__container {
         padding-top: 0px;
         padding-bottom: 0px;
+        padding-right: 21px;
         display: flex;
         align-items: center;
         height: 100%;
@@ -4740,13 +4995,13 @@ height: calc((100% - 50px) / 2);
         opacity: 0.8;
         z-index: 11;
         transition: top .3s ease-out 0.1s;
-/*        transition-duration: .3s;
-        transition-property: display,transform;
-        display: none;*/
+/* transition-duration: .3s;
+ transition-property: display,transform;
+ display: none;*/
     }
     .nav__enter-link {
         display: none;
-    /*    margin-top: 20px;*/
+    /* margin-top: 20px;*/
     }
     .nav__enter-link:hover {
         color: #FFFFFF; 
@@ -4754,7 +5009,7 @@ height: calc((100% - 50px) / 2);
     .nav__enter-link-activ {
         display: none;
     }
-    .nav__enter-link-mobile {
+     .nav__enter-link-mobile {
         display: block;
         padding: 17px 100px;
         margin-bottom: 45px;
@@ -4818,7 +5073,6 @@ height: calc((100% - 50px) / 2);
     .nav__enter-link-mobile:active path {
         fill: #ffffff;
         d: path("M9.62056 9.09278L10.6389 10.1111L14.25 6.5L10.6389 2.88889L9.62056 3.90722L11.4839 5.77778H0V7.22222H11.4839L9.62056 9.09278ZM16.0556 0H5.94444C5.14278 0 4.5 0.65 4.5 1.44444V4.33333H5.94444V1.44444H16.0556V11.5556H5.94444V8.66667H4.5V11.5556C4.5 12.35 5.14278 13 5.94444 13H16.0556C16.85 13 17.5 12.35 17.5 11.5556V1.44444C17.5 0.65 16.85 0 16.0556 0Z");
-
     }*/
 
     .nav__enter-link-mobile:focus {
@@ -4852,7 +5106,7 @@ height: calc((100% - 50px) / 2);
         padding-left: 0;
         margin-left: 50px;
         padding-right: 0;
-        margin-right: 50px;
+        margin-right: 15px;
 
     }
     .touch-beautiful__description {
@@ -4882,11 +5136,10 @@ height: calc((100% - 50px) / 2);
         height: auto;
     }
     .touch-beautiful__btn {
-        margin-top: 2px;
+        margin-top: 4px;
         margin-bottom: 98px;
         padding-left: 33px;
     }
-
 
     .burger__is-activ{
         margin: 0;
@@ -4949,23 +5202,28 @@ height: calc((100% - 50px) / 2);
     }
     
     .mySwiper {
+        margin-top: 0px;
+        padding-top: 60px;
+        padding-left: 0px;
         height: auto;
         display: flex;
         flex-direction: column;
       }
-      .mySwiper .swiper-wrapper {
-        order: 1;
-        margin-bottom: 40px;
-      }
+    .mySwiper .swiper-wrapper {
+       order: 1;
+       margin-bottom: 40px;
+    }
       /*
       .swiper-right-btns {
         order: 2;
         margin-bottom: 0;
       }*/
-      .gallery__filter {
-        margin-bottom: 40px;
-      }
-
+    .gallery__filter {
+       margin-bottom: 35px;
+    }
+    .mySwiper .swiper-slide {
+        height: calc(100% + 24px);
+    }
               /***картинки для слайдов №1   ***/
     .slide1-img1 {
         background: url(../img/Rectangle70_768.jpg);
@@ -5074,9 +5332,12 @@ height: calc((100% - 50px) / 2);
     }
     .gallery__text {
         position: relative;
-        color: transparent;
+     /*   color: transparent;*/
     }
-    .gallery__text::before {
+    .gallery__choices {
+        height: 95px;
+    }
+/*    .gallery__text::before {
         content: "Фильтр:";
         position: absolute;
         top: 15px;
@@ -5085,15 +5346,11 @@ height: calc((100% - 50px) / 2);
         right: 0px;
         color: white;
         background-color: transparent;
-
-       /*z-index: -1;*/
-       /* opacity: 0;*/
-
-    }
-    .mySwiper {
+    }*/
+/*    .mySwiper {
         padding-top: 2px;
         padding-left: 0px;
-    }
+    }*/
     .gallery__filter {
         width: 42%;
     }
@@ -5104,19 +5361,19 @@ height: calc((100% - 50px) / 2);
         padding-left: 0px;
     }
     .swiper-button-next {
-        top: 29%;
-        left: 19.5%;
+        top: 5.8%;
+        left: 15.1%;
     }
     .swiper-button-prev {
-        top: 29%;
-        left: 6.8%;
+        top: 5.8%;
+        left: 0.2%;
     }
     .mySwiper .swiper-wrapper {
-        height: 610px; 
+        height: 306px; 
     }
     .swiper-pagination {
-        top: 28.5%;
-        left: 12%;
+        top: 2.2%;
+        left: 5.9%;
     }
 }
 /**************************** 425 - 320 ************************************************************************/
@@ -5186,7 +5443,6 @@ height: calc((100% - 50px) / 2);
         display: none;
         margin-top: 20px;
     }
-
     .nav-menu__adaptiv{
         display: none;
     }
@@ -5208,7 +5464,6 @@ height: calc((100% - 50px) / 2);
         margin-bottom: 10px;
         width: 100%;
         max-width: 358px;
-
         height: auto;
         font-family: "Open Sans" ,sans-serif;
         font-style: normal;
@@ -5221,7 +5476,6 @@ height: calc((100% - 50px) / 2);
         margin: 0px 0px 18px 0px;
         width: 100%;
         max-width: 365px;
-
         height: 86px;
         font-family: "Open Sans" ,sans-serif;
         font-style: normal;
@@ -5289,11 +5543,11 @@ height: calc((100% - 50px) / 2);
     .header__container {
         padding-top: 0px;
         padding-bottom: 0px;
-        padding-right: 10px;
+        padding-right: 14px;
         display: flex;
         align-items: center;
-        height: 100%;
-        height: 45px;
+    /*    height: 100%;*/
+        height: 46px;
     }
     .header__nav {
         width: 100%;
@@ -5577,42 +5831,42 @@ height: calc((100% - 50px) / 2);
         display: none;
     }
     
-    .touch-beautiful {
+ .touch-beautiful {
         height: 100%;
     }
     
-    .touch-beautiful__description {
+ .touch-beautiful__description {
         margin: 0px 0 56px 0px;
         position: relative;
-    /*    width: 100%;*/
+    /* width: 100%;*/
         top: 12px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-    .touch-beautiful__alignment {
-     /*   width: 100%;*/
+ .touch-beautiful__alignment {
+        width: 100%;
         position: relative;
-    /*    margin: auto;*/
+        /* margin: auto; */
         padding-top: 22px;
         padding-bottom: 0;
         padding-left: 0;
-        margin-left: 30px;
+        margin-left: 0px;
         padding-right: 0;
-        margin-right: 30px;
+        /* margin-right: 30px; */
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: flex-start;
     }
-    .touch-beautiful__title {
+ .touch-beautiful__title {
         margin-top: 0px;
         margin-left: 0px;
         margin-bottom: 13px;
         width: 100%;
         max-width: 258px;
-/*        width: 267px;*/
+/* width: 267px;*/
         height: auto;
         font-family: "Open Sans" ,sans-serif;
         font-style: normal;
@@ -5620,14 +5874,14 @@ height: calc((100% - 50px) / 2);
         font-size: 32px;
         line-height: 37px;
         text-align: center;
-     /*   letter-spacing: 1.6px;*/
+     /* letter-spacing: 1.6px;*/
     }
-    .touch-beautiful__text {
+ .touch-beautiful__text {
         padding-left: 0px;
-        margin: 0px 0px 20px -3px;
-     /*   width: 100%;*/
+        margin: 0px 0px 18px 0px;
+     /* width: 100%;*/
         max-width: 265px;
-/*        width: 265px;*/
+/* width: 265px;*/
         height: 86px;
         font-family: "Open Sans" ,sans-serif;
         font-style: normal;
@@ -5636,13 +5890,13 @@ height: calc((100% - 50px) / 2);
         line-height: 16px;
         text-align: center;
     }
-    .touch-beautiful__btn {
+ .touch-beautiful__btn {
         margin-bottom: 0px;
- /*       margin: 0px;*/
+ /* margin: 0px;*/
         display: inline-block;
         padding: 9px 15px;
-    /*    width: 200px;*/
-    /*    height: 40px;*/
+    /* width: 200px;*/
+        height: 40px;
         font-family: "Open Sans" ,sans-serif;
         font-style: normal;
         font-weight: bold;
@@ -5653,11 +5907,11 @@ height: calc((100% - 50px) / 2);
         border-radius: 100px;
         z-index: 0;
     }
-    .swiper-button-next, .swiper-button-prev {
+ /*.swiper-button-next, .swiper-button-prev {
         width: calc(var(--swiper-navigation-size)/ 88 * 27);
     }
-
-    .burger__is-activ{
+*/
+ .burger__is-activ{
         margin: 0;
         display: inline-block;
         width: 25px;
@@ -5666,7 +5920,7 @@ height: calc((100% - 50px) / 2);
         cursor: pointer;
         z-index: 12;
     }
-    .burger__is-activ .header__burger-icon1 {
+ .burger__is-activ .header__burger-icon1 {
         transform: translateY(8px) rotate(45deg)
     }
     .burger__is-activ .header__burger-icon2 {
@@ -5703,7 +5957,7 @@ height: calc((100% - 50px) / 2);
         transition-property: display,transform;
         transform: translateY(-2px) rotate(45deg);
     }
-    .header__search-form-close2 {
+ .header__search-form-close2 {
         display: block;
         margin-bottom: 0px;
         width: 21px;
@@ -5713,7 +5967,7 @@ height: calc((100% - 50px) / 2);
         transition-property: display,transform;
         transform: translateY(-4px) rotate(-45deg);
     }
-    .header__search-background {
+ .header__search-background {
         /* display: none; */
         width: 100%;
         top: -1000px;
@@ -5730,45 +5984,47 @@ height: calc((100% - 50px) / 2);
         /* transform: translateY(-1000px); */
         transition: top .4s ease-in-out;
     }
-    .header__search-background--revealed {
+ .header__search-background--revealed {
         top: 0px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: flex-end;
         transition: top .4s ease-out;
-    /*    transform: translateY(1000px);*/
+    /* transform: translateY(1000px);*/
 
 
     }
-    .adout-us__title {
+ .adout-us__title {
         margin: 0;
         padding-top: 38px;
         padding-bottom: 0px;
         font-size: 28px;
        }
-    .about-us__text {
+ .about-us__text {
         margin: 0;
-        padding-bottom: 50px;
+        padding-bottom: 48px;
         font-size: 14px;
         line-height: 28px;
         letter-spacing: 0.2px;
     }
 
-    .gallery-background {
+ .gallery-background {
         flex-direction: column;
     }
 
-    .gallery__title {
-        padding-top: 36px;
-        font-size: 28px;
-    }
-    .gallery__text {
+ .gallery__title {
+    /*    padding-top: 36px;*/
+    margin-bottom: 0px;
+    font-size: 28px;
+
+}
+ .gallery__text {
         position: relative;
         color: transparent;
         padding-top: 0px;
     }
-    .gallery__text::before {
+ .gallery__text::before {
         content: "Фильтр:";
         position: absolute;
         top: 0px;
@@ -5784,8 +6040,8 @@ height: calc((100% - 50px) / 2);
 
     }
 
-    .choices {
-        padding-top: 0px;
+ .choices {
+        padding-top: 3px;
     }
     .coments-gallery {
         position: absolute;
@@ -5825,41 +6081,41 @@ height: calc((100% - 50px) / 2);
         background: url(../img/Rectangle138_320.jpg);
         background-size: cover;
     }
-    .slide2-img2 {
+ .slide2-img2 {
         background: url(../img/Rectangle140_320.jpg);
         background-size: cover;
     }
     
-    .slide2-img3 {
+ .slide2-img3 {
         background: url(../img/Rectangle141_320.jpg);
         background-size: cover;
     }
-    .slide2-img4 {
+ .slide2-img4 {
         background: url(../img/Rectangle144_320.jpg);
         background-size: cover;
     }
-    .slide2-img5 {
+ .slide2-img5 {
         background: url(../img/Rectangle105_320.jpg);
         background-size: cover;
     }
-    .slide2-img6 {
+ .slide2-img6 {
         background: url(../img/Rectangle145_320.jpg);
         background-size: cover;
     }
    
-    .slide3-img1 {
+ .slide3-img1 {
         background: url(../img/Rectangle77_320.jpg);
         background-size: cover;
     }
-    .slide3-img2 {
+ .slide3-img2 {
         background: url(../img/Rectangle78_320.jpg);
         background-size: cover;
     }
-    .slide3-img3 {
+ .slide3-img3 {
         background: url(../img/Rectangle74_320.jpg);
         background-size: cover;
     }
-    .slide3-img4 {
+ .slide3-img4 {
         background: url(../img/Rectangle75_320.jpg);
         background-size: cover;
     }
@@ -5877,59 +6133,64 @@ height: calc((100% - 50px) / 2);
         background: url(../img/Rectangle87_320.jpg);
         background-size: cover;
     }
-    .slide4-img2 {
+ .slide4-img2 {
         background: url(../img/Rectangle89_320.jpg);
         background-size: cover;
     }
-    .slide4-img3 {
+ .slide4-img3 {
         background: url(../img/Rectangle81_320.jpg);
         background-size: cover;
     }
-    .slide4-img4 {
+ .slide4-img4 {
         background: url(../img/Rectangle83_320.jpg);
         background-size: cover;
     }
 
-    .slide4-img5 {
+ .slide4-img5 {
         background: url(../img/Rectangle91_320.jpg);
         background-size: cover;
     }
-    .slide4-img6 {
+ .slide4-img6 {
         background: url(../img/Rectangle85_320.jpg);
         background-size: cover;
     }
-    .mySwiper {      
+ .mySwiper { 
         padding-top: 0px; 
         padding-left: 0px;
-        padding-bottom: 0px;
-        margin-bottom: 120px;
+        padding-bottom: 99px;
+        margin-bottom: 0px;
+        margin-top: 27px;
     }
-    .mySwiper .swiper-wrapper {
-        height: 500px;
+ .mySwiper .swiper-wrapper {
+    height: 368px;
     }
-    .mySwiper .swiper-slide {
-        height: calc(100% - 135px);
+ .mySwiper .swiper-slide {
+        height: 100%;
+        /*height: calc(100% - 135px);*/
     }
-    .gallery__filter {
-       width: 100%;
+ .gallery__filter {
+        margin-top: 28px;
+        margin-bottom: 0px;
+        width: 100%;
+
     }
-    .gallery__choices {
-        height: 85px;
+ .gallery__choices {
+        height: 80px;
     }
-    .swiper-button-next {
-        top: 74%;
-        left: 63.5%;
+ .swiper-button-next {
+        top: 87%;
+        left: 62%;
     }
-    .swiper-button-prev {
-        top: 74%;
-        left: 31.8%;
+ .swiper-button-prev {
+        top: 87%;
+        left: 28%;
     }
-    .swiper-pagination {
+ .swiper-pagination {
         left: 43%;
-        top: 73%;
-        width: 15%;
+        top: 84%;
+        width: 16%;
     }
-    .adout-us {
+ .adout-us {
         margin-bottom: -10px;
     }
 }

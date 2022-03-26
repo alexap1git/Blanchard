@@ -54,9 +54,9 @@
                         <li class="nav__item">
                             <a href="#events" class="nav__events nav__item-link">События</a>
                         </li>
-                        <li class="nav__item">
+<!--                    <li class="nav__item">
                             <a href="#publications" class="nav__publications nav__item-link">Издания</a>
-                        </li>
+                        </li> -->
                         <li class="nav__item">
                             <a href="#project" class="nav__project nav__item-link">Проекты</a>
                         </li>
@@ -336,12 +336,12 @@
             <div class="gallery-background container">
                 <div class="gallery__filter">
                     <h3 class="gallery__title" id="gallery">Галерея</h3> 
-                    <p class="gallery__text">Фильтровать по:</p> 
+                    <p class="gallery__text">Фильтр:</p> 
                     <div class="gallery__choices">
                         <select name="select" id="select-id">
-                            <option value="Автор">Автор</option>
-                            <option value="">Направление</option>
-                            <option value="">Техника</option>
+                            <option value="Живопись">Живопись</option>
+                            <option value="">Скульптура</option>
+                            <option value="">Рисунок</option>
                         </select>
                         <script src="js/choices.min.js"></script>
                         <script>
@@ -351,12 +351,46 @@
                             });
                         </script>
                     </div>
-                    <p class="coments-gallery">
+                    <div class="gallery-checbox">
+                    <!--<p class="gallery-check">Категории:</p>-->    
+                        <label for="check-a" class="lable">                
+                            <input type="checkbox" name="check" class="checke1" id="check-a"> 
+                            <span>
+                            </span>
+                        </label>  
+                        <label for="check-b" class="lable">
+                            <input type="checkbox" name="check" class="checke2" id="check-b">
+                            <span>
+                            </span>
+                        </label>  
+                        <label for="check-c" class="lable">
+                            <input type="checkbox" name="check" class="checke3" id="check-c">
+                            <span>
+                            </span>
+                        </label>  
+   
+                    </div>
+<!--                <p class="coments-gallery">
                         Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний <a href="/">авторизуйтесь</a>, либо воспользуйтесь лицензией. 
-                    </p>
+                    </p> -->
                 </div>
                 <!-- Swiper -->
                 <div class="swiper mySwiper">
+                    <div class="swiper-button-next">
+                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 -1.01779e-06 15 -6.55671e-07C6.71573 -2.93554e-07 2.93554e-07 6.71573 6.55671e-07 15C1.01779e-06 23.2843 6.71573 30 15 30Z" fill="#666666"/>
+                            <path d="M15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 -1.01779e-06 15 -6.55671e-07C6.71573 -2.93554e-07 2.93554e-07 6.71573 6.55671e-07 15C1.01779e-06 23.2843 6.71573 30 15 30Z" stroke="black"/>
+                            <path d="M14 20L19 15L14 10" stroke="white"/>
+                        </svg>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev">
+                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15 30C6.71573 30 8.89561e-07 23.2843 1.25168e-06 15C1.61379e-06 6.71573 6.71573 -1.01779e-06 15 -6.55671e-07C23.2843 -2.93554e-07 30 6.71573 30 15C30 23.2843 23.2843 30 15 30Z" fill="#666666"/>
+                            <path d="M15 30C6.71573 30 8.89561e-07 23.2843 1.25168e-06 15C1.61379e-06 6.71573 6.71573 -1.01779e-06 15 -6.55671e-07C23.2843 -2.93554e-07 30 6.71573 30 15C30 23.2843 23.2843 30 15 30Z" stroke="black"/>
+                            <path d="M16 20L11 15L16 10" stroke="white"/>
+                        </svg>
+                    </div>
                     <div class="swiper-wrapper">    
                         <div class="slide1-img1 swiper-slide">
                                 <!--<div class="slide-img__hover"></div>-->
@@ -456,9 +490,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-pagination"></div>
+
+
  
                 <!-- Swiper JS -->
                 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
@@ -469,7 +502,7 @@
                     slidesPerView: 3,
                     slidesPerGroup: 3,
                     grid: {
-                        rows: 2
+                        rows: 1
                     },
                     spaceBetween: 30,
                     pagination: {
@@ -487,12 +520,26 @@
                         grid: {
                             rows: 1
                         },
-                        spaceBetween: 0
+                        spaceBetween: 10
                         },
-                        768: {
+                        320: {
+                        slidesPerView: 1,
+                        grid: {
+                            rows: 1
+                        },
+                        spaceBetween: 20
+                        },
+                        690: {
                         slidesPerView: 2,
                         grid: {
-                            rows: 2
+                            rows: 1
+                        },
+                        spaceBetween: 38
+                        },
+                        800: {
+                        slidesPerView: 2,
+                        grid: {
+                            rows: 1
                         },
                         spaceBetween: 34
                         },
@@ -500,7 +547,7 @@
                         1200: {
                         slidesPerView: 3,
                         grid: {
-                            rows: 2
+                            rows: 1
                         },
                         spaceBetween: 50
                         }
