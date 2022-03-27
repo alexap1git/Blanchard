@@ -698,9 +698,13 @@ h2 {
     transition-duration: 500ms;
     transform: scaleY(1);
 }*/
+.menu__list {
+    display: none;
+}
 .active-list--item {
     transition-duration: 500ms;
     transform: scaleY(1);
+    display: block;
 }
 
 .menu__item-realizm,.menu__item-impressianizm,.menu__item-postimpressianizm,.menu__item-avangard,.menu__item-futurism  {
@@ -1378,7 +1382,7 @@ h2 {
 }
 .about-us__text {
     margin: 0;
-    padding-bottom: 65px;
+    padding-bottom: 67px;
     max-width: 1080px;
     font-weight: normal;
     font-size: 16px;
@@ -1402,8 +1406,8 @@ h2 {
     flex-direction: row;
 }
 .gallery__filter {
-    margin-top: 75px;
-    margin-bottom: 75px;
+    margin-top: 73px;
+    margin-bottom: 77px;
     width: 30%;
     display: flex;
     flex-direction: column;
@@ -1428,7 +1432,7 @@ h2 {
     /* padding-top: 17px; */
     font-family: "Open Sans" ,sans-serif;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 16px;
     line-height: 32px;
     color: #FFFFFF;
@@ -1456,16 +1460,27 @@ h2 {
     position: absolute;
     top: 1%;
 }
+
+.swiper-btns {
+    height: 90px;
+    width: 13%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+/*    margin-bottom: 40px;*/
+}
+
 .swiper-button-next {
-    top: 12%;
-    left: 12.7%;
+    position: relative;
+    margin-top: 1px;
     width: 30px;
     height: 30px;
 }
 
+
 .swiper-button-next:after {
     display: none;
-    /*content: "\203A";
+/*    content: "\203A";
     padding: 9px 13px;
     border-radius: 15px;
     border: 1px solid rgb(182, 181, 181);
@@ -1473,16 +1488,21 @@ h2 {
     color: white;
     font-size: small;*/
 }
+
 .swiper-button-prev {
-    top: 12%;
-    left: 4.3%;
+    position: relative;
     width: 30px;
     height: 30px;
+    margin-top: 0px;
+    margin-right: 15px;
+    margin-left: -7px;
+    padding-left: 0;
 }
+
 
  .swiper-button-prev:after {
      display: none;
- /*   content: '\2039';
+/*   content: '\2039';
     padding: 9px 13px;
     border-radius: 15px;
    border: 1px solid rgb(182, 181, 181);
@@ -1490,16 +1510,18 @@ h2 {
     color: white;
     font-size: small;*/
 }
+
 .swiper-pagination {
-    position: absolute;
-    left: 7.1%;
-    top: 9%;
+    position: relative;
     width: 65px;
-    height: 25px;
+    height: 16px;
+    margin-top: 22px;
+    margin-right: 10px;
     font-size: 16px;
     color: white;
     z-index: 15;
 }
+
 .choices{
     flex-grow: 1;
     padding-top: 8px;
@@ -1703,7 +1725,7 @@ h2 {
 }
 .lable {
     position: relative;
-    margin-bottom: 31px;
+    margin-bottom: 33px;
     padding-left: 24px;
     cursor: pointer;
     font-family: Open Sans;
@@ -2064,7 +2086,7 @@ h2 {
     overflow: hidden;
     margin-top: 75px;
     margin-bottom: 65px;
-    padding-top: 91px;
+/*    padding-top: 91px;*/
     padding-left: 48px;
     /* padding-bottom: 65px;*/
 }
@@ -4251,7 +4273,9 @@ h2 {
         background-size: cover;
 
     }
-
+    .swiper-btns {
+        width: 24%;
+    }
     .header__container {
         display: flex;
         justify-content: space-between;
@@ -4292,7 +4316,7 @@ h2 {
         margin: 0px 0px 0px 0px;
      /* display: none;*/
         position: absolute;
-        right: 30px;
+        right: 50px;
         width: 30px;
         height: 30px;
         border: 0px;
@@ -4521,7 +4545,7 @@ h2 {
         margin-right: auto;
         margin-left: auto;
         padding-left: 50px;
-        padding-right: 29px;
+        padding-right: 49px;
         padding-top: 0px;
         padding-bottom: 0px;
     }
@@ -4730,7 +4754,7 @@ h2 {
     }
     .mySwiper {
         max-width: 100%;
-        padding-left: 33px;
+        padding-left: 31px;
         margin-left: 18px;
     }
     .mySwiper .swiper-slide {
@@ -4740,17 +4764,20 @@ h2 {
         height: calc((100% - 15px));
     }
     .swiper-button-next {
-        top: 12.5%;
-        left: 21%;
+        margin-left: 0px;
+        margin-top: 0px;
+    /*    top: 12.5%;
+        left: 21%;*/
     }
     .swiper-button-prev {
-        top: 12.5%;
-        left: 5%;
+        margin-left: -11px;
+    /*    top: 12.5%;
+        left: 5%;*/
     }
-    .swiper-pagination {
+    /*.swiper-pagination {
         left: 11%;
         top: 39px;
-    }
+    }*/
 
     .gallery__filter {
         width: 46%;
@@ -4774,7 +4801,7 @@ h2 {
         flex-direction: column;
         align-items: flex-start;
         flex-grow: 0;
-        margin-bottom: 35px;
+        margin-bottom: 30px;
     }
 /*    .gallery__text::before {
         content: "Фильтр:";
@@ -4813,7 +4840,7 @@ h2 {
     /******/
 }
 
-/**************************** 768 - 320 ************************************************************************/
+/**************************** 768 ************************************************************************/
 @media (min-width:691px) and (max-width:800px) {  
     html,
      body {
@@ -4827,8 +4854,12 @@ h2 {
         max-width: 768px;
         margin-right: auto;
         margin-left: auto;
-        padding-left: 49.5px;
-        padding-right: 22.5px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .adout-us {
+        padding-left: 50.5px;
+        padding-right: 51.5px;
     }
     .about-us__text {
         padding-bottom: 69px;
@@ -4844,7 +4875,7 @@ h2 {
     .header__container {
         padding-top: 0px;
         padding-bottom: 0px;
-        padding-right: 21px;
+        padding-right: 44px;
         display: flex;
         align-items: center;
         height: 100%;
@@ -5203,7 +5234,7 @@ h2 {
     
     .mySwiper {
         margin-top: 0px;
-        padding-top: 60px;
+     /*   padding-top: 5px;*/
         padding-left: 0px;
         height: auto;
         display: flex;
@@ -5218,9 +5249,7 @@ h2 {
         order: 2;
         margin-bottom: 0;
       }*/
-    .gallery__filter {
-       margin-bottom: 35px;
-    }
+
     .mySwiper .swiper-slide {
         height: calc(100% + 24px);
     }
@@ -5337,6 +5366,14 @@ h2 {
     .gallery__choices {
         height: 95px;
     }
+    .choices__item {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+    }
+    .choices__list--single {
+        padding: 4px 16px 0px 0px;
+    }
 /*    .gallery__text::before {
         content: "Фильтр:";
         position: absolute;
@@ -5353,6 +5390,7 @@ h2 {
     }*/
     .gallery__filter {
         width: 42%;
+        margin-bottom: 0px;
     }
     .coments-gallery {
         position: absolute;
@@ -5360,20 +5398,25 @@ h2 {
         padding-bottom: 0px;
         padding-left: 0px;
     }
+    .swiper-btns {
+        height: 93px;
+        width: 22%;
+    }
     .swiper-button-next {
-        top: 5.8%;
-        left: 15.1%;
+    /*    top: 5.8%;
+        left: 15.1%;*/
     }
     .swiper-button-prev {
-        top: 5.8%;
-        left: 0.2%;
+        margin-left: -9px;
+    /*    top: 5.8%;
+        left: 0.2%;*/
     }
     .mySwiper .swiper-wrapper {
         height: 306px; 
     }
     .swiper-pagination {
-        top: 2.2%;
-        left: 5.9%;
+    /*    top: 2.2%;
+        left: 5.9%;*/
     }
 }
 /**************************** 425 - 320 ************************************************************************/
@@ -5861,9 +5904,9 @@ h2 {
         align-items: flex-start;
     }
  .touch-beautiful__title {
-        margin-top: 0px;
-        margin-left: 0px;
-        margin-bottom: 13px;
+        margin-top: -2px;
+        margin-left: 2px;
+        margin-bottom: 15px;
         width: 100%;
         max-width: 258px;
 /* width: 267px;*/
@@ -5997,16 +6040,16 @@ h2 {
     }
  .adout-us__title {
         margin: 0;
-        padding-top: 38px;
+        padding-top: 36px;
         padding-bottom: 0px;
         font-size: 28px;
        }
  .about-us__text {
-        margin: 0;
-        padding-bottom: 48px;
-        font-size: 14px;
-        line-height: 28px;
-        letter-spacing: 0.2px;
+    margin: 0;
+    padding-bottom: 40px;
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: 0;
     }
 
  .gallery-background {
@@ -6018,13 +6061,13 @@ h2 {
     margin-bottom: 0px;
     font-size: 28px;
 
-}
+    }
  .gallery__text {
         position: relative;
-        color: transparent;
+     /*   color: transparent;*/
         padding-top: 0px;
     }
- .gallery__text::before {
+/* .gallery__text::before {
         content: "Фильтр:";
         position: absolute;
         top: 0px;
@@ -6034,14 +6077,14 @@ h2 {
         color: white;
         background-color: transparent;
         font-size: 16px;
-
-       /*z-index: -1;*/
-       /* opacity: 0;*/
-
     }
-
- .choices {
+*/
+    .choices {
         padding-top: 3px;
+        opacity: 1;
+    }
+    .choices__inner {
+        min-height: 42px;
     }
     .coments-gallery {
         position: absolute;
@@ -6155,11 +6198,15 @@ h2 {
         background-size: cover;
     }
  .mySwiper { 
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
         padding-top: 0px; 
         padding-left: 0px;
-        padding-bottom: 99px;
+        padding-bottom: 21px;
         margin-bottom: 0px;
-        margin-top: 27px;
+        margin-top: 20px;
     }
  .mySwiper .swiper-wrapper {
     height: 368px;
@@ -6175,22 +6222,33 @@ h2 {
 
     }
  .gallery__choices {
-        height: 80px;
+        height: 81px;
     }
- .swiper-button-next {
+.swiper-btns {
+    margin-top: -12px;
+    margin-left: 5px;
+    /* height: 38%; */
+    width: 60%;
+    justify-content: center;
+}
+
+ /*.swiper-button-next {
         top: 87%;
         left: 62%;
-    }
- .swiper-button-prev {
+    }*/
+/* .swiper-button-prev {
+
         top: 87%;
         left: 28%;
-    }
- .swiper-pagination {
+    }*/
+ /*.swiper-pagination {
         left: 43%;
         top: 84%;
-        width: 16%;
-    }
- .adout-us {
+        margin-top: 88px;
+        width: 50%;
+    }*/
+
+/* .adout-us {
         margin-bottom: -10px;
-    }
+    }*/
 }
