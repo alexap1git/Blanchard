@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/choices.min.css">
-    <!--SimpleBar -->
+
     <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css" />
     <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
 
@@ -12,14 +12,10 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
-      <!-- Link Swiper's CSS -->
-    <!--<link rel="stylesheet" href="css/swiper1-bundle.min.css">-->
-    <!--<link rel="stylesheet" href="css/swiper2-bundle.min.css"> -->
-    <!--<link rel="stylesheet" href="css/swiper3-bundle.min.css"> -->
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <script src="js/index.js"></script>
+
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
@@ -29,44 +25,38 @@
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/ico" sizes="32x32" href="/icons/favicon32x32.ico">
+    <link rel="icon" type="image/ico" sizes="16x16" href="/icons/favicon16x16.ico">
+    <link rel="shortcut icon" href="/icons/favicon.ico">
     <title>Blanchard</title>
 </head>
 <body>
-    <header class="header__site">
-
-        
-        <!--<div class="header__nav">-->        
+    <header class="header">    
             <div class="container header__container">
                 <a href="/" aria-label="Ссылка на логотип Blanchard" class="header__blanchard-link">
                     <img src="img/Logo.svg" alt="логотип Blanchard" class="header__blanchard-img">    
                 </a>
-                <nav class="nav-menu__adaptiv">
+                <nav class="nav">
                     <ul id="nav-menu" class="nav__list" aria-label="Меню">
                         <li class="nav__item">
-                            <a href="#adout" class="nav__adout-us nav__item-link">О нас</a>
+                            <a href="#adout" class="nav__about-us nav__item-link" aria-label="О нас">О нас</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#gallery" class="nav__gallery nav__item-link">Галерея</a>
+                            <a href="#gallery" class="nav__gallery nav__item-link" aria-label="Галерея">Галерея</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#catalog" class="nav__catalog nav__item-link">Каталог</a>
+                            <a href="#catalog" class="nav__catalog nav__item-link" aria-label="Каталог">Каталог</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#events" class="nav__events nav__item-link">События</a>
-                        </li>
-<!--                    <li class="nav__item">
-                            <a href="#publications" class="nav__publications nav__item-link">Издания</a>
-                        </li> -->
-                        <li class="nav__item">
-                            <a href="#project" class="nav__project nav__item-link">Проекты</a>
+                            <a href="#events" class="nav__events nav__item-link" aria-label="События">События</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#contacts" class="nav__contacts nav__item-link">Контакты</a>
+                            <a href="#project" class="nav__project nav__item-link" aria-label="Проекты">Проекты</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#contacts" class="nav__contacts nav__item-link" aria-label="Контакты">Контакты</a>
                         </li>
                     </ul>
-                    <!--<button id="enter-link-mobile" class="nav__enter-link-mobile btn">--> 
-                       <!--<p class="nav__enter-link-mobile-text">Войти</p> --> 
-                    <!--</button>--> 
                     <div class="nav__enter">
                         <a href="/" aria-label="Войти" id="enter-link-mobile" class="nav__enter-link nav__enter-link-mobile">
                             <svg class="nav__enter-svg" width="13" height="13" viewbox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -79,7 +69,7 @@
 
                 <div class="header__search-label"></div>
                 <div class="header__search-background">
-                    <form action="https://jsonplaceholder.typicode.com/posts" autocomplete="on" method="POST" id="form__mobile" class="search_form-mobile">
+                    <form action="https://jsonplaceholder.typicode.com/posts" autocomplete="on" method="POST" id="form__mobile" class="header__search-form-mobile">
                         <button id="search-form" class="header__search-form btn" type="submit" aria-label="Поиск, мобильная версия">
                             <svg fill="none" height="22" viewbox="0 0 23 22" width="23" xmlns="http://www.w3.org/2000/svg">
                                 <rect fill="white" height="1.71695" transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6533)" width="6.8678"></rect>
@@ -87,9 +77,7 @@
                                 </path>
                             </svg>
                         </button>
-    
-                    <!-- <label class="header__search-label" for="search_input"></label>-->   
-                        <input class="header__search-input" name="search" placeholder="Поиск по сайту" id="search_input" type="search">   
+                        <input class="header__search-input" name="search" placeholder="" id="search_input" type="search">   
                         <div id="search-form-close" class="header__search-form-close">
                             <span class="header__search-form-close1"></span>
                             <span class="header__search-form-close2"></span>
@@ -102,10 +90,7 @@
                 <span class="header__burger-icon2"></span>
                 <span class="header__burger-icon3"></span>   
              </button>
-
-        <!--</div>-->  
-
-        <div class="section-search">
+        <div class="search">
             <div class="is-activ"></div>
             <div class="container search__container">
                 <ul class="search__list" aria-label="Меню поиска по разделам">
@@ -116,23 +101,22 @@
                                 <path d="M11 5L6 10L0.999997 5" stroke="white"/>
                             </svg>
                         </button>
-                        <ul class="menu__realizm menu__list" data-simplebar>
-                        <!-- <li  class="realizm-scrolls"></li>    -->   
-                            <li class="menu__item-realizm menu__img-realizm1">
-                                <a href="/" class="list-link list-link-realizm1">Тинторетто</a>
-                                <div class="scrolls__realizm1"></div>
+                        <ul class="search__menu-realizm search__menu-list" data-simplebar>
+                            <li class="search__menu-item-realizm search__menu-img-realizm1">
+                                <a href="/" class="list-link list-link-realizm1" aria-label="Тинторетто">Тинторетто</a>
+                                <div class="search__scrolls-realizm1"></div>
                             </li>
-                            <li class="menu__item-realizm menu__img-realizm2">
-                                <a href="/" class="list-link list-link-realizm2">Фридрих</a>
-                                <div class="scrolls__realizm2"></div>
+                            <li class="search__menu-item-realizm search__menu-img-realizm2">
+                                <a href="/" class="list-link list-link-realizm2" aria-label="Фридрих">Фридрих</a>
+                                <div class="search__scrolls-realizm2"></div>
                             </li>
-                            <li class="menu__item-realizm menu__img-realizm3">
-                                <a href="/" class="list-link list-link-realizm3">Леонардо</a>
-                                <div class="scrolls__realizm3"></div>
+                            <li class="search__menu-item-realizm search__menu-img-realizm3">
+                                <a href="/" class="list-link list-link-realizm3" aria-label="Леонардо">Леонардо</a>
+                                <div class="search__scrolls-realizm3"></div>
                             </li>
-                            <li class="menu__item-realizm menu__img-realizm4">
-                                <a href="/" class="list-link list-link-realizm4">Верроккьо</a>
-                                <div class="scrolls__realizm4"></div>
+                            <li class="search__menu-item-realizm search__menu-img-realizm4">
+                                <a href="/" class="list-link list-link-realizm4" aria-label="Верроккьо">Верроккьо</a>
+                                <div class="search__scrolls-realizm4"></div>
                             </li> 
                         </ul>    
                     </li>    
@@ -143,23 +127,22 @@
                                 <path d="M11 5L6 10L0.999997 5" stroke="white"/>
                             </svg>
                         </button> 
-                        <ul class="menu__impressianizm menu__list" data-simplebar> 
-                        <!--   <li class="impressianizm-scrolls"></li> >  --> 
-                            <li class="menu__item-impressianizm menu__img-impressianizm1">
-                                <a href="/" class="list-link list-link-impressianizm1">Пикассо</a>
-                                <div class="scrolls__impressianizm1"></div>
+                        <ul class="search__menu-impressianizm search__menu-list" data-simplebar> 
+                            <li class="search__menu-item-impressianizm search__menu-img-impressianizm1">
+                                <a href="/" class="list-link list-link-impressianizm1" aria-label="Пикассо">Пикассо</a>
+                                <div class="search__scrolls-impressianizm1"></div>
                             </li>
-                            <li class="menu__item-impressianizm menu__img-impressianizm2">
-                                <a href="/" class="list-link list-link-impressianizm2">Фридрих***</a>
-                                <div class="scrolls__impressianizm2"></div>
+                            <li class="search__menu-item-impressianizm search__menu-img-impressianizm2">
+                                <a href="/" class="list-link list-link-impressianizm2" aria-label="Фридрих***">Фридрих***</a>
+                                <div class="search__scrolls-impressianizm2"></div>
                             </li>
-                            <li class="menu__item-impressianizm menu__img-impressianizm3">
-                                <a href="/" class="list-link list-link-impressianizm3">Леонардо**</a>
-                                <div class="scrolls__impressianizm3"></div>
+                            <li class="search__menu-item-impressianizm search__menu-img-impressianizm3">
+                                <a href="/" class="list-link list-link-impressianizm3" aria-label="Фридрих***">Фридрих***</a>
+                                <div class="search__scrolls-impressianizm3"></div>
                             </li>
-                            <li class="menu__item-impressianizm menu__img-impressianizm4">
-                                <a href="/" class="list-link list-link-impressianizm4">Верроккьо*</a>
-                                <div class="scrolls__impressianizm4"></div>
+                            <li class="search__menu-item-impressianizm search__menu-img-impressianizm4">
+                                <a href="/" class="list-link list-link-impressianizm4" aria-label="Верроккьо*">Верроккьо*</a>
+                                <div class="search__scrolls-impressianizm4"></div>
                             </li>    
                         </ul>
                     </li>
@@ -170,23 +153,22 @@
                                 <path d="M11 5L6 10L0.999997 5" stroke="white"/>
                             </svg>
                         </button>
-                        <ul class="menu__postimpressianizm menu__list" data-simplebar>
-                        <!--<li class="postimpressianizm-scrolls"></li>-->    
-                            <li class="menu__item-postimpressianizm menu__img-postimpressianizm1">
-                                <a href="/" class="list-link list-link-postimpressianizm1">Пикассо****</a>
-                                <div class="scrolls__postimpressianizm1"></div>
+                        <ul class="search__menu-postimpressianizm search__menu-list" data-simplebar>
+                            <li class="search__menu-item-postimpressianizm search__menu-img-postimpressianizm1">
+                                <a href="/" class="list-link list-link-postimpressianizm1" aria-label="Пикассо****">Пикассо****</a>
+                                <div class="search__scrolls-postimpressianizm1"></div>
                             </li>
-                            <li class="menu__item-postimpressianizm menu__img-postimpressianizm2">
-                                <a href="/" class="list-link list-link-postimpressianizm2">Фридрих******</a>
-                                <div class="scrolls__postimpressianizm2"></div>
+                            <li class="search__menu-item-postimpressianizm search__menu-img-postimpressianizm2">
+                                <a href="/" class="list-link list-link-postimpressianizm2" aria-label="Фридрих******">Фридрих******</a>
+                                <div class="search__scrolls-postimpressianizm2"></div>
                             </li>
-                            <li class="menu__item-postimpressianizm menu__img-postimpressianizm3">
-                                <a href="/" class="list-link list-link-postimpressianizm3">Леонардо*****</a>
-                                <div class="scrolls__postimpressianizm3"></div>
+                            <li class="search__menu-item-postimpressianizm search__menu-img-postimpressianizm3">
+                                <a href="/" class="list-link list-link-postimpressianizm3" aria-label="Верроккьо*">Леонардо*****</a>
+                                <div class="search__scrolls-postimpressianizm3"></div>
                             </li>
-                            <li class="menu__item-postimpressianizm menu__img-postimpressianizm4">
-                                <a href="/" class="list-link list-link-postimpressianizm4">Верроккьо****</a>
-                                <div class="scrolls__postimpressianizm4"></div>
+                            <li class="search__menu-item-postimpressianizm search__menu-img-postimpressianizm4">
+                                <a href="/" class="list-link list-link-postimpressianizm4" aria-label="Верроккьо****">Верроккьо****</a>
+                                <div class="search__scrolls-postimpressianizm4"></div>
                             </li>                    
                         </ul>
                     </li>
@@ -197,23 +179,22 @@
                                 <path d="M11 5L6 10L0.999997 5" stroke="white"/>
                             </svg>
                         </button> 
-                        <ul class="menu__avangard menu__list" data-simplebar>
-                        <!--    <li class="avangard-scrolls"></li>-->
-                            <li class="menu__item-avangard menu__img-avangard1">
-                                <a href="/" class="list-link list-link-avangard1">Пикассо////</a>
-                                <div class="scrolls__avangard1"></div>
+                        <ul class="search__menu-avangard search__menu-list" data-simplebar>
+                            <li class="search__menu-item-avangard search__menu-img-avangard1">
+                                <a href="/" class="list-link list-link-avangard1" aria-label="Пикассо////">Пикассо////</a>
+                                <div class="search__scrolls-avangard1"></div>
                             </li>
-                            <li class="menu__item-avangard menu__img-avangard2">
-                                <a href="/" class="list-link list-link-avangard2">Фридрих/////</a>
-                                <div class="scrolls__avangard2"></div>
+                            <li class="search__menu-item-avangard search__menu-img-avangard2">
+                                <a href="/" class="list-link list-link-avangard2" aria-label="Фридрих/////">Фридрих/////</a>
+                                <div class="search__scrolls-avangard2"></div>
                             </li>
-                            <li class="menu__item-avangard menu__img-avangard3">
-                                <a href="/" class="list-link list-link-avangard3">Леонардо/////</a>
-                                <div class="scrolls__avangard3"></div>
+                            <li class="search__menu-item-avangard search__menu-img-avangard3">
+                                <a href="/" class="list-link list-link-avangard3" aria-label="Леонардо/////">Леонардо/////</a>
+                                <div class="search__scrolls-avangard3"></div>
                             </li>
-                            <li class="menu__item-avangard menu__img-avangard4">
-                                <a href="/" class="list-link list-link-avangard4">Верроккьо/////</a>
-                                <div class="scrolls__avangard4"></div>
+                            <li class="search__menu-item-avangard search__menu-img-avangard4">
+                                <a href="/" class="list-link list-link-avangard4" aria-label="Верроккьо/////">Верроккьо/////</a>
+                                <div class="search__scrolls-avangard4"></div>
                             </li>                   
                         </ul>
                     </li>
@@ -224,23 +205,22 @@
                                 <path d="M11 5L6 10L0.999997 5" stroke="white"/>
                             </svg>
                         </button> 
-                        <ul class="menu__futurism menu__list" data-simplebar>
-                        <!--<li class="avangard-scrolls"></li>  -->                
-                            <li class="menu__item-futurism menu__img-futurism1">
-                                <a href="/" class="list-link list-link-futurism1">Пикассо...........</a>
-                                <div class="scrolls__futurism1"></div>
+                        <ul class="search__menu-futurism search__menu-list" data-simplebar>         
+                            <li class="search__menu-item-futurism search__menu-img-futurism1">
+                                <a href="/" class="list-link list-link-futurism1" aria-label="Пикассо..........">Пикассо..........</a>
+                                <div class="search__scrolls-futurism1"></div>
                             </li>
-                            <li class="menu__item-futurism menu__img-futurism2">
-                                <a href="/" class="list-link list-link-futurism2">Фридрих...........</a>
-                                <div class="scrolls__futurism2"></div>
+                            <li class="search__menu-item-futurism search__menu-img-futurism2">
+                                <a href="/" class="list-link list-link-futurism2" aria-label="Фридрих..........">Фридрих..........</a>
+                                <div class="search__scrolls-futurism2"></div>
                             </li>
-                            <li class="menu__item-futurism menu__img-futurism3">
-                                <a href="/" class="list-link list-link-futurism3">Леонардо.........</a>
-                                <div class="scrolls__futurism3"></div>
+                            <li class="search__menu-item-futurism search__menu-img-futurism3">
+                                <a href="/" class="list-link list-link-futurism3" aria-label="Леонардо........">Леонардо........</a>
+                                <div class="search__scrolls-futurism3"></div>
                             </li>
-                            <li class="menu__item-futurism menu__img-futurism4">
-                                <a href="/" class="list-link list-link-futurism4">Верроккьо........</a>
-                                <div class="scrolls__futurism4"></div>
+                            <li class="search__menu-item-futurism search__menu-img-futurism4">
+                                <a href="/" class="list-link list-link-futurism4" aria-label="Верроккьо.......">Верроккьо.......</a>
+                                <div class="search__scrolls-futurism4"></div>
                             </li>    
                         </ul>
                     </li>
@@ -253,29 +233,12 @@
                             </path>
                         </svg>
                     </button>
-                    <!--  <img src="img/Group64.svg" alt="Поиск" class="search__form-item"> --> 
                     <input type="search" name="search" placeholder="Поиск по сайту" class="search__website-form">
                 </form>
             </div>
         </div>
         <div class="touch-beautiful">
-            <!--<div class="swiper-slide1"></div>
-            <div class="swiper-slide2"></div>
-            <div class="swiper-slide3"></div>
-            --> 
-
             <!--swiper -->
-            <style>
-                    
-
-          /*
-                .swiper-slide img {
-                  display: block;
-                  width: 100%;
-                  height: 100%;
-                  object-fit: cover;
-                }*/
-              </style>
             <div class="swiper touch-beautiful__swiper">
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
@@ -284,40 +247,17 @@
                   <div class="swiper-slide swiper-slide2"></div>
                   <div class="swiper-slide swiper-slide3"></div>
                 </div>
-                <!-- If we need pagination -->
-                <div class="touch-beautiful__swiper-pagination"></div>
-              
-                <!-- If we need navigation buttons -->
-                <!--<div class="swiper-btn-prev"></div>-->
-                <!--<div class="swiper-btn-next"></div>-->
-              
-                <!-- If we need scrollbar -->
-                <!-- <div class="swiper-scrollbar"></div>-->
                 <!-- Swiper JS -->
                 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
                 <!-- Initialize Swiper -->
-                <script>
-                var swiper = new Swiper(".touch-beautiful__swiper", {
-                   /*slidesPerView: 1,
-                   slidesPerGroup: 1,
-                    grid: {
-                        rows: 1,
-                    },*/
-                    /*slideClass: "touch-beautiful__swiper-slide",*/
-                    pagination: {
-                        el: ".touch-beautiful__swiper-pagination",
-                        clickable: true,
-                    },   
-                });
-                </script>
+                <script src="js/touch-beautiful__swiper.js"></script>
               </div>
             <!--swiper END-->
             <div class="container touch-beautiful__alignment">
                 <div class="touch-beautiful__description">           
                     <h1 class="touch-beautiful__title">Прикоснитесь к прекрасному</h1>
                     <p class="touch-beautiful__text">Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки для новых предложений.</p>
-                    <button class="touch-beautiful__btn btn">Подписаться на рассылку</button>
+                    <button class="touch-beautiful__btn btn" aria-label="Подписаться на рассылку">Подписаться на рассылку</button>
                 </div> 
             </div>
         </div>
@@ -327,8 +267,8 @@
 
     <main class="main">
         <!--О нас-->
-        <section class="adout-us container">
-            <h3 class="adout-us__title" id="adout">О нас</h3>
+        <section class="about-us container">
+            <h3 class="about-us__title" id="adout">О нас</h3>
             <p class="about-us__text">Ясность нашей позиции очевидна: семантический разбор внешних противодействий однозначно определяет каждого участника как способного принимать собственные решения касаемо распределения внутренних резервов и ресурсов. Не следует, однако, забывать, что высококачественный прототип будущего проекта влечет за собой процесс внедрения и модернизации модели развития. Повседневная практика показывает, что высокое качество позиционных исследований создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом комплекса распределения внутренних резервов и ресурсов. В рамках спецификации современных стандартов, действия представителей оппозиции набирают популярность среди определенных слоев населения, а значит, должны быть разоблачены.</p>
         </section>
         <!--Галерея-->
@@ -337,48 +277,39 @@
                 <div class="gallery__filter">
                     <h3 class="gallery__title" id="gallery">Галерея</h3> 
                     <p class="gallery__text">Фильтр:</p> 
-                    <div class="gallery__choices">
+                    <div class="gallery__choices" aria-label="Выпадающее меню">
                         <select name="select" id="select-id">
-                            <option value="Живопись">Живопись</option>
-                            <option value="">Скульптура</option>
-                            <option value="">Рисунок</option>
+                            <option value="Живопись"  aria-label="Живопись">Живопись</option>
+                            <option value="" aria-label="Рисунок">Рисунок</option>
+                            <option value="" aria-label="Скульптура">Скульптура</option>
                         </select>
                         <script src="js/choices.min.js"></script>
-                        <script>
-                            const element = document.querySelector('#select-id');
-                            const choices = new Choices(element, {
-                            searchEnabled: false, shouldSort: false, shouldSortItems: false,itemSelectText: '',callbackOnInit: 1, placeholder:true,renderChoiceLimit:2,  position: 'bottom',
-                            });
-                        </script>
+                        <script src="js/choices.setting.js"></script>
                     </div>
-                    <div class="gallery-checbox">
-                    <!--<p class="gallery-check">Категории:</p>-->    
+                    <div class="gallery-checbox"  aria-label="Чекбокс по векам">
                         <label for="check-a" class="lable">                
                             <input type="checkbox" name="check" class="checke1" id="check-a"> 
-                            <span>
+                            <span aria-label="Девятнадцатый век">
                             </span>
                         </label>  
                         <label for="check-b" class="lable">
                             <input type="checkbox" name="check" class="checke2" id="check-b">
-                            <span>
+                            <span aria-label="Двадцатый век">
                             </span>
                         </label>  
                         <label for="check-c" class="lable">
                             <input type="checkbox" name="check" class="checke3" id="check-c">
-                            <span>
+                            <span  aria-label="Современность">
                             </span>
                         </label>  
    
                     </div>
-<!--                <p class="coments-gallery">
-                        Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний <a href="/">авторизуйтесь</a>, либо воспользуйтесь лицензией. 
-                    </p> -->
                 </div>
                 <!-- Swiper -->
                 <div class="swiper mySwiper">
                     <div class="swiper-btns">
                         <div class="swiper-button-prev">
-                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg width="30" height="30" viewbox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M15 30C6.71573 30 8.89561e-07 23.2843 1.25168e-06 15C1.61379e-06 6.71573 6.71573 -1.01779e-06 15 -6.55671e-07C23.2843 -2.93554e-07 30 6.71573 30 15C30 23.2843 23.2843 30 15 30Z" fill="#666666"/>
                                 <path d="M15 30C6.71573 30 8.89561e-07 23.2843 1.25168e-06 15C1.61379e-06 6.71573 6.71573 -1.01779e-06 15 -6.55671e-07C23.2843 -2.93554e-07 30 6.71573 30 15C30 23.2843 23.2843 30 15 30Z" stroke="black"/>
                                 <path d="M16 20L11 15L16 10" stroke="white"/>
@@ -386,197 +317,582 @@
                         </div>
                         <div class="swiper-pagination"></div>
                         <div class="swiper-button-next">
-                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg width="30" height="30" viewbox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 -1.01779e-06 15 -6.55671e-07C6.71573 -2.93554e-07 2.93554e-07 6.71573 6.55671e-07 15C1.01779e-06 23.2843 6.71573 30 15 30Z" fill="#666666"/>
                                 <path d="M15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 -1.01779e-06 15 -6.55671e-07C6.71573 -2.93554e-07 2.93554e-07 6.71573 6.55671e-07 15C1.01779e-06 23.2843 6.71573 30 15 30Z" stroke="black"/>
                                 <path d="M14 20L19 15L14 10" stroke="white"/>
                             </svg>
                         </div>
-
                     </div>
                     <div class="swiper-wrapper">    
                         <div class="slide1-img1 swiper-slide">
-                                <!--<div class="slide-img__hover"></div>-->
-                            <!--<img src="img/Rectangle86.jpg" alt="img1" class="slide1-img1">--> 
                         </div>
                         <div class="slide1-img2 swiper-slide">
-                                                <!--<div class="slide-img__hover"></div>-->
-                            <!--<img src="img/Rectangle80.jpg" alt="img2" class="slide1-img2">-->
                         </div>
                         <div class="slide1-img3 swiper-slide">
-                                                <!--<div class="slide-img__hover"></div>-->
-                            <!--<img src="img/Rectangle90.jpg" alt="img3" class="slide1-img3">-->
                         </div>
                         <div class="slide1-img4 swiper-slide">
-                                                <!--<div class="slide-img__hover"></div>-->
-                            <!--<img src="img/Rectangle88.jpg" alt="img4" class="slide1-img4">-->
                         </div>
                         <div class="slide1-img5 swiper-slide">
-                                                <!--<div class="slide-img__hover"></div>-->
-                            <!--<img src="img/Rectangle82.jpg" alt="img5" class="slide1-img5">-->
                         </div>
                         <div class="slide1-img6 swiper-slide">
-                                                <!--<div class="slide-img__hover"></div>-->
-                            <!--<img src="img/Rectangle84.jpg" alt="img6" class="slide1-img6">-->
                         </div>
                         <div class="slide2-img1 swiper-slide">
-                                                <!--<div class="slide-img__hover"></div>-->
                         </div>
                         <div class="slide2-img2 swiper-slide">
-                                                <!--<div class="slide-img__hover"></div>-->
                         </div>
                         <div class="slide2-img3 swiper-slide">
-                                                <!--<div class="slide-img__hover"></div>-->
                         </div>
                         <div class="slide2-img4 swiper-slide">
-                                                <!--<div class="slide-img__hover"></div>-->
                         </div>
                         <div class="slide2-img5 swiper-slide">
-                                                <!--<div class="slide-img__hover"></div>-->
                         </div>
                         <div class="slide2-img6 swiper-slide">
-                                                <!--<div class="slide-img__hover"></div>-->
                         </div>
                         <div class="slide3-img1 swiper-slide">
-                                                <!--<div class="slide-img__hover"></div>-->
                         </div>
                         <div class="slide3-img2 swiper-slide">
-                                                <!--<div class="slide-img__hover"></div>-->
                         </div>
                         <div class="slide3-img3 swiper-slide">
-                                                <!--<div class="slide-img__hover"></div>-->
                         </div>
                         <div class="slide3-img4 swiper-slide">
-                                                <!--<div class="slide-img__hover"></div>-->
                         </div>
                         <div class="slide3-img5 swiper-slide">
-                                                <!--<div class="slide-img__hover"></div>-->
                         </div>
                         <div class="slide3-img6 swiper-slide">
-                                                <!--<div class="slide-img__hover"></div>-->
                         </div>
                         <div class="slide4-img1 swiper-slide">
-                                                <!--<div class="slide-img__hover"></div>-->
                         </div>
                         <div class="slide4-img2 swiper-slide">
-                                                <!--<div class="slide-img__hover"></div>-->
                         </div>
                         <div class="slide4-img3 swiper-slide">
-                                                <!--<div class="slide-img__hover"></div>-->
                         </div>
                         <div class="slide4-img4 swiper-slide">
-                                                <!--<div class="slide-img__hover"></div>-->
                         </div>
                         <div class="slide4-img5 swiper-slide">
-                                                <!--<div class="slide-img__hover"></div>-->
                         </div>
                         <div class="slide4-img6 swiper-slide">
-                                                <!--<div class="slide-img__hover"></div>-->
                         </div>
                         <div class="slide5-img1 swiper-slide">
-                                                <!--<div class="slide-img__hover"></div>-->
                         </div>
                         <div class="slide5-img2 swiper-slide">
-                                                <!--<div class="slide-img__hover"></div>-->
                         </div>
                         <div class="slide5-img3 swiper-slide">
-                                                <!--<div class="slide-img__hover"></div>-->
                         </div>
                         <div class="slide5-img4 swiper-slide">
-                                                <!--<div class="slide-img__hover"></div>-->
                         </div>
                         <div class="slide5-img5 swiper-slide">
-                                                <!--<div class="slide-img__hover"></div>-->
                         </div>
                         <div class="slide5-img6 swiper-slide">
-                                                <!--<div class="slide-img__hover"></div>-->
                         </div>
                     </div>
                 </div>
-
-
- 
                 <!-- Swiper JS -->
-                <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-                        
+                <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>    
                 <!-- Initialize Swiper -->
-                <script>
-                let gallerySlider = new Swiper(".mySwiper", {
-                    slidesPerView: 3,
-                    slidesPerGroup: 3,
-                    grid: {
-                        rows: 1
-                    },
-                    spaceBetween: 30,
-                    pagination: {
-                        el: ".swiper-pagination",
-                        type: "fraction"
-                    },
-                    navigation: {
-                        nextEl: ".swiper-button-next",
-                        prevEl: ".swiper-button-prev"
-                    },
+                <script src="js/mySwiper.js"></script>
+            </div>
+        </section>
+        <section class="catalog">
+            <div class="catalog-background container">
+                <h3 class="catalog__title" id="catalog">Каталог</h3> 
+                <p class="catalog__text">Акционеры крупнейших компаний, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. Являясь всего лишь частью общей картины, стремящиеся вытеснить традиционное производство, нанотехнологии и по сей день остаются уделом либералов, которые жаждут быть функционально разнесены на независимые элементы. </p>
+                <div class="catalog__painters">
+                    <div class="painters">
+                        <div class="painter1-description1">
+                            <img src="img/Noname.png" alt="" class="painter1-img">
+                            <h3 class="painter-name">Что мы о нём знаем?</h3>
+                            <p class="painter-datelife"><a href="#gallery" class="painter-gallery" aria-label="В галерею">В галерею</a></p>
+                            <p class="painter-text">Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+                        </div>
+                        <div class="painter2-description1">
+                            <img src="img/Noname.png" alt="" class="painter2-img">
+                            <h3 class="painter-name">Что мы о нём знаем?</h3>
+                            <p class="painter-datelife"><a href="#gallery" class="painter-gallery" aria-label="В галерею">В галерею</a></p>
+                            <p class="painter-text">Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+                        </div>
+                        <div class="painter3-description1">
+                            <img src="img/Noname.png" alt="" class="painter3-img">
+                            <h3 class="painter-name">Что мы о нём знаем?</h3>
+                            <p class="painter-datelife"><a href="#gallery" class="painter-gallery" aria-label="В галерею">В галерею</a></p>
+                            <p class="painter-text">Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+                        </div>
+                        <div class="painter4-description1">
+                            <img src="img/Noname.png" alt="" class="painter4-img">
+                            <h3 class="painter-name">Что мы о нём знаем?</h3>
+                            <p class="painter-datelife"><a href="#gallery" class="painter-gallery" aria-label="В галерею">В галерею</a></p>
+                            <p class="painter-text">Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+                        </div>
+                        <div class="painter5-description1">
+                            <img src="img/Noname.png" alt="" class="painter5-img">
+                            <h3 class="painter-name">Что мы о нём знаем?</h3>
+                            <p class="painter-datelife"><a href="#gallery" class="painter-gallery" aria-label="В галерею">В галерею</a></p>
+                            <p class="painter-text">Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+                        </div>
+                        <div class="painter6-description1">
+                            <img src="img/Noname.png" alt="" class="painter6-img">
+                            <h3 class="painter-name">Что мы о нём знаем?</h3>
+                            <p class="painter-datelife"><a href="#gallery" class="painter-gallery" aria-label="В галерею">В галерею</a></p>
+                            <p class="painter-text">Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+                         </div>
+                        <div class="painter7-description1">
+                            <img src="img/Noname.png" alt="" class="painter7-img">
+                            <h3 class="painter-name">Что мы о нём знаем?</h3>
+                            <p class="painter-datelife"><a href="#gallery" class="painter-gallery" aria-label="В галерею">В галерею</a></p>
+                            <p class="painter-text">Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+                        </div>
+                        <div class="painter8-description1">
+                            <img src="img/Noname.png" alt="" class="painter8-img">
+                            <h3 class="painter-name">Что мы о нём знаем?</h3>
+                            <p class="painter-datelife"><a href="#gallery" class="painter-gallery" aria-label="В галерею">В галерею</a></p>
+                            <p class="painter-text">Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+                        </div>
+                        <div class="painter9-description1">
+                            <img src="img/Noname.png" alt="" class="painter9-img">
+                            <h3 class="painter-name">Что мы о нём знаем?</h3>
+                            <p class="painter-datelife"><a href="#gallery" class="painter-gallery" aria-label="В галерею">В галерею</a></p>
+                            <p class="painter-text">Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+                        </div>
+                        <div class="painter10-description1 visible">
+                            <img src="../img/image3.jpg" alt="Доменико Гирландайо" class="painter10-img">
+                            <h3 class="painter-name">Доменико Гирландайо</h3>
+                            <p class="painter-datelife">2 июня 1448 — 11 января 1494.</p>
+                            <p class="painter-text">Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными навыками. Автор фресковых циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные граждане Флоренции в костюмах того времени).</p>
+                        </div>
+                        <div class="painter11-description1">
+                            <img src="img/Noname.png" alt="" class="painter11-img">
+                            <h3 class="painter-name">Что мы о нём знаем?</h3>
+                            <p class="painter-datelife"><a href="#gallery" class="painter-gallery">В галерею</a></p>
+                            <p class="painter-text">Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+                        </div>
+                        <div class="painter12-description1">
+                            <img src="img/Noname.png" alt="" class="painter12-img">
+                            <h3 class="painter-name">Что мы о нём знаем?</h3>
+                            <p class="painter-datelife"><a href="#gallery" class="painter-gallery">В галерею</a></p>
+                            <p class="painter-text">Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+                        </div>
+                        <div class="painter13-description1">
+                            <img src="img/Noname.png" alt="" class="painter13-img">
+                            <h3 class="painter-name">Что мы о нём знаем?</h3>
+                            <p class="painter-datelife"><a href="#gallery" class="painter-gallery">В галерею</a></p>
+                            <p class="painter-text">Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+                        </div>
+                        <div class="painter14-description1">
+                            <img src="img/Noname.png" alt="" class="painter14-img">
+                            <h3 class="painter-name">Что мы о нём знаем?</h3>
+                            <p class="painter-datelife"><a href="#gallery" class="painter-gallery">В галерею</a></p>
+                            <p class="painter-text">Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+                        </div>
+                        <div class="painter15-description1">
+                            <img src="img/Noname.png" alt="" class="painter15-img">
+                            <h3 class="painter-name">Что мы о нём знаем?</h3>
+                            <p class="painter-datelife"><a href="#gallery" class="painter-gallery">В галерею</a></p>
+                            <p class="painter-text">Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+                        </div>
+                        <div class="painter16-description1">
+                            <img src="img/Noname.png" alt="" class="painter16-img">
+                            <h3 class="painter-name">Что мы о нём знаем?</h3>
+                            <p class="painter-datelife"><a href="#gallery" class="painter-gallery">В галерею</a></p>
+                            <p class="painter-text">Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+                        </div>
+                        <div class="painter17-description1">
+                            <img src="img/Noname.png" alt="" class="painter17-img">
+                            <h3 class="painter-name">Что мы о нём знаем?</h3>
+                            <p class="painter-datelife"><a href="#gallery" class="painter-gallery">В галерею</a></p>
+                            <p class="painter-text">Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+                        </div>
+                        <div class="painter18-description1">
+                            <img src="img/Noname.png" alt="" class="painter18-img">
+                            <h3 class="painter-name">Что мы о нём знаем?</h3>
+                            <p class="painter-datelife"><a href="#gallery" class="painter-gallery">В галерею</a></p>
+                            <p class="painter-text">Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+                        </div>
+                        <div class="painter19-description1">
+                            <img src="img/Noname.png" alt="" class="painter19-img">
+                            <h3 class="painter-name">Что мы о нём знаем?</h3>
+                            <p class="painter-datelife"><a href="#gallery" class="painter-gallery">В галерею</a></p>
+                            <p class="painter-text">Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+                        </div>
+                        <div class="painter20-description1">
+                            <img src="img/Noname.png" alt="" class="painter20-img">
+                            <h3 class="painter-name">Что мы о нём знаем?</h3>
+                            <p class="painter-datelife"><a href="#gallery" class="painter-gallery">В галерею</a></p>
+                            <p class="painter-text">Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+                        </div>
+                        <div class="painter21-description1">
+                            <img src="img/Noname.png" alt="" class="painter21-img">
+                            <h3 class="painter-name">Что мы о нём знаем?</h3>
+                            <p class="painter-datelife"><a href="#gallery" class="painter-gallery">В галерею</a></p>
+                            <p class="painter-text">Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
+                        </div>
 
-                    breakpoints: {
-                        0: {
-                        slidesPerView: 1,
-                        grid: {
-                            rows: 1
-                        },
-                        spaceBetween: 10
-                        },
-                        320: {
-                        slidesPerView: 1,
-                        grid: {
-                            rows: 1
-                        },
-                        spaceBetween: 20
-                        },
-                        690: {
-                        slidesPerView: 2,
-                        grid: {
-                            rows: 1
-                        },
-                        spaceBetween: 38
-                        },
-                        800: {
-                        slidesPerView: 2,
-                        grid: {
-                            rows: 1
-                        },
-                        spaceBetween: 35
-                        },
+                    </div>
+                    <div id="accordion" class="accordion-painters">
+                        <div class="accordion-painters__period1">
+                        <!--   <img src="../img/Rectangle32.png" alt="" class="accordion__line">--> 
+                            <h4 class="accordion-painters__title1">
+                                C 1400 по 1499 гг.
+                                 <span class="accordion-painters__href1">
+                                    <svg width="50" height="50" viewbox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" fill="#ECECEC"/>
+                                        <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black"/>
+                                    </svg>                                        
+                                </span>
+                            </h4>
 
-                        1200: {
-                        slidesPerView: 3,
-                        grid: {
-                            rows: 1
-                        },
-                        spaceBetween: 50
-                        }
-                    },
-                });
+                        </div>
+                        <div class="accord-text1">
+                            <div class="painter1-block1">
+                                <p class="accord1-painter1 painters-text">Бенедетто ди Биндо Бергоньоне,</p>
+                                <p class="accord1-painter2 painters-text">Амброджо Биссоло,</p>
+                                <p class="accord1-painter3 painters-text">Франческо Больтраффио,</p>
+                                <p class="accord1-painter4 painters-text">Джованни Бонсиньори,</p>
+                                <p class="accord1-painter5 painters-text">Франческо Боттичини,</p>
+                                <p class="accord1-painter6 painters-text">Рафаэлло Брамантино Бреа,</p>
+                                <p class="accord1-painter7 painters-text">Людовико Бьяджо д’Антонио Туччи,</p>
+                            <!--</div>-->                            
+                            <!--<div class="painter1__block2">-->
+                                <p class="accord1-painter8 painters-text">Веккьетта,</p>
+                                <p class="accord1-painter9 painters-text">Андреа Верроккьо,</p>
+                                <p class="accord1-painter10 painters-text">Доменико Гирландайо,</p>
+                                <p class="accord1-painter11 painters-text">Беноццо Гоццоли Граначчи,</p>
+                                <p class="accord1-painter12 painters-text">Франческо Грегорио ди Чекко,</p>
+                                <p class="accord1-painter13 painters-text">Джованни да Удине,</p>
+                                <p class="accord1-painter14 painters-text">Джованни ди Паоло</p>
+                                <p class="accord1-painter15 painters-text">Джорджоне,</p>    
+                            <!--</div>-->                            
+                            <!--<div class="painter1__block3">-->
+                                <p class="accord1-painter16 painters-text">Парентино,</p>
+                                <p class="accord1-painter17 painters-text">Бернардо Пезеллино,</p>
+                                <p class="accord1-painter18 painters-text">Пьетро Перуджино Перуцци,</p>
+                                <p class="accord1-painter19 painters-text">Бальдассаре</p>
+                                <p class="accord1-painter20 painters-text">Пизанелло</p>
+                                <p class="accord1-painter21 painters-text">Пинтуриккьо</p>
+                            </div>
+                            <div class="painter-noname painter-noname1">
+                                <div class="painter-noname__picture">
+                                    <div class="painter-noname__picture-images"></div>
+                                </div>
+                                <div class="painter-noname__description">
+                                    <h4 class="painter-noname__title">Здесь пока пусто</h4>
+                                    <p class="painter-noname__text">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                                    <a href="#gallery" class="painter-noname__gallery" aria-label="В галерею">В галерею</a>
+                                </div>
+                            </div>
+                        </div>
 
-                </script>
+                        <div class="accordion-painters__period2">
+                            <h4 class="accordion-painters__title2">
+                                C 1500 по 1599 гг.
+                                <span class="accordion-painters__href2">
+                                    <svg width="50" height="50" viewbox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" fill="#ECECEC"/>
+                                        <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black"/>
+                                    </svg>                                        
+                                </span>
+                            </h4>
+                       </div>
+                        <div class="accord-text2">
+                            <div class="painter2-block1">
+                                <p class="accord2-painter1 painters-text">Аенедетто ди Биндо Бергоньоне,</p>
+                                <p class="accord2-painter2 painters-text">Амброджо Биссоло, </p>
+                                <p class="accord2-painter3 painters-text">Франческо Больтраффио,</p>
+                                <p class="accord2-painter4 painters-text">Джованни Бонсиньори,</p>
+                                <p class="accord2-painter5 painters-text">Франческо Боттичини,   </p>
+                                <p class="accord2-painter6 painters-text">Рафаэлло Брамантино Бреа, </p>
+                                <p class="accord2-painter7 painters-text">Людовико Бьяджо д’Антонио Туччи,</p>
+                            <!--</div>-->
+                            <!--<div class="painter2__block2">-->
+                                <p class="accord2-painter8 painters-text">Веккьетта,</p>
+                                <p class="accord2-painter9 painters-text">Андреа Верроккьо, </p>
+                                <p class="accord2-painter10 painters-text">Доменико Гирландайо, </p>
+                                <p class="accord2-painter11 painters-text">Беноццо Гоццоли Граначчи, </p>
+                                <p class="accord2-painter12 painters-text">Франческо Грегорио ди Чекко,</p>
+                                <p class="accord2-painter13 painters-text">Джованни да Удине,</p>
+                                <p class="accord2-painter14 painters-text">Джованни ди Паоло</p>
+                                <p class="accord2-painter15 painters-text">Джорджоне,</p>    
+                            <!--</div>-->
+                            <!--<div class="painter2__block3">-->
+                                <p class="accord2-painter16 painters-text">Парентино,</p>
+                                <p class="accord2-painter17 painters-text">Бернардо Пезеллино,</p>
+                                <p class="accord2-painter18 painters-text">Пьетро Перуджино Перуцци,</p>
+                                <p class="accord2-painter19 painters-text">Бальдассаре</p>
+                                <p class="accord2-painter20 painters-text">Пизанелло</p>
+                                <p class="accord2-painter21 painters-text">Пинтуриккьо</p>
+                            </div>
+                            <div class="painter-noname painter-noname2">
+                                <div class="painter-noname__picture">
+                                    <div class="painter-noname__picture-images"></div>
+                                </div>
+                                <div class="painter-noname__description">
+                                    <h4 class="painter-noname__title">Здесь пока пусто</h4>
+                                    <p class="painter-noname__text">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                                    <a href="#gallery" class="painter-noname__gallery" aria-label="В галерею">В галерею</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-painters__period3">
+                            <h4 class="accordion-painters__title3">
+                                C 1600 по 1699 гг.
+                                <span class="accordion-painters__href3">
+                                    <svg width="50" height="50" viewbox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" fill="#ECECEC"/>
+                                        <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black"/>
+                                    </svg>                                        
+                                </span>                 
+                            </h4>
+                        </div>
+                        <div class="accord-text3">
+                            <div class="painter3-block1">
+                                <p class="accord3-painter1 painters-text">Генедетто ди Биндо Бергоньоне,</p>
+                                <p class="accord3-painter2 painters-text">Амброджо Биссоло, </p>
+                                <p class="accord3-painter3 painters-text">Франческо Больтраффио,</p>
+                                <p class="accord3-painter4 painters-text">Джованни Бонсиньори,</p>
+                                <p class="accord3-painter5 painters-text">Франческо Боттичини,   </p>
+                                <p class="accord3-painter6 painters-text">Рафаэлло Брамантино Бреа, </p>
+                                <p class="accord3-painter7 painters-text">Людовико Бьяджо д’Антонио Туччи,</p>
+                            <!--</div>-->
+                            <!--<div class="painter3__block2">-->
+                                <p class="accord3-painter8 painters-text">Веккьетта,</p>
+                                <p class="accord3-painter9 painters-text">Андреа Верроккьо, </p>
+                                <p class="accord3-painter10 painters-text">Доменико Гирландайо, </p>
+                                <p class="accord3-painter11 painters-text">Беноццо Гоццоли Граначчи, </p>
+                                <p class="accord3-painter12 painters-text">Франческо Грегорио ди Чекко,</p>
+                                <p class="accord3-painter13 painters-text">Джованни да Удине,</p>
+                                <p class="accord3-painter14 painters-text">Джованни ди Паоло</p>
+                                <p class="accord3-painter15 painters-text">Джорджоне,</p>    
+                            <!--</div>-->
+                            <!--<div class="painter3__block3">-->
+                                <p class="accord3-painter16 painters-text">Парентино,</p>
+                                <p class="accord3-painter17 painters-text">Бернардо Пезеллино,</p>
+                                <p class="accord3-painter18 painters-text">Пьетро Перуджино Перуцци,</p>
+                                <p class="accord3-painter19 painters-text">Бальдассаре</p>
+                                <p class="accord3-painter20 painters-text">Пизанелло</p>
+                                <p class="accord3-painter21 painters-text">Пинтуриккьо</p>
+                            </div>
+                            <div class="painter-noname painter-noname3">
+                                <div class="painter-noname__picture">
+                                    <div class="painter-noname__picture-images"></div>
+                                </div>
+                                <div class="painter-noname__description">
+                                    <h4 class="painter-noname__title">Здесь пока пусто</h4>
+                                    <p class="painter-noname__text">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                                    <a href="#gallery" class="painter-noname__gallery" aria-label="В галерею">В галерею</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-painters__period4">
+                            <h4 class="accordion-painters__title4">
+                                C 1700 по 1799 гг.
+                                <span class="accordion-painters__href4">
+                                    <svg width="50" height="50" viewbox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" fill="#ECECEC"/>
+                                        <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black"/>
+                                    </svg>                                        
+                                </span>                  
+                            </h4>
+                        </div>
+                        <div class="accord-text4">
+                            <div class="painter4-block1">
+                                <p class="accord4-painter1 painters-text">Денедетто ди Биндо Бергоньоне,</p>
+                                <p class="accord4-painter2 painters-text">Амброджо Биссоло, </p>
+                                <p class="accord4-painter3 painters-text">Франческо Больтраффио,</p>
+                                <p class="accord4-painter4 painters-text">Джованни Бонсиньори,</p>
+                                <p class="accord4-painter5 painters-text">Франческо Боттичини,   </p>
+                                <p class="accord4-painter6 painters-text">Рафаэлло Брамантино Бреа, </p>
+                                <p class="accord4-painter7 painters-text">Людовико Бьяджо д’Антонио Туччи,</p>
+                            <!--</div>-->
+                            <!--<div class="painter4__block2">-->
+                                <p class="accord4-painter8 painters-text">Веккьетта,</p>
+                                <p class="accord4-painter9 painters-text">Андреа Верроккьо, </p>
+                                <p class="accord4-painter10 painters-text">Доменико Гирландайо, </p>
+                                <p class="accord4-painter11 painters-text">Беноццо Гоццоли Граначчи, </p>
+                                <p class="accord4-painter12 painters-text">Франческо Грегорио ди Чекко,</p>
+                                <p class="accord4-painter13 painters-text">Джованни да Удине,</p>
+                                <p class="accord4-painter14 painters-text">Джованни ди Паоло</p>
+                                <p class="accord4-painter15 painters-text">Джорджоне,</p>    
+                            <!--</div>-->
+                            <!--<div class="painter4__block3">-->
+                                <p class="accord4-painter16 painters-text">Парентино,</p>
+                                <p class="accord4-painter17 painters-text">Бернардо Пезеллино,</p>
+                                <p class="accord4-painter18 painters-text">Пьетро Перуджино Перуцци,</p>
+                                <p class="accord4-painter19 painters-text">Бальдассаре</p>
+                                <p class="accord4-painter20 painters-text">Пизанелло</p>
+                                <p class="accord4-painter21 painters-text">Пинтуриккьо</p>
+                            </div>
+                            <div class="painter-noname painter-noname4">
+                                <div class="painter-noname__picture">
+                                    <div class="painter-noname__picture-images"></div>
+                                </div>
+                                <div class="painter-noname__description">
+                                    <h4 class="painter-noname__title">Здесь пока пусто</h4>
+                                    <p class="painter-noname__text">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                                    <a href="#gallery" class="painter-noname__gallery" aria-label="В галерею">В галерею</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-painters__period5">
+                            <h4 class="accordion-painters__title5">
+                                C 1800 по 1899 гг.
+                                <span class="accordion-painters__href5">
+                                    <svg width="50" height="50" viewbox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" fill="#ECECEC"/>
+                                        <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black"/>
+                                    </svg>                                        
+                                </span>                   
+                            </h4>
+                        </div>
+                        <div class="accord-text5">
+                            <div class="painter5-block1">
+                                <p class="accord5-painter1 painters-text">Женедетто ди Биндо Бергоньоне,</p>
+                                <p class="accord5-painter2 painters-text">Амброджо Биссоло, </p>
+                                <p class="accord5-painter3 painters-text">Франческо Больтраффио,</p>
+                                <p class="accord5-painter4 painters-text">Джованни Бонсиньори,</p>
+                                <p class="accord5-painter5 painters-text">Франческо Боттичини,   </p>
+                                <p class="accord5-painter6 painters-text">Рафаэлло Брамантино Бреа, </p>
+                                <p class="accord5-painter7 painters-text">Людовико Бьяджо д’Антонио Туччи,</p>
+                            <!--</div>-->
+                            <!--<div class="painter5__block2">-->
+                                <p class="accord5-painter8 painters-text">Веккьетта,</p>
+                                <p class="accord5-painter9 painters-text">Андреа Верроккьо, </p>
+                                <p class="accord5-painter10 painters-text">Доменико Гирландайо, </p>
+                                <p class="accord5-painter11 painters-text">Беноццо Гоццоли Граначчи, </p>
+                                <p class="accord5-painter12 painters-text">Франческо Грегорио ди Чекко,</p>
+                                <p class="accord5-painter13 painters-text">Джованни да Удине,</p>
+                                <p class="accord5-painter14 painters-text">Джованни ди Паоло</p>
+                                <p class="accord5-painter15 painters-text">Джорджоне,</p>    
+                            <!--</div>-->
+                            <!--<div class="painter5__block3">-->
+                                <p class="accord5-painter16 painters-text">Парентино,</p>
+                                <p class="accord5-painter17 painters-text">Бернардо Пезеллино,</p>
+                                <p class="accord5-painter18 painters-text">Пьетро Перуджино Перуцци,</p>
+                                <p class="accord5-painter19 painters-text">Бальдассаре</p>
+                                <p class="accord5-painter20 painters-text">Пизанелло</p>
+                                <p class="accord5-painter21 painters-text">Пинтуриккьо</p>
+                            </div>
+                            <div class="painter-noname painter-noname5">
+                                <div class="painter-noname__picture">
+                                    <div class="painter-noname__picture-images"></div>
+                                </div>
+                                <div class="painter-noname__description">
+                                    <h4 class="painter-noname__title">Здесь пока пусто</h4>
+                                    <p class="painter-noname__text">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                                    <a href="#gallery" class="painter-noname__gallery" aria-label="В галерею">В галерею</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-painters__period6">
+                            <h4 class="accordion-painters__title6">
+                                C 1900 по 1999 гг.
+                                <span class="accordion-painters__href6">
+                                    <svg width="50" height="50" viewbox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" fill="#ECECEC"/>
+                                        <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black"/>
+                                    </svg>                                        
+                                </span>                   
+                            </h4>
+                        <!--   <img src="../img/Rectangle32.png" alt="" class="accordion__line">--> 
+                        </div>
+                        <div class="accord-text6">
+                            <div class="painter6-block1">
+                                <p class="accord6-painter1 painters-text">Зенедетто ди Биндо Бергоньоне,</p>
+                                <p class="accord6-painter2 painters-text">Амброджо Биссоло, </p>
+                                <p class="accord6-painter3 painters-text">Франческо Больтраффио,</p>
+                                <p class="accord6-painter4 painters-text">Джованни Бонсиньори,</p>
+                                <p class="accord6-painter5 painters-text">Франческо Боттичини,   </p>
+                                <p class="accord6-painter6 painters-text">Рафаэлло Брамантино Бреа, </p>
+                                <p class="accord6-painter7 painters-text">Людовико Бьяджо д’Антонио Туччи,</p>
+                            <!--</div>-->
+                            <!--<div class="painter6__block2">-->
+                                <p class="accord6-painter8 painters-text">Веккьетта,</p>
+                                <p class="accord6-painter9 painters-text">Андреа Верроккьо, </p>
+                                <p class="accord6-painter10 painters-text">Доменико Гирландайо, </p>
+                                <p class="accord6-painter11 painters-text">Беноццо Гоццоли Граначчи, </p>
+                                <p class="accord6-painter12 painters-text">Франческо Грегорио ди Чекко,</p>
+                                <p class="accord6-painter13 painters-text">Джованни да Удине,</p>
+                                <p class="accord6-painter14 painters-text">Джованни ди Паоло</p>
+                                <p class="accord6-painter15 painters-text">Джорджоне,</p>    
+                            <!--</div>-->
+                            <!--<div class="painter6__block3">-->
+                                <p class="accord6-painter16 painters-text">Парентино,</p>
+                                <p class="accord6-painter17 painters-text">Бернардо Пезеллино,</p>
+                                <p class="accord6-painter18 painters-text">Пьетро Перуджино Перуцци,</p>
+                                <p class="accord6-painter19 painters-text">Бальдассаре</p>
+                                <p class="accord6-painter20 painters-text">Пизанелло</p>
+                                <p class="accord6-painter21 painters-text">Пинтуриккьо</p>
+                            </div>
+                            <div class="painter-noname painter-noname6">
+                                <div class="painter-noname__picture">
+                                    <div class="painter-noname__picture-images"></div>
+                                </div>
+                                <div class="painter-noname__description">
+                                    <h4 class="painter-noname__title">Здесь пока пусто</h4>
+                                    <p class="painter-noname__text">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                                    <a href="#gallery" class="painter-noname__gallery" aria-label="В галерею">В галерею</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-painters__period7">
+                            <h4 class="accordion-painters__title7">
+                                C 2000 г.
+                                <span class="accordion-painters__href7">
+                                    <svg width="50" height="50" viewbox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" fill="#ECECEC"/>
+                                        <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black"/>
+                                    </svg>                                        
+                                </span>
+                            </h4>
+                        </div>
+                        <div class="accord-text7">
+                            <div class="painter7-block1">
+                                <p class="accord7-painter1 painters-text">Иенедетто ди Биндо Бергоньоне,</p>
+                                <p class="accord7-painter2 painters-text">Амброджо Биссоло, </p>
+                                <p class="accord7-painter3 painters-text">Франческо Больтраффио,</p>
+                                <p class="accord7-painter4 painters-text">Джованни Бонсиньори,</p>
+                                <p class="accord7-painter5 painters-text">Франческо Боттичини,   </p>
+                                <p class="accord7-painter6 painters-text">Рафаэлло Брамантино Бреа, </p>
+                                <p class="accord7-painter7 painters-text">Людовико Бьяджо д’Антонио Туччи,</p>
+                            <!--</div>-->
+                            <!--<div class="painter7__block2">-->
+                                <p class="accord7-painter8 painters-text">Веккьетта,</p>
+                                <p class="accord7-painter9 painters-text">Андреа Верроккьо, </p>
+                                <p class="accord7-painter10 painters-text">Доменико Гирландайо, </p>
+                                <p class="accord7-painter11 painters-text">Беноццо Гоццоли Граначчи, </p>
+                                <p class="accord7-painter12 painters-text">Франческо Грегорио ди Чекко,</p>
+                                <p class="accord7-painter13 painters-text">Джованни да Удине,</p>
+                                <p class="accord7-painter14 painters-text">Джованни ди Паоло</p>
+                                <p class="accord7-painter15 painters-text">Джорджоне,</p>    
+                            <!--</div>-->
+                            <!--<div class="painter7__block3">-->
+                                <p class="accord7-painter16 painters-text">Парентино,</p>
+                                <p class="accord7-painter17 painters-text">Бернардо Пезеллино,</p>
+                                <p class="accord7-painter18 painters-text">Пьетро Перуджино Перуцци,</p>
+                                <p class="accord7-painter19 painters-text">Бальдассаре</p>
+                                <p class="accord7-painter20 painters-text">Пизанелло</p>
+                                <p class="accord7-painter21 painters-text">Пинтуриккьо</p>
+                            </div>
+                            <div class="painter-noname painter-noname7">
+                                <div class="painter-noname__picture">
+                                    <div class="painter-noname__picture-images"></div>
+                                </div>
+                                <div class="painter-noname__description">
+                                    <h4 class="painter-noname__title">Здесь пока пусто</h4>
+                                    <p class="painter-noname__text">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                                    <a href="#gallery" class="painter-noname__gallery" aria-label="В галерею">В галерею</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
    <footer class="footer"></footer>
-
-
     <script src="js/swiper.js"></script>
-    <script>
-        $( function() {
-          $( "#accordion" ).accordion();
-        } );
-    </script>
-    <script>
-        new SimpleBar(document.getElementById('myElement'), {
-            scrollbarMinSize : 2,
-        option2: value2
-        });
-        const simpleBar = new SimpleBar(document.getElementById('myElement'));
-        simpleBar.recalculate();
-    </script>
+    <script src="js/accordion.js"></script>
 </body>
 </html>
