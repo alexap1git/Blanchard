@@ -2991,6 +2991,7 @@ h2 {
     border-bottom: 1px solid #7943A4;*/
     border-top: 1px solid #CACACA;
     border-bottom: 1px solid #CACACA;
+    background: none;
 }
 .accordion-painters__period1:focus-within {
     color: #ffffff;
@@ -3002,7 +3003,14 @@ h2 {
     border-top: 1px solid #7943A4;
     border-bottom: 1px solid #7943A4;
 }
-
+.ui-accordion-header-icon {
+    display: none;
+}
+.ui-accordion-header {
+    padding-top: 42px;
+    padding-bottom: 42px;
+    background: none;
+}
 .ui-accordion-header-active .accordion-painters__href1 {
     transform: rotate(180deg);
     margin-top: -11px;
