@@ -49,7 +49,43 @@ window.addEventListener('DOMContentLoaded', function () {
                     document.querySelector('.search__menu-futurism').classList.toggle('futurism__is-activ')
                     document.querySelector('.search__futurism').classList.toggle('search__futurism-activ')
                 })
-
+                
+                document.querySelector('.slide1-img1').addEventListener('click', function(){
+                    document.querySelector('.slider1-img1-full').classList.add('slider1-img__is-activ')
+                })
+                document.querySelector('.slide1-img2').addEventListener('click', function(){
+                    document.querySelector('.slider1-img2-full').classList.add('slider1-img__is-activ')
+                })
+                document.querySelector('.slide1-img3').addEventListener('click', function(){
+                    document.querySelector('.slider1-img3-full').classList.add('slider1-img__is-activ')
+                })
+                document.querySelector('.slide1-img4').addEventListener('click', function(){
+                    document.querySelector('.slider1-img4-full').classList.add('slider1-img__is-activ')
+                })
+                document.querySelector('.slide1-img5').addEventListener('click', function(){
+                    document.querySelector('.slider1-img5-full').classList.add('slider1-img__is-activ')
+                })
+                document.querySelector('.slide1-img6').addEventListener('click', function(){
+                    document.querySelector('.slider1-img6-full').classList.add('slider1-img__is-activ')
+                })
+                document.querySelector('.slider1-img1-close').addEventListener('click', function(){
+                    document.querySelector('.slider1-img1-full').classList.remove('slider1-img__is-activ')
+                })
+                document.querySelector('.slider1-img2-close').addEventListener('click', function(){
+                    document.querySelector('.slider1-img2-full').classList.remove('slider1-img__is-activ')
+                })
+                document.querySelector('.slider1-img3-close').addEventListener('click', function(){
+                    document.querySelector('.slider1-img3-full').classList.remove('slider1-img__is-activ')
+                })
+                document.querySelector('.slider1-img4-close').addEventListener('click', function(){
+                    document.querySelector('.slider1-img4-full').classList.remove('slider1-img__is-activ')
+                })
+                document.querySelector('.slider1-img5-close').addEventListener('click', function(){
+                    document.querySelector('.slider1-img5-full').classList.remove('slider1-img__is-activ')
+                })
+                document.querySelector('.slider1-img6-close').addEventListener('click', function(){
+                    document.querySelector('.slider1-img6-full').classList.remove('slider1-img__is-activ')
+                })
 /*                 document.querySelector('.search__realizm').addEventListener('click', function(){
 
                    document.querySelector('.search__realizm-activ').addEventListener('click', function(){
@@ -110,6 +146,7 @@ window.addEventListener('DOMContentLoaded', function () {
                     document.querySelector('.header__burger-btn').classList.remove('header__withdraw')
                     document.querySelector('.header__blanchard-link').classList.remove('header__withdraw')
                     document.querySelector('.header__search-form-close').classList.remove('header__search-form-close-activ')
+                    document.querySelector('.header__blanchard-link').classList.remove('header__blanchard-link--compensation')
                 })
                 document.querySelector('.accord1-painter1').addEventListener('click', function(){
                     document.querySelector('.visible').classList.remove('visible') 

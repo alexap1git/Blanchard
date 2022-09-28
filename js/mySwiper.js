@@ -1,9 +1,9 @@
 let gallerySlider = new Swiper(".mySwiper", {
-    slidesPerView: 3,
+/*    slidesPerView: 3,
     slidesPerGroup: 3,
     grid: {
         rows: 1
-    },
+    },*/
     spaceBetween: 30,
     pagination: {
         el: ".swiper-pagination",
@@ -13,10 +13,11 @@ let gallerySlider = new Swiper(".mySwiper", {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev"
     },
-
+    loop: true,
     breakpoints: {
         0: {
         slidesPerView: 1,
+        slidesPerGroup: 1,
         grid: {
             rows: 1
         },
@@ -24,6 +25,7 @@ let gallerySlider = new Swiper(".mySwiper", {
         },
         320: {
         slidesPerView: 1,
+        slidesPerGroup: 1,
         grid: {
             rows: 1
         },
@@ -31,6 +33,7 @@ let gallerySlider = new Swiper(".mySwiper", {
         },
         690: {
         slidesPerView: 2,
+        slidesPerGroup: 2,
         grid: {
             rows: 1
         },
@@ -38,6 +41,7 @@ let gallerySlider = new Swiper(".mySwiper", {
         },
         800: {
         slidesPerView: 2,
+        slidesPerGroup: 2,
         grid: {
             rows: 1
         },
@@ -46,6 +50,7 @@ let gallerySlider = new Swiper(".mySwiper", {
 
         1200: {
         slidesPerView: 3,
+        slidesPerGroup: 3,
         grid: {
             rows: 1
         },
