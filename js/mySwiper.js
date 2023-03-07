@@ -5,15 +5,22 @@ let gallerySlider = new Swiper(".mySwiper", {
         rows: 1
     },*/
     spaceBetween: 30,
+    keyboard: {
+        enabled: true,
+        onlyInViewport: true,
+        pageUpDown: true,
+          
+    },
     pagination: {
         el: ".swiper-pagination",
         type: "fraction"
     },
     navigation: {
         nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev"
+        prevEl: ".swiper-button-prev",
+    //    disabledClass: ".swiper-button-disabled",
     },
-    loop: true,
+    //loop: true,
     breakpoints: {
         0: {
         slidesPerView: 1,

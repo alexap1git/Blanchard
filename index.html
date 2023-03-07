@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/choices.min.css">
@@ -34,7 +35,7 @@
     <header class="header">    
             <div class="container header__container">
                 <a href="/" aria-label="Ссылка на логотип Blanchard" class="header__blanchard-link">
-                    <img src="img/Logo.svg" alt="логотип Blanchard" class="header__blanchard-img">    
+                    <img src="img/Logo.svg" alt="Logo Blanchard" class="header__blanchard-img">    
                 </a>
                 <nav class="nav">
                     <ul id="nav-menu" class="nav__list" aria-label="Меню">
@@ -255,8 +256,8 @@
             <!--swiper END-->
             <div class="container touch-beautiful__alignment">
                 <div class="touch-beautiful__description">           
-                    <h1 class="touch-beautiful__title">Прикоснитесь к прекрасному</h1>
-                    <p class="touch-beautiful__text">Мы вынуждены оталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки для новых предложений.</p>
+                    <h3 class="touch-beautiful__title">Прикоснитесь к прекрасному</h3>
+                    <p class="touch-beautiful__text">Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки для новых предложений.</p>
                     <a href="#contacts" class="touch-beautiful__btn btn">
                         <!--<button class="btn" aria-label="Подписаться на рассылку">  </button>-->
                             Подписаться на рассылку
@@ -289,28 +290,28 @@
                     <div class="gallery-checbox">
                         <label for="check-a" class="lable">                
                             <input type="checkbox" name="check" class="checke1" id="check-a"> 
-                            <span class="check__check"></span>
-                            <!--<span class="check__check" aria-label="Девятнадцатый век"></span>-->
-                            <span class="check__text">XIX век</span>
+                            <span class="check-check"></span>
+                            <!--<span class="check-check" aria-label="Девятнадцатый век"></span>-->
+                            <span class="check-text">XIX век</span>
                         </label>  
                         <label for="check-b" class="lable">
                             <input type="checkbox" name="check" class="checke2" id="check-b">
-                            <span class="check__check"></span>
-                            <!--<span class="check__check" aria-label="Двадцатый век"></span>-->
-                            <span class="check__text">XX век</span>
+                            <span class="check-check"></span>
+                            <!--<span class="check-check" aria-label="Двадцатый век"></span>-->
+                            <span class="check-text">XX век</span>
                         </label>  
                         <label for="check-c" class="lable">
                             <input type="checkbox" name="check" class="checke3" id="check-c">
-                            <span  class="check__check"></span>
-                            <!--<span  class="check__check" aria-label="Современность"></span>-->
-                            <span class="check__text">Современность</span>
+                            <span  class="check-check"></span>
+                            <!--<span  class="check-check" aria-label="Современность"></span>-->
+                            <span class="check-text">Современность</span>
                         </label>  
                     </div>
                 </div>
                 <!-- Swiper -->
                 <div class="swiper mySwiper">
                     <div class="swiper-btns">
-                        <div class="swiper-button-prev">
+                        <div class="swiper-button-prev swiper-btn">
                             <svg width="30" height="30" viewbox="-1 -1 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M15 30C6.71573 30 8.89561e-07 23.2843 1.25168e-06 15C1.61379e-06 6.71573 6.71573 -1.01779e-06 15 -6.55671e-07C23.2843 -2.93554e-07 30 6.71573 30 15C30 23.2843 23.2843 30 15 30Z" fill="#ECECEC"/>
                                 <path d="M15 30C6.71573 30 8.89561e-07 23.2843 1.25168e-06 15C1.61379e-06 6.71573 6.71573 -1.01779e-06 15 -6.55671e-07C23.2843 -2.93554e-07 30 6.71573 30 15C30 23.2843 23.2843 30 15 30Z" stroke="black" stroke-width="0"/>
@@ -318,7 +319,7 @@
                             </svg>
                         </div>
                         <div class="swiper-pagination"></div>
-                        <div class="swiper-button-next">
+                        <div class="swiper-button-next swiper-btn">
                             <svg width="30" height="30" viewbox="-1 -1 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 -1.01779e-06 15 -6.55671e-07C6.71573 -2.93554e-07 2.93554e-07 6.71573 6.55671e-07 15C1.01779e-06 23.2843 6.71573 30 15 30Z" fill="#ECECEC"/>
                                 <path d="M15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 -1.01779e-06 15 -6.55671e-07C6.71573 -2.93554e-07 2.93554e-07 6.71573 6.55671e-07 15C1.01779e-06 23.2843 6.71573 30 15 30Z" stroke="black" stroke-width="0"/>
@@ -395,96 +396,7 @@
                 <!-- Initialize Swiper -->
                 <script src="js/mySwiper.js"></script>
             </div>
-            <div class="slider1-img1-full">
-                <div class="slider1-img1-picture"></div>
-                <div class="slider1-img-description">
-                    <h4 class="slider1-img-author">Казимир Малевич</h4>
-                    <p class="slider1-img-name">«Без рук»</p>
-                    <p class="slider1-img-years">1930</p>
-                    <p class="slider1-img-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere repudiandae aliquid impedit rem eaque cupiditate nostrum voluptatum voluptas quibusdam. Ex pariatur nostrum molestiae reiciendis aperiam quisquam, repudiandae quo atque illo.</p>
-                </div>
-                <div class="slider1-img1-close">
-                    <svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666641 15.3043L15.3333 3.17761e-05L16 0.695679L1.33331 15.9999L0.666641 15.3043Z" fill="black"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666725 -3.39221e-06L15.3334 15.3042L14.6667 15.9999L5.72019e-05 0.695643L0.666725 -3.39221e-06Z" fill="black"/>
-                    </svg>
-                </div>
-            </div>
-            <div class="slider1-img2-full">
-                <div class="slider1-img2-picture"></div>
-                <div class="slider1-img-description">
-                    <h4 class="slider1-img-author">Казимир Малевич</h4>
-                    <p class="slider1-img-name">«Женщина с граблями»</p>
-                    <p class="slider1-img-years">1931-1932</p>
-                    <p class="slider1-img-text">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930–1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
-                </div>
-                <div class="slider1-img2-close">
-                    <svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666641 15.3043L15.3333 3.17761e-05L16 0.695679L1.33331 15.9999L0.666641 15.3043Z" fill="black"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666725 -3.39221e-06L15.3334 15.3042L14.6667 15.9999L5.72019e-05 0.695643L0.666725 -3.39221e-06Z" fill="black"/>
-                    </svg>
-                </div>
-            </div>
-            <div class="slider1-img3-full">
-                <div class="slider1-img3-picture"></div>
-                <div class="slider1-img-description">
-                    <h4 class="slider1-img-author">Каземир Малевич</h4>
-                    <p class="slider1-img-name">«Не женщина с молотом»</p>
-                    <p class="slider1-img-years">1931-1932</p>
-                    <p class="slider1-img-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores, tenetur expedita, natus quos hic dolore esse, eligendi nihil ipsum facilis ab corporis error exercitationem atque necessitatibus delectus est! Cupiditate, quam?</p>
-                </div>
-                <div class="slider1-img3-close">
-                    <svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666641 15.3043L15.3333 3.17761e-05L16 0.695679L1.33331 15.9999L0.666641 15.3043Z" fill="black"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666725 -3.39221e-06L15.3334 15.3042L14.6667 15.9999L5.72019e-05 0.695643L0.666725 -3.39221e-06Z" fill="black"/>
-                    </svg>
-                </div>
-            </div>
-            <div class="slider1-img4-full">
-                <div class="slider1-img4-picture"></div>
-                <div class="slider1-img-description">
-                    <h4 class="slider1-img-author">Каземир Малевич</h4>
-                    <p class="slider1-img-name">«Не женщина с молотом»</p>
-                    <p class="slider1-img-years">1931-1932</p>
-                    <p class="slider1-img-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores, tenetur expedita, natus quos hic dolore esse, eligendi nihil ipsum facilis ab corporis error exercitationem atque necessitatibus delectus est! Cupiditate, quam?</p>
-                </div>
-                <div class="slider1-img4-close">
-                    <svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666641 15.3043L15.3333 3.17761e-05L16 0.695679L1.33331 15.9999L0.666641 15.3043Z" fill="black"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666725 -3.39221e-06L15.3334 15.3042L14.6667 15.9999L5.72019e-05 0.695643L0.666725 -3.39221e-06Z" fill="black"/>
-                    </svg>
-                </div>
-            </div>
-            <div class="slider1-img5-full">
-                <div class="slider1-img5-picture"></div>
-                <div class="slider1-img-description">
-                    <h4 class="slider1-img-author">Каземир Малевич</h4>
-                    <p class="slider1-img-name">«Не женщина с молотом»</p>
-                    <p class="slider1-img-years">1931-1932</p>
-                    <p class="slider1-img-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores, tenetur expedita, natus quos hic dolore esse, eligendi nihil ipsum facilis ab corporis error exercitationem atque necessitatibus delectus est! Cupiditate, quam?</p>
-                </div>
-                <div class="slider1-img5-close">
-                    <svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666641 15.3043L15.3333 3.17761e-05L16 0.695679L1.33331 15.9999L0.666641 15.3043Z" fill="black"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666725 -3.39221e-06L15.3334 15.3042L14.6667 15.9999L5.72019e-05 0.695643L0.666725 -3.39221e-06Z" fill="black"/>
-                    </svg>
-                </div>
-            </div>
-            <div class="slider1-img6-full">
-                <div class="slider1-img6-picture"></div>
-                <div class="slider1-img-description">
-                    <h4 class="slider1-img-author">Каземир Малевич</h4>
-                    <p class="slider1-img-name">«Не женщина с молотом»</p>
-                    <p class="slider1-img-years">1931-1932</p>
-                    <p class="slider1-img-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores, tenetur expedita, natus quos hic dolore esse, eligendi nihil ipsum facilis ab corporis error exercitationem atque necessitatibus delectus est! Cupiditate, quam?</p>
-                </div>
-                <div class="slider1-img6-close">
-                    <svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666641 15.3043L15.3333 3.17761e-05L16 0.695679L1.33331 15.9999L0.666641 15.3043Z" fill="black"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666725 -3.39221e-06L15.3334 15.3042L14.6667 15.9999L5.72019e-05 0.695643L0.666725 -3.39221e-06Z" fill="black"/>
-                    </svg>
-                </div>  
-            </div>
+
         </section>
         <section class="catalog">
             <div class="catalog-background container">
@@ -548,8 +460,8 @@
                         </div>
                         <div class="painter10-description1 visible">
                             <img src="../img/image3.jpg" alt="Доменико Гирландайо" class="painter10-img">
-                            <h3 class="painter-name">Доменико Гирландайо</h3>
-                            <p class="painter-datelife">2 июня 1448-11 января 1494</p>
+                            <h4 class="painter-name">Доменико Гирландайо</h4>
+                            <p class="painter-datelife">2 июня 1448 – 11 января 1494</p>
                             <p class="painter-text">Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными навыками. Автор фресковых циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные граждане Флоренции в костюмах того времени).</p>
                         </div>
                         <div class="painter11-description1">
@@ -650,7 +562,7 @@
                                 <span class="accord1-painter12 painters-text"><span>Франческо Грегорио ди Чекко,</span></span>
                                 <span class="accord1-painter13 painters-text"><span>Джованни да Удине,</span></span>
                                 <span class="accord1-painter14 painters-text"><span>Джованни ди Паоло</span></span>
-                                <span class="accord1-painter15 painters-text"><span>Джорджоне,</span></span>   
+                                <span class="accord1-painter15 painters-text"><span>Джорджоне,</span></span> 
                                 <span class="accord1-painter16 painters-text"><span>Парентино,</span></span>
                                 <span class="accord1-painter17 painters-text"><span>Бернардо Пезеллино,</span></span>
                                 <span class="accord1-painter18 painters-text"><span>Пьетро Перуджино Перуцци,</span></span>
@@ -1009,9 +921,9 @@
                     </div>
 
                 </div> 
-                <div class="event-items__swiper-pagination"></div> 
-                <div class="event-items__swiper-button-prev"></div>   
-                <div class="event-items__swiper-button-next">
+                <div class="events-background__swiper-pagination"></div> 
+                <div class="events-background__swiper-button-prev"></div>   
+                <div class="events-background__swiper-button-next">
                     <svg width="50" height="50" viewbox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M25 2.72191e-06C38.8071 2.11838e-06 50 11.1929 50 25C50 38.8071 38.8071 50 25 50C11.1929 50 -4.89256e-07 38.8071 -1.09278e-06 25C-1.69631e-06 11.1929 11.1929 3.32544e-06 25 2.72191e-06Z" fill="#ECECEC"/>
                          <!--<path d="M25 2.72191e-06C38.8071 2.11838e-06 50 11.1929 50 25C50 38.8071 38.8071 50 25 50C11.1929 50 -4.89256e-07 38.8071 -1.09278e-06 25C-1.69631e-06 11.1929 11.1929 3.32544e-06 25 2.72191e-06Z" stroke="black"/>--> 
@@ -1026,11 +938,46 @@
         </section>
         <section class="project container">
             <h3 class="project__title" id="project">Проекты</h3>
-            <div class="project_container">
+            <div class="project__container">
                 <span class="project__text">
                     Предварительные выводы: постоянное информационно-пропагандистское обеспечение нашей деятельности однозначно фиксирует необходимость своевременного выполнения сверхзадачи. А ещё независимые государства смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности. Прежде всего, постоянное информационно-пропагандистское 
                 </span>
-                <span class="project__tooltip1">
+
+                <!--======-->
+                <!-- Development -->
+                <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+                <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+
+                <!-- Production -->
+                <script src="https://unpkg.com/@popperjs/core@2"></script>
+                <script src="https://unpkg.com/tippy.js@6"></script>
+
+                <button id="my-tooltip1" class="project__tooltip-marker1"></button>
+                <span class="project__text">
+                    обеспечение нашей деятельности однозначно фиксирует необходимость экономической целесообразности принимаемых решений. И нет сомнений, что действия представителей оппозиции могут быть рассмотрены 
+                </span>   
+                <button id="my-tooltip2" class="project__tooltip-marker2"></button>
+                <span class="project__text">    
+                    исключительно в разрезе маркетинговых и финансовых 
+                </span>
+                <button id="my-tooltip3" class="project__tooltip-marker3"></button>
+                <script>
+                  // With the above scripts loaded, you can call `tippy()` with a CSS
+                  // selector and a `content` prop:
+                  tippy('#my-tooltip1', {
+                    content: 'Пример современных тенденций - современная методология разработки',
+                    interactiveDebounce: 675,
+                  });
+                  tippy('#my-tooltip2', {
+                    content: 'Приятно, граждане, наблюдать, как сделанные на базе аналитики выводы вызывают у вас эмоции',
+                  });
+                  tippy('#my-tooltip3', {
+                    content: 'В стремлении повысить качество ',
+                  });
+                </script>
+                <!--======-->
+
+               <!-- <span class="project__tooltip1">
                     <span class="project__tooltip-marker1" tabindex="8">          
                     </span>
                     <span class="project__tooltip-popup1">
@@ -1056,7 +1003,7 @@
                     <span class="project__tooltip-popup3">
                         Приятно, граждане, наблюдать, как сделанные на базе аналитики выводы вызывают у вас эмоции  
                     </span>
-                </span>
+                </span>-->
                 <span class="project__text project__768">        
                     предпосылок. Банальные, но неопровержимые выводы, а также представители современных социальных резервов призывают нас к новым свершениям, которые, в свою очередь, должны быть смешаны с не уникальными данными до степени совершенной неузнаваемости. Подробнее:<a href="https://blanchard-art.ru/">blanchard-art.ru</a> 
                 </span>
@@ -1077,32 +1024,32 @@
             <div class="swiper swiper3-container">
                 <div class="swiper-wrapper">
                         <div class="slide3-block1 swiper-slide">
-                            <div class="slide3__img1"></div>
-                             <!--  <img src="img/1932.png" alt="img1" class="slide3__img1">-->
+                            <div class="slide3-block1__img1"></div>
+                             <!--  <img src="img/1932.png" alt="img1" class="slide3-block1__img1">-->
                         </div>
                         <div class="slide3-block2 swiper-slide">
-                            <div class="slide3__img2"></div>
+                            <div class="slide3-block2__img2"></div>
                         </div>
                         <div class="slide3-block3 swiper-slide">
-                            <div class="slide3__img3"></div>
+                            <div class="slide3-block3__img3"></div>
                         </div>
                         <div class="slide3-block4 swiper-slide">
-                            <div class="slide3__img4"></div>
+                            <div class="slide3-block4__img4"></div>
                         </div>
                         <div class="slide3-block5 swiper-slide">
-                            <div class="slide3__img5"></div>
+                            <div class="slide3-block5__img5"></div>
                         </div>
                         <div class="slide3-block6 swiper-slide">
-                            <div class="slide3__img6"></div>
+                            <div class="slide3-block6__img6"></div>
                         </div>                    
                         <div class="slide3-block7 swiper-slide">
-                            <div class="slide3__img7"></div>
+                            <div class="slide3-block7__img7"></div>
                         </div>
                         <div class="slide3-block8 swiper-slide">
-                            <div class="slide3__img8"></div>
+                            <div class="slide3-block8__img8"></div>
                         </div>
                         <div class="slide3-block9 swiper-slide">
-                            <div class="slide3__img9"></div>
+                            <div class="slide3-block9__img9"></div>
                         </div>
                 </div>
 
@@ -1132,25 +1079,29 @@
             <!---->
         </section>
         <section class="contacts">
-            <div class="contacts_border">
+            <div class="contacts__border">
                 <div class="contacts__all container">
                     <div class="contacts__title" id="contacts">
                         <p class="contacts__name">Шоурум № 4</p>        
                         <p class="contacts__adress">Леонтьевский переулок, дом 5/1</p>
                     </div>
                     <div class="contacts__call">
-                        <form action="https://jsonplaceholder.typicode.com/posts" autocomplete="off" method="POST" class="Contacts__forms">
+                        <form action="https://jsonplaceholder.typicode.com/posts" autocomplete="off" method="POST" class="contacts__call-forms">
                             <div class="contacts__name-call-all">
                                 <input name="name" class="contacts__name-call" type="text" placeholder="Имя*" autocomplete="off" data-validate-field="name" id="name" required>
                                 <p class="contacts__name-call-invalid">Недопустимый формат</p>
                             </div>
-                            <input name="phon" class="contacts__telephon-call" type="tel" placeholder="Телефон*" data-validate-field="tel" data-validate-rules="phon" required>
+                            <div class="contacts__name-call-all">
+                                <input name="phon" class="contacts__telephon-call" type="tel" placeholder="Телефон*" data-validate-field="tel" data-validate-rules="phon" required>
+                                <p class="contacts__telephon-call-invalid">Недопустимый формат</p>
+                            </div>
                             <button type="submit" class="contacts__send contacts__send-text1 btn">Заказать обратный звонок</button>
                             <button type="submit" class="contacts__send contacts__send-text2 btn">Заказать</button>
                         </form>
                         <script src="/js/just-validate.min.js"></script>
                         <script src="/js/inputmask.min.js"></script>
                         <script src="/js/validates.js"></script>
+
                     </div>
                     <div class="contacts__messengers">
                         <p class="contacts__one-click">Связаться в один клик</p>
@@ -1162,7 +1113,6 @@
                                         <path d="M25.8749 21.751C25.6249 21.626 24.3124 20.876 24.0624 20.8135C23.8124 20.6885 23.6249 20.6885 23.4374 20.9385C23.2499 21.1885 22.6874 21.8135 22.5624 21.9385C22.3749 22.126 22.2499 22.126 21.9999 22.001C21.7499 21.876 20.8749 21.5635 19.8749 20.5635C19.1249 19.8135 18.5624 18.9385 18.4374 18.626C18.3124 18.376 18.4374 18.1885 18.5624 18.0635C18.6874 17.9385 18.8124 17.751 18.9999 17.626C19.1874 17.501 19.1874 17.376 19.3124 17.1885C19.4374 17.001 19.3749 16.876 19.3124 16.6885C19.2499 16.501 18.7499 15.1885 18.5624 14.626C18.3749 14.0635 18.1249 14.1885 17.9999 14.126C17.8124 14.126 17.6874 14.0635 17.4999 14.0635C17.2499 14.0635 16.9374 14.1885 16.7499 14.376C16.4999 14.626 15.7499 15.251 15.7499 16.5635C15.7499 17.876 16.6249 19.251 16.7499 19.376C16.8749 19.5635 18.4999 22.4385 21.1874 23.626C23.8749 24.8135 23.8749 24.4385 24.3749 24.4385C24.8749 24.4385 25.9999 23.8135 26.2499 23.251C26.4999 22.626 26.4999 22.0635 26.4374 22.001C26.3124 22.001 26.1249 21.9385 25.8749 21.751ZM20.8749 28.1885C19.1249 28.1885 17.4999 27.6885 16.0624 26.751L12.6874 27.8135L13.8124 24.5635C12.7499 23.0635 12.1249 21.251 12.1249 19.376C12.1249 14.501 16.0624 10.5635 20.9374 10.5635C25.8124 10.5635 29.6874 14.501 29.6874 19.376C29.6874 24.251 25.7499 28.1885 20.8749 28.1885ZM20.8749 8.81348C15.0624 8.81348 10.3124 13.5635 10.3124 19.376C10.3124 21.3135 10.8124 23.1885 11.8124 24.8135L9.87489 30.501L15.7499 28.626C17.3124 29.501 19.0624 29.9385 20.8749 29.9385C26.6874 29.9385 31.4374 25.1885 31.4374 19.376C31.4374 13.5635 26.7499 8.81348 20.8749 8.81348Z" fill="white"/>
                                     </g>
                                 </svg>
-                              <!--  <img src="img/Whatsapp-Icon.svg" alt="Watsapp">-->
                             </a>
                             <a href="/" class="contacts__telegram">
                                 <svg width="40" height="40" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1171,14 +1121,11 @@
                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M9.05321 19.7889L20.7168 14.7649C26.2711 12.4547 27.4251 12.0534 28.1774 12.0402C28.3429 12.0373 28.7128 12.0783 28.9524 12.2727C29.1548 12.4369 29.2104 12.6587 29.2371 12.8143C29.2637 12.9699 29.2969 13.3246 29.2705 13.6017C28.9695 16.7641 27.6671 24.4386 27.0046 27.9806C26.7242 29.4794 26.1726 29.9819 25.6378 30.0311C24.4763 30.138 23.5944 29.2635 22.4694 28.5261L18.0061 25.528C16.0314 24.2268 17.3115 23.5116 18.4369 22.3428C18.7314 22.0368 23.8487 17.3823 23.9477 16.96C23.9597 16.9072 23.9716 16.7104 23.8547 16.6064C23.7377 16.5024 23.565 16.5384 23.4405 16.5663C23.264 16.6064 20.452 18.465 15.0044 22.1423C14.2062 22.6904 13.4832 22.9575 12.8355 22.9435C12.1214 22.9281 10.7478 22.5397 9.72661 22.2078C8.47408 21.8007 7.4786 21.5854 7.56532 20.8939C7.61044 20.5338 8.1064 20.1655 9.05317 19.789L9.05321 19.7889Z" fill="white"/>
                                     </g>
                                 </svg>
-                                <!--  <img src="img/Telegram_2019_Logo.svg" alt="Телеграм">-->
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
-            
- 
             <div class="contacts__map">
              <!--<div id="map" style="width: 1205px; height: 700px"></div>-->   
                 <div id="map"></div>
@@ -1188,28 +1135,131 @@
         </section>
     </main>
    <footer class="footer">
-        <div class="footer__logo">
-            <a href="/" class="footer__logo-link">
-                <img src="img/Blanchard.png" alt="Blanchard" class="footer__logo-name">
-                <img src="img/художественная_галерея.png" alt="художественная галерея">
-            </a>
-        </div>    
-        <div class="footer__socseti">
-            <a href="/" class="footer__vk">
-                <svg width="45" height="45" class="footer__vk-svg" viewbox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M22.5 0C10.074 0 0 10.0736 0 22.5C0 34.9264 10.074 45 22.5 45C34.926 45 45 34.9264 45 22.5C45 10.0736 34.926 0 22.5 0ZM33.9132 24.9335C34.9619 25.9577 36.0714 26.9217 37.0128 28.0519C37.4299 28.5519 37.823 29.0688 38.1222 29.6503C38.5495 30.4794 38.1637 31.3886 37.4216 31.4379L32.812 31.4369C31.6215 31.5354 30.6741 31.0553 29.8754 30.2414C29.2378 29.5927 28.6462 28.8999 28.0321 28.2292C27.7812 27.9539 27.517 27.6947 27.2021 27.4907C26.5737 27.0819 26.0277 27.2072 25.6677 27.8636C25.3008 28.5316 25.217 29.2719 25.182 30.0153C25.1319 31.1022 24.8041 31.3863 23.7135 31.4374C21.3832 31.5465 19.1721 31.1929 17.117 30.0181C15.3041 28.9818 13.901 27.5193 12.6783 25.8634C10.2973 22.6353 8.47381 19.0924 6.8354 15.4478C6.46665 14.627 6.73642 14.1878 7.64194 14.1707C9.14639 14.1417 10.6508 14.1454 12.1553 14.1694C12.7676 14.179 13.1727 14.5294 13.4079 15.1071C14.2209 17.1074 15.2176 19.0105 16.4665 20.7755C16.7994 21.2455 17.1391 21.7142 17.623 22.0461C18.157 22.4125 18.5639 22.2915 18.8158 21.6953C18.9769 21.3164 19.0464 20.9113 19.0814 20.5053C19.2011 19.1145 19.2153 17.7242 19.0082 16.339C18.8793 15.4722 18.3918 14.9124 17.5277 14.7485C17.0876 14.6652 17.152 14.5022 17.3661 14.2508C17.7376 13.8163 18.0856 13.5474 18.7812 13.5474L23.9893 13.5465C24.8101 13.7076 24.9942 14.0759 25.1056 14.9027L25.1102 20.6903C25.1006 21.0103 25.2709 21.9586 25.8454 22.1681C26.3058 22.32 26.6096 21.9508 26.8849 21.6594C28.1339 20.334 29.0237 18.7697 29.8206 17.1506C30.1723 16.4366 30.4757 15.6978 30.7703 14.9575C30.9895 14.4101 31.3301 14.1408 31.9479 14.15L36.9631 14.156C37.1108 14.156 37.2609 14.1574 37.4073 14.1827C38.2525 14.3273 38.4841 14.6909 38.2226 15.5154C37.811 16.8109 37.0114 17.89 36.2297 18.9718C35.3919 20.1301 34.4983 21.2478 33.6687 22.4111C32.9064 23.4746 32.9667 24.01 33.9132 24.9335Z" fill="#CACACA"/>
-                </svg>
-            <!--<img src="img/Vk2.svg" alt="ВКонтакте">-->
-            </a>
-            <a href="/" class="footer__OK">
-                <svg width="45" height="45" class="footer__Ok-svg" viewbox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M19.279 14.9859C19.279 16.8409 20.7828 18.3449 22.6379 18.3449C24.4929 18.3449 25.9967 16.8409 25.9967 14.9859C25.9967 13.1309 24.4929 11.6271 22.6379 11.6271C20.7828 11.6271 19.279 13.1309 19.279 14.9859Z" fill="#CACACA"/>
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M22.5 45C34.9264 45 45 34.9264 45 22.5C45 10.0736 34.9264 0 22.5 0C10.0736 0 0 10.0736 0 22.5C0 34.9264 10.0736 45 22.5 45ZM14.5125 14.9858C14.5125 10.4984 18.1503 6.86047 22.6379 6.86047C27.1254 6.86047 30.7632 10.4984 30.7632 14.9858C30.7632 19.4734 27.1254 23.1115 22.6379 23.1115C18.1503 23.1115 14.5125 19.4734 14.5125 14.9858ZM30.8117 27.291C30.7086 27.3737 28.7593 28.9142 25.5064 29.5769L30.4165 34.4432C31.28 35.3053 31.2811 36.7042 30.419 37.5677C29.5569 38.431 28.1583 38.4324 27.2945 37.5701L22.5276 32.928L18.1979 37.5402C17.7644 37.9899 17.1862 38.216 16.6074 38.216C16.0553 38.216 15.5027 38.0106 15.074 37.5972C14.1956 36.7502 14.1701 35.3516 15.0171 34.4733L19.6777 29.6025C16.3336 28.9555 14.3039 27.3749 14.1993 27.291C13.2475 26.5277 13.0946 25.1372 13.8579 24.1852C14.6212 23.2334 16.0115 23.0805 16.9636 23.8437C16.9837 23.86 19.1067 25.4549 22.5275 25.4572C25.9483 25.4549 28.0273 23.86 28.0474 23.8437C28.9995 23.0805 30.3899 23.2334 31.1531 24.1852C31.9165 25.1372 31.7636 26.5277 30.8117 27.291Z" fill="#CACACA"/>
-                </svg>
-                <!--<img src="img/ok.svg" alt="ВКонтакте">-->
-            </a>
+        <div class="footer_container container">
+            <div class="footer__logo">
+                <a href="/" class="footer__logo-link">
+                    <img src="img/Blanchard.png" alt="Blanchard" class="footer__logo-name">
+                    <img src="img/художественная_галерея.png" alt="Art gallery">
+                </a>
+            </div>    
+            <div class="footer__socseti">
+                <a href="/" class="footer__vk">
+                    <svg width="45" height="45" class="footer__vk-svg" viewbox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22.5 0C10.074 0 0 10.0736 0 22.5C0 34.9264 10.074 45 22.5 45C34.926 45 45 34.9264 45 22.5C45 10.0736 34.926 0 22.5 0ZM33.9132 24.9335C34.9619 25.9577 36.0714 26.9217 37.0128 28.0519C37.4299 28.5519 37.823 29.0688 38.1222 29.6503C38.5495 30.4794 38.1637 31.3886 37.4216 31.4379L32.812 31.4369C31.6215 31.5354 30.6741 31.0553 29.8754 30.2414C29.2378 29.5927 28.6462 28.8999 28.0321 28.2292C27.7812 27.9539 27.517 27.6947 27.2021 27.4907C26.5737 27.0819 26.0277 27.2072 25.6677 27.8636C25.3008 28.5316 25.217 29.2719 25.182 30.0153C25.1319 31.1022 24.8041 31.3863 23.7135 31.4374C21.3832 31.5465 19.1721 31.1929 17.117 30.0181C15.3041 28.9818 13.901 27.5193 12.6783 25.8634C10.2973 22.6353 8.47381 19.0924 6.8354 15.4478C6.46665 14.627 6.73642 14.1878 7.64194 14.1707C9.14639 14.1417 10.6508 14.1454 12.1553 14.1694C12.7676 14.179 13.1727 14.5294 13.4079 15.1071C14.2209 17.1074 15.2176 19.0105 16.4665 20.7755C16.7994 21.2455 17.1391 21.7142 17.623 22.0461C18.157 22.4125 18.5639 22.2915 18.8158 21.6953C18.9769 21.3164 19.0464 20.9113 19.0814 20.5053C19.2011 19.1145 19.2153 17.7242 19.0082 16.339C18.8793 15.4722 18.3918 14.9124 17.5277 14.7485C17.0876 14.6652 17.152 14.5022 17.3661 14.2508C17.7376 13.8163 18.0856 13.5474 18.7812 13.5474L23.9893 13.5465C24.8101 13.7076 24.9942 14.0759 25.1056 14.9027L25.1102 20.6903C25.1006 21.0103 25.2709 21.9586 25.8454 22.1681C26.3058 22.32 26.6096 21.9508 26.8849 21.6594C28.1339 20.334 29.0237 18.7697 29.8206 17.1506C30.1723 16.4366 30.4757 15.6978 30.7703 14.9575C30.9895 14.4101 31.3301 14.1408 31.9479 14.15L36.9631 14.156C37.1108 14.156 37.2609 14.1574 37.4073 14.1827C38.2525 14.3273 38.4841 14.6909 38.2226 15.5154C37.811 16.8109 37.0114 17.89 36.2297 18.9718C35.3919 20.1301 34.4983 21.2478 33.6687 22.4111C32.9064 23.4746 32.9667 24.01 33.9132 24.9335Z" fill="#CACACA"/>
+                    </svg>
+                </a>
+                <a href="/" class="footer__OK">
+                    <svg width="45" height="45" class="footer__Ok-svg" viewbox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19.279 14.9859C19.279 16.8409 20.7828 18.3449 22.6379 18.3449C24.4929 18.3449 25.9967 16.8409 25.9967 14.9859C25.9967 13.1309 24.4929 11.6271 22.6379 11.6271C20.7828 11.6271 19.279 13.1309 19.279 14.9859Z" fill="#CACACA"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M22.5 45C34.9264 45 45 34.9264 45 22.5C45 10.0736 34.9264 0 22.5 0C10.0736 0 0 10.0736 0 22.5C0 34.9264 10.0736 45 22.5 45ZM14.5125 14.9858C14.5125 10.4984 18.1503 6.86047 22.6379 6.86047C27.1254 6.86047 30.7632 10.4984 30.7632 14.9858C30.7632 19.4734 27.1254 23.1115 22.6379 23.1115C18.1503 23.1115 14.5125 19.4734 14.5125 14.9858ZM30.8117 27.291C30.7086 27.3737 28.7593 28.9142 25.5064 29.5769L30.4165 34.4432C31.28 35.3053 31.2811 36.7042 30.419 37.5677C29.5569 38.431 28.1583 38.4324 27.2945 37.5701L22.5276 32.928L18.1979 37.5402C17.7644 37.9899 17.1862 38.216 16.6074 38.216C16.0553 38.216 15.5027 38.0106 15.074 37.5972C14.1956 36.7502 14.1701 35.3516 15.0171 34.4733L19.6777 29.6025C16.3336 28.9555 14.3039 27.3749 14.1993 27.291C13.2475 26.5277 13.0946 25.1372 13.8579 24.1852C14.6212 23.2334 16.0115 23.0805 16.9636 23.8437C16.9837 23.86 19.1067 25.4549 22.5275 25.4572C25.9483 25.4549 28.0273 23.86 28.0474 23.8437C28.9995 23.0805 30.3899 23.2334 31.1531 24.1852C31.9165 25.1372 31.7636 26.5277 30.8117 27.291Z" fill="#CACACA"/>
+                    </svg>
+                </a>
+            </div>
         </div>
    </footer>
+   <div class="slaider1-img1-popap">
+        <div class="slider1-img1-full">
+            <div class="slider1-img1-picture"></div>
+            <div class="slider1-img-description">
+                <h4 class="slider1-img-author">Казимир Малевич</h4>
+                <p class="slider1-img-name">«Без рук»</p>
+                <p class="slider1-img-years">1930</p>
+                <p class="slider1-img-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere repudiandae aliquid impedit rem eaque cupiditate nostrum voluptatum voluptas quibusdam. Ex pariatur nostrum molestiae reiciendis aperiam quisquam, repudiandae quo atque illo.</p>
+            </div>
+            <div class="slider1-img1-close">
+                <svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666641 15.3043L15.3333 3.17761e-05L16 0.695679L1.33331 15.9999L0.666641 15.3043Z" fill="black"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666725 -3.39221e-06L15.3334 15.3042L14.6667 15.9999L5.72019e-05 0.695643L0.666725 -3.39221e-06Z" fill="black"/>
+                </svg>
+            </div>
+        </div>
+    </div>
+    <div class="slaider1-img2-popap">
+        <div class="slider1-img2-full">
+            <div class="slider1-img2-picture"></div>
+            <div class="slider1-img-description">
+                <h4 class="slider1-img-author">Казимир Малевич</h4>
+                <p class="slider1-img-name">«Женщина с граблями»</p>
+                <p class="slider1-img-years">1931-1932</p>
+                <p class="slider1-img-text">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930–1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
+            </div>
+            <div class="slider1-img2-close">
+                <svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666641 15.3043L15.3333 3.17761e-05L16 0.695679L1.33331 15.9999L0.666641 15.3043Z" fill="black"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666725 -3.39221e-06L15.3334 15.3042L14.6667 15.9999L5.72019e-05 0.695643L0.666725 -3.39221e-06Z" fill="black"/>
+                </svg>
+            </div>
+        </div>
+    </div>
+
+    <div class="slaider1-img3-popap">
+        <div class="slider1-img3-full">
+            <div class="slider1-img3-picture"></div>
+            <div class="slider1-img-description">
+                <h4 class="slider1-img-author">Каземир Малевич</h4>
+                <p class="slider1-img-name">«Не женщина с молотом»</p>
+                <p class="slider1-img-years">1931-1932</p>
+                <p class="slider1-img-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores, tenetur expedita, natus quos hic dolore esse, eligendi nihil ipsum facilis ab corporis error exercitationem atque necessitatibus delectus est! Cupiditate, quam?</p>
+            </div>
+            <div class="slider1-img3-close">
+                <svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666641 15.3043L15.3333 3.17761e-05L16 0.695679L1.33331 15.9999L0.666641 15.3043Z" fill="black"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666725 -3.39221e-06L15.3334 15.3042L14.6667 15.9999L5.72019e-05 0.695643L0.666725 -3.39221e-06Z" fill="black"/>
+                </svg>
+            </div>
+        </div>
+    </div>
+    <div class="slaider1-img4-popap">
+        <div class="slider1-img4-full">
+            <div class="slider1-img4-picture"></div>
+            <div class="slider1-img-description">
+                <h4 class="slider1-img-author">Каземир Малевич4</h4>
+                <p class="slider1-img-name">«Не женщина с молотом»</p>
+                <p class="slider1-img-years">1931-1932</p>
+                <p class="slider1-img-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores, tenetur expedita, natus quos hic dolore esse, eligendi nihil ipsum facilis ab corporis error exercitationem atque necessitatibus delectus est! Cupiditate, quam?</p>
+            </div>
+            <div class="slider1-img4-close">
+                <svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666641 15.3043L15.3333 3.17761e-05L16 0.695679L1.33331 15.9999L0.666641 15.3043Z" fill="black"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666725 -3.39221e-06L15.3334 15.3042L14.6667 15.9999L5.72019e-05 0.695643L0.666725 -3.39221e-06Z" fill="black"/>
+                </svg>
+            </div>
+        </div>
+    </div>
+    <div class="slaider1-img5-popap">
+        <div class="slider1-img5-full">
+            <div class="slider1-img5-picture"></div>
+            <div class="slider1-img-description">
+                <h4 class="slider1-img-author">Каземир Малевич5</h4>
+                <p class="slider1-img-name">«Не женщина с молотом»</p>
+                <p class="slider1-img-years">1931-1932</p>
+                <p class="slider1-img-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores, tenetur expedita, natus quos hic dolore esse, eligendi nihil ipsum facilis ab corporis error exercitationem atque necessitatibus delectus est! Cupiditate, quam?</p>
+            </div>
+            <div class="slider1-img5-close">
+                <svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666641 15.3043L15.3333 3.17761e-05L16 0.695679L1.33331 15.9999L0.666641 15.3043Z" fill="black"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666725 -3.39221e-06L15.3334 15.3042L14.6667 15.9999L5.72019e-05 0.695643L0.666725 -3.39221e-06Z" fill="black"/>
+                </svg>
+            </div>
+        </div>
+    </div>
+    <div class="slaider1-img6-popap">
+        <div class="slider1-img6-full">
+            <div class="slider1-img6-picture"></div>
+            <div class="slider1-img-description">
+                <h4 class="slider1-img-author">Каземир Малевич6</h4>
+                <p class="slider1-img-name">«Не женщина с молотом»</p>
+                <p class="slider1-img-years">1931-1932</p>
+                <p class="slider1-img-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores, tenetur expedita, natus quos hic dolore esse, eligendi nihil ipsum facilis ab corporis error exercitationem atque necessitatibus delectus est! Cupiditate, quam?</p>
+            </div>
+            <div class="slider1-img6-close">
+                <svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666641 15.3043L15.3333 3.17761e-05L16 0.695679L1.33331 15.9999L0.666641 15.3043Z" fill="black"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666725 -3.39221e-06L15.3334 15.3042L14.6667 15.9999L5.72019e-05 0.695643L0.666725 -3.39221e-06Z" fill="black"/>
+                </svg>
+            </div>
+        </div>
+    </div>
     <script src="js/swiper.js"></script>
     <script src="js/accordion.js"></script>
 </body>

@@ -51,40 +51,40 @@ window.addEventListener('DOMContentLoaded', function () {
                 })
                 
                 document.querySelector('.slide1-img1').addEventListener('click', function(){
-                    document.querySelector('.slider1-img1-full').classList.add('slider1-img__is-activ')
+                    document.querySelector('.slaider1-img1-popap').classList.add('slider1-img__is-activ')
                 })
                 document.querySelector('.slide1-img2').addEventListener('click', function(){
-                    document.querySelector('.slider1-img2-full').classList.add('slider1-img__is-activ')
+                    document.querySelector('.slaider1-img2-popap').classList.add('slider1-img__is-activ')
                 })
                 document.querySelector('.slide1-img3').addEventListener('click', function(){
-                    document.querySelector('.slider1-img3-full').classList.add('slider1-img__is-activ')
+                    document.querySelector('.slaider1-img3-popap').classList.add('slider1-img__is-activ')
                 })
                 document.querySelector('.slide1-img4').addEventListener('click', function(){
-                    document.querySelector('.slider1-img4-full').classList.add('slider1-img__is-activ')
+                    document.querySelector('.slaider1-img4-popap').classList.add('slider1-img__is-activ')
                 })
                 document.querySelector('.slide1-img5').addEventListener('click', function(){
-                    document.querySelector('.slider1-img5-full').classList.add('slider1-img__is-activ')
+                    document.querySelector('.slaider1-img5-popap').classList.add('slider1-img__is-activ')
                 })
                 document.querySelector('.slide1-img6').addEventListener('click', function(){
-                    document.querySelector('.slider1-img6-full').classList.add('slider1-img__is-activ')
+                    document.querySelector('.slaider1-img6-popap').classList.add('slider1-img__is-activ')
                 })
                 document.querySelector('.slider1-img1-close').addEventListener('click', function(){
-                    document.querySelector('.slider1-img1-full').classList.remove('slider1-img__is-activ')
+                    document.querySelector('.slaider1-img1-popap').classList.remove('slider1-img__is-activ')
                 })
                 document.querySelector('.slider1-img2-close').addEventListener('click', function(){
-                    document.querySelector('.slider1-img2-full').classList.remove('slider1-img__is-activ')
+                    document.querySelector('.slaider1-img2-popap').classList.remove('slider1-img__is-activ')
                 })
                 document.querySelector('.slider1-img3-close').addEventListener('click', function(){
-                    document.querySelector('.slider1-img3-full').classList.remove('slider1-img__is-activ')
+                    document.querySelector('.slaider1-img3-popap').classList.remove('slider1-img__is-activ')
                 })
                 document.querySelector('.slider1-img4-close').addEventListener('click', function(){
-                    document.querySelector('.slider1-img4-full').classList.remove('slider1-img__is-activ')
+                    document.querySelector('.slaider1-img4-popap').classList.remove('slider1-img__is-activ')
                 })
                 document.querySelector('.slider1-img5-close').addEventListener('click', function(){
-                    document.querySelector('.slider1-img5-full').classList.remove('slider1-img__is-activ')
+                    document.querySelector('.slaider1-img5-popap').classList.remove('slider1-img__is-activ')
                 })
                 document.querySelector('.slider1-img6-close').addEventListener('click', function(){
-                    document.querySelector('.slider1-img6-full').classList.remove('slider1-img__is-activ')
+                    document.querySelector('.slaider1-img6-popap').classList.remove('slider1-img__is-activ')
                 })
 /*                 document.querySelector('.search__realizm').addEventListener('click', function(){
 

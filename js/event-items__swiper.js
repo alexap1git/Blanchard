@@ -1,17 +1,17 @@
 var swiper = new Swiper(".event-items", {
-    slidesPerView: 3,
+   /* slidesPerView: 3,
     slidesPerGroup: 2,
-    
+    */
      grid: {
          rows: 1,
      },
      /*slideClass: "touch-beautiful__swiper-slide",*/
      navigation: {
-        nextEl: ".event-items__swiper-button-next",
-        prevEl: ".event-items__swiper-button-prev"
+        nextEl: ".events-background__swiper-button-next",
+        prevEl: ".events-background__swiper-button-prev"
     },
     /* pagination: {
-         el: ".event-items__swiper-pagination",
+         el: ".events-background__swiper-pagination",
          clickable: true,
      },*/
      loop: true,  
@@ -20,7 +20,7 @@ var swiper = new Swiper(".event-items", {
             slidesPerView: 1,
             slidesPerGroup: 1,
             pagination: {
-                el: ".event-items__swiper-pagination",
+                el: ".events-background__swiper-pagination",
                 type: "bullets",
 /*              bulletActiveClass: 'swiper-pagination-bullet-active',
                 dynamicBullets:	true,
@@ -36,7 +36,7 @@ var swiper = new Swiper(".event-items", {
          320: {
             loop:false,
             pagination: {
-                el: ".event-items__swiper-pagination",
+                el: ".events-background__swiper-pagination",
                 type: "bullets",
 /*              bulletActiveClass: 'swiper-pagination-bullet-active',
                 dynamicBullets:	true,
@@ -54,7 +54,7 @@ var swiper = new Swiper(".event-items", {
          690: {
             loop:false,
             pagination: {
-                el: ".event-items__swiper-pagination",
+                el: ".events-background__swiper-pagination",
                 dynamicBullets:false,
                 enabled: true,
                 clickable:	true,
@@ -69,7 +69,7 @@ var swiper = new Swiper(".event-items", {
          1024: {
             loop:false,
             pagination: {
-                el: ".event-items__swiper-pagination",
+                el: ".events-background__swiper-pagination",
                 clickable:	true,
                 enabled: true,
                 dynamicBullets: false,

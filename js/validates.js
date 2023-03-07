@@ -2,7 +2,7 @@
     var im = new Inputmask("+7 (999) 999-99-99");
     im.mask(selector);
 
-    new JustValidate ('.Contacts__forms', {
+    new JustValidate ('.contacts__call-forms', {
         rules: {
             name: {
                 required: true,
