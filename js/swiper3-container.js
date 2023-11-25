@@ -1,7 +1,8 @@
     var swiper = new Swiper('.swiper3-container', {
         spaceBetween: 50,
-        loop: true,  
-       /* pagination: {
+        loop: false,  
+       /*  allowSlidePrev:false,
+       pagination: {
             el: '.swiper3-pagination',
             type: 'fraction',
         },*/
@@ -62,6 +63,7 @@
                spaceBetween: 34
                },
             1024: {
+                loop:false,
                 navigation: {
                     nextEl: ".swiper3-button-next",
                     prevEl: ".swiper3-button-prev"
@@ -74,6 +76,7 @@
                },
        
             1200: {
+                loop:false,
                 navigation: {
                     nextEl: ".swiper3-button-next",
                     prevEl: ".swiper3-button-prev"

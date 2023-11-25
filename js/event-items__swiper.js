@@ -2,6 +2,7 @@ var swiper = new Swiper(".event-items", {
    /* slidesPerView: 3,
     slidesPerGroup: 2,
     */
+    loop:false,
      grid: {
          rows: 1,
      },
@@ -14,7 +15,6 @@ var swiper = new Swiper(".event-items", {
          el: ".events-background__swiper-pagination",
          clickable: true,
      },*/
-     loop: true,  
      breakpoints: {
          0: {
             slidesPerView: 1,
@@ -22,9 +22,6 @@ var swiper = new Swiper(".event-items", {
             pagination: {
                 el: ".events-background__swiper-pagination",
                 type: "bullets",
-/*              bulletActiveClass: 'swiper-pagination-bullet-active',
-                dynamicBullets:	true,
-                dynamicMainBullets:	5,*/
                 clickable:	true,
                 enabled: true
             },
@@ -38,9 +35,6 @@ var swiper = new Swiper(".event-items", {
             pagination: {
                 el: ".events-background__swiper-pagination",
                 type: "bullets",
-/*              bulletActiveClass: 'swiper-pagination-bullet-active',
-                dynamicBullets:	true,
-                dynamicMainBullets:	5,*/
                 clickable:	true,
                 enabled: true
             },
@@ -72,12 +66,8 @@ var swiper = new Swiper(".event-items", {
                 el: ".events-background__swiper-pagination",
                 clickable:	true,
                 enabled: true,
-                dynamicBullets: false,
+                dynamicBullets: false
 /*                dynamicMainBullets:	1*/
-            },
-            navigation: {
-                enabled: false,
-                nextEl:	null
             },
             slidesPerView: 3,
             grid: {
@@ -86,16 +76,20 @@ var swiper = new Swiper(".event-items", {
             spaceBetween: 27
             },
     
-            1200: {
-                pagination: {
-                    clickable:	false,
-                    enabled: true
-                },
+        1200: {
+            navigation: {
+                nextEl: ".events-background__swiper-button-next",
+                prevEl: ".events-background__swiper-button-prev"
+            },    
+            pagination: {
+                clickable:	false,
+                enabled: true
+            },
             slidesPerView: 3,
             grid: {
                 rows: 1
             },
-            spaceBetween: 49
+            spaceBetween: 51
             }
      },
  });
