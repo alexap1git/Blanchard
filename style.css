@@ -4928,7 +4928,7 @@ h2 {
 @media (min-width:1201px) and (max-width:1608px) {  
     .accord-text1  {
         height: 100%;
-        max-height: 40%;
+        max-height: 414px;
     }
     .accord-text2,.accord-text3,.accord-text4,.accord-text5,.accord-text6,.accord-text7  {
         /*padding-top: 25px;*/
@@ -8200,7 +8200,7 @@ h2 {
     }
     .contacts__one-click {
         margin: 0 0 13px 0px;
-        width: 350px;
+        width: 300px;
     }
     .contacts__watsapp {
         margin-right: 20px;
