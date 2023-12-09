@@ -1,6 +1,6 @@
 $( function() {
-   $( "#accordion" ).accordion({animate: {easing:'easeInCirc', duration: 600}});
-  // $( "#accordion" ).accordion({animate: {easing:'linear', duration: 600}});
+  // $( "#accordion" ).accordion({animate: {easing:'easeInCirc', duration: 300}});
+   $( "#accordion" ).accordion({animate: {easing:'linear', duration: 400}});
  //   $( "#accordion" ).accordion( {animate: 500 });
   } );
 

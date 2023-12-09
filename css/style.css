@@ -4,7 +4,7 @@
         url('/fonts/OpenSans-Light.woff2') format('woff2'),
 		url('/fonts/OpenSans-Light.woff') format('woff');
 	font-display: swap;
-	font-weight: lighter;
+	font-weight: normal;
 	font-style: normal;
 }
 
@@ -97,7 +97,7 @@ h2 {
 }
 .header__container {
     padding-top: 22px;
-    padding-bottom: 23px;
+    padding-bottom: 22px;
     display: flex;
     align-items: center;
     background: #000000;
@@ -1500,8 +1500,11 @@ h2 {
     background: #000000;
     border: 1px solid #999999;
     border-radius: 6px;
+    transition: .3s;
 }
-
+.choices__list--dropdown.is-active {
+    transition: .3s;
+}
 .choices__inner {
     height: 40px;
     min-height: 40px;
@@ -1732,11 +1735,11 @@ h2 {
     color: white;
  }
 .lable:hover {
-    text-decoration-line: #C283F3;
+/*    text-decoration-line: #C283F3;*/
     transition: .6s;
 }
 .lable:visited {
-    text-decoration-line: #C283F3;
+/*    text-decoration-line: #C283F3;*/
     color: #C283F3;
 }
 .lable:active {
@@ -2131,7 +2134,7 @@ h2 {
 .slide2-img1:active {
     background:linear-gradient(0deg, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4)), url(../img/Rectangle70_1_1920.jpg) center no-repeat;
     background-size: cover;
-    transform: .3s;
+    transition: .3s;
      
 }
 .slide2-img2 {
@@ -2142,7 +2145,7 @@ h2 {
 .slide2-img2:active {
     background:linear-gradient(0deg, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4)), url(../img/Rectangle72_1_1920.jpg) center no-repeat;
     background-size: cover;
-    transform: .3s;
+    transition: .3s;
      
 }
 .slide2-img3 {
@@ -2153,7 +2156,7 @@ h2 {
 .slide2-img3:active {
     background:linear-gradient(0deg, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4)), url(../img/Rectangle69_1_1920.jpg) center no-repeat;
     background-size: cover;
-    transform: .3s;
+    transition: .3s;
      
 }
 .slide2-img4 {
@@ -2164,7 +2167,7 @@ h2 {
 .slide2-img4:active {
     background:linear-gradient(0deg, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4)), url(../img/Rectangle69_1_1920.jpg) center no-repeat;
     background-size: cover;
-    transform: .3s;
+    transition: .3s;
      
 }
 .slide2-img5 {
@@ -2175,7 +2178,7 @@ h2 {
 .slide2-img5:active {
     background:linear-gradient(0deg, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4)), url(../img/Rectangle71_1_1920.jpg) center no-repeat;
     background-size: cover;
-    transform: .3s;
+    transition: .3s;
      
 }
 .slide2-img6 {
@@ -2186,7 +2189,7 @@ h2 {
 .slide2-img6:active {
     background:linear-gradient(0deg, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4)), url(../img/Rectangle73_1_1920.jpg) center no-repeat;
     background-size: cover;
-    transform: .3s;
+    transition: .3s;
      
 }
 /***картинки для слайдов №3   ***/
@@ -3896,7 +3899,7 @@ h2 {
     border-radius: 5px;
 }
 .tippy-content {
-   padding: auto;
+/*   padding: ;*/
    margin: auto;
    text-align: center;
 }
@@ -4928,7 +4931,7 @@ h2 {
 @media (min-width:1201px) and (max-width:1608px) {  
     .accord-text1  {
         height: 100%;
-        max-height: 40%;
+        max-height: 414px;
     }
     .accord-text2,.accord-text3,.accord-text4,.accord-text5,.accord-text6,.accord-text7  {
         /*padding-top: 25px;*/
@@ -5025,7 +5028,7 @@ h2 {
     .header__search-form {
         cursor: pointer;
         position: absolute;
-        right: 32px;
+       /* right: 32px;*/
         top: -15px;
     }
     .header__search-form svg {
@@ -6109,6 +6112,10 @@ h2 {
         margin-left: 0px;
         transition: margin-left .4s linear;
     }
+    .search_form-mobile-revealed {
+        display: flex;
+        
+    }
     .header__search-form {
         cursor: pointer;
     }
@@ -6123,12 +6130,28 @@ h2 {
     .header__search-label {
         margin: 0px 3px 0px 0px;
         display: inline-block;
+        position: relative;
+        left: 30px;
         width: 27px;
         height: 26px;
         border: 0px;
         background: url(../img/Union.png) no-repeat;
         cursor: pointer;
         z-index: 10;
+    }
+    .header__search-background {
+        /*display: none;*/
+        visibility: initial;
+        position: relative;
+        left: -10000px;
+        transition: .4s;
+    }
+    .header__search-background--revealed {
+        display: block;
+        visibility: initial;
+        position: relative;
+        left: 0px;
+        transition: .4s;
     }
 
     .header__search-label--revealed {
@@ -6153,13 +6176,14 @@ h2 {
         padding-right: 10px;
         left: 0px;
         max-width: 1200px;
-        min-width: 576px;
+        min-width: 588px;
       /*  width: 100%;*/
         background-color: transparent;
         border: none;
         border-bottom: 1px solid #ffffff; 
         outline: none;
         color: #ffffff;
+        transition: all .4s;
     }
     .header__search-form-mobile-revealed {
         margin: 37px 0px;
@@ -6174,8 +6198,8 @@ h2 {
         margin-bottom: 0px;
         padding-top: 29px;
         padding-bottom: 19px;
-        padding-left: 31px;
-        padding-right: 5px;
+        padding-left: 55px;
+     /*   padding-right: 5px;*/
         height: auto;
     }
     .header__blanchard-link:focus-visible {
@@ -6397,7 +6421,7 @@ h2 {
         margin-bottom: 21px;
     }
     .painter1-block1 {
-        max-width: 33%;
+        max-width: 36%;
     }
     .touch-beautiful__btn {
         margin-top: 0px;
@@ -6438,7 +6462,7 @@ h2 {
      /*   display: none;*/
         margin-left: 15px;
         position: relative;
-        top: 8px;
+        top: 4px;
         transition-duration: .4s;
         transition-property: top;
     }
@@ -6813,6 +6837,7 @@ h2 {
     }
     .swiper3-container {
         width: 84%;
+        padding-right: 0px;
     }
     .slide3-block1, .slide3-block2, .slide3-block3, .slide3-block4, .slide3-block5, .slide3-block6, .slide3-block7, .slide3-block8, .slide3-block9 {
         height: 105px;
@@ -6841,8 +6866,8 @@ h2 {
         top: -100px;
     }
     .swiper3-button-next {
-        top: -70px;
-        right: -96%;
+        top: -67px;
+        right: -95%;
     }
     .contacts__all {
         padding: 40px 45px 42px 50px;
@@ -8027,7 +8052,7 @@ h2 {
         margin-bottom: 3px;
     }
     .slide3-block1,.slide3-block2,.slide3-block3,.slide3-block4,.slide3-block5,.slide3-block6,.slide3-block7,.slide3-block8,.slide3-block9 {
-        width: 196px !important;
+       /* width: 196px !important;*/
         margin: 0 auto;
         height: 68px;
     }
@@ -8200,7 +8225,7 @@ h2 {
     }
     .contacts__one-click {
         margin: 0 0 13px 0px;
-        width: 350px;
+        width: 300px;
     }
     .contacts__watsapp {
         margin-right: 20px;
