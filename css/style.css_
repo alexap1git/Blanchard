@@ -3611,7 +3611,7 @@ h2 {
 
 .painters-text {
     margin: 0px;
-    padding-right: 15px;
+    padding-right: 20px;
     font-family: 'Open Sans' ,sans-serif ,sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -3627,7 +3627,7 @@ h2 {
     flex-direction: column;
     flex-wrap: wrap;
  /*   height: 100%;*/
-    max-width: 39%;
+    max-width: 32%;
     align-content: flex-start;
 }
 
@@ -4337,13 +4337,13 @@ h2 {
 .slide3-block1__img1 {
     height: 63px;
     width: 244px;
-   /* margin-left: 105px;*/
+    margin-left: 105px;
 }
 .slide3-block2__img2 {
     height: 59px;
     width: 328px;
-  /*  margin-left: 60px;*/
-    background-size: contain;
+    margin-left: 60px;
+   /* background-size: contain;*/
     background-repeat: no-repeat;
 }
 .slide3-block3__img3 {
@@ -4933,7 +4933,7 @@ h2 {
 @media (min-width:1201px) and (max-width:1608px) {  
     .accord-text1  {
         height: 100%;
-        max-height: 424px;
+        max-height: 414px;
     }
     .accord-text2,.accord-text3,.accord-text4,.accord-text5,.accord-text6,.accord-text7  {
         /*padding-top: 25px;*/
@@ -5613,8 +5613,8 @@ h2 {
         /*   min-height: 388px;*/
         margin-bottom: 20px;
         margin-top: 26px;
-        min-height: 34%;
-        max-height: 35%;
+        min-height: 32%;
+        max-height: 33%;
         /*   max-height:25%;*/
         /*  max-height: fit-content;*/
         /* transition: .3s;*/
@@ -5641,7 +5641,7 @@ h2 {
     }
 
     .painter1-block1 {
-        max-width: 58%;
+        max-width: 54%;
         white-space: pre;
     }
     .accord1-painter1,.accord1-painter2,.accord1-painter3,.accord1-painter4 ,.accord1-painter5,.accord1-painter6,.accord1-painter7,.accord1-painter8,.accord1-painter9,.accord1-painter10 ,.accord1-painter11,.accord1-painter12, .accord1-painter13,.accord1-painter14,.accord1-painter15,.accord1-painter16 ,.accord1-painter17,.accord1-painter18,.accord1-painter19,.accord1-painter20,.accord1-painter21  {
@@ -6351,7 +6351,7 @@ h2 {
     }
     .touch-beautiful__alignment {
         padding-top: 24px;
-        padding-bottom: 57px;
+        padding-bottom: 56px;
         padding-left: 0;
         margin-left: 50px;
         padding-right: 0;
